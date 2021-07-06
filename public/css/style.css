@@ -1,0 +1,32 @@
+.validationError {
+    color: red;
+}
+
+nav .nav-content {
+    background-color: #cceeff;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+nav .nav-row {
+    display: block;
+    max-width: 82rem;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 0.7em;
+}
+
+nav .nav-menu {
+    float: right;
+}
+
+nav .nav-item {
+    display: inline-block;
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+    font-size: 0.9em;
+}
