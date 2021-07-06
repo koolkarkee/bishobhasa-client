@@ -6,7 +6,7 @@ import { RegisterComponent } from '../components/auth/register/register.componen
 import Header from '../components/common/header/header.component'
 import PageNotFoundComponent from '../components/common/pagenotfound/pagenotfound.component'
 import DashBoardComponent from '../components/common/dashboard/dashboard.component'
-import SidebarBurgerComponent from './../components/common/sidebar/sidebar.component';
+import SidebarBurgerComponent from './../components/common/sidebar/sidebar.component'
 
 import HomeIcon from '@material-ui/icons/Home';
 import SettingsIcon from '@material-ui/icons/Settings';
@@ -99,7 +99,9 @@ const PublicRoute = ({component : Component, props}) => (
             <> 
                 <div className="header">
                     <Header isLoggedUser = { localStorage.getItem('token') ? true : false }></Header>  
-                </div>  
+                </div>   
+                 
+
                 <div className="main">  
                     <Component { ...props}></Component>
                 </div>

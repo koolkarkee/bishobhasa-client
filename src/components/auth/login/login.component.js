@@ -146,7 +146,7 @@ export class LoginComponent extends Component {
             <div>
                 <form className="form-group" onSubmit={this.handleSubmit}>   
                     <div>                        
-                        <h2>Login</h2>
+                        <h2 class="has-text-primary">Login</h2>
                         <p>Please login to start your session</p>
                     </div>   
                     <FormGroup column = "true"> 
