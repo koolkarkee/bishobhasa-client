@@ -4,6 +4,14 @@ import React from 'react'
 import { LoginComponent } from '../components/auth/login/login.component'
 import { RegisterComponent } from '../components/auth/register/register.component'
 import Header from '../components/common/header/header.component'
+import HomeComponent from '../components/site/home.componenet'
+import ServiceComponent from '../components/site/service.component'
+import AboutUsComponent from '../components/site/aboutus.component'
+import TestimonialComponent from '../components/site/testimonial.component'
+import BookStoreComponent from '../components/site/bookstore.component'
+import ContactComponent from '../components/site/contact.component'
+
+
 import PageNotFoundComponent from '../components/common/pagenotfound/pagenotfound.component'
 import DashBoardComponent from '../components/common/dashboard/dashboard.component'
 import SidebarBurgerComponent from './../components/common/sidebar/sidebar.component'
@@ -73,7 +81,7 @@ const ProtectedRoute = ({component : Component, props}) => (
                         <div id="header">
                             <Header isLoggedUser = { true }></Header>  
                         </div> 
-        
+                       
                         <div className="sidebar">
                             <div id="outer-container">
                                 <div> 
@@ -99,8 +107,26 @@ const PublicRoute = ({component : Component, props}) => (
             <> 
                 <div className="header">
                     <Header isLoggedUser = { localStorage.getItem('token') ? true : false }></Header>  
-                </div>   
-                 
+                </div>  
+
+                 <div>
+                     <HomeComponent></HomeComponent>
+                 </div>  
+                 <div>
+                     <ServiceComponent></ServiceComponent>
+                 </div>
+                 <div>
+                     <AboutUsComponent />
+                 </div>
+                 <div>
+                    <TestimonialComponent />
+                 </div>
+                 <div>
+                     <BookStoreComponent />
+                 </div>
+                 <div>
+                     <ContactComponent />
+                 </div>
 
                 <div className="main">  
                     <Component { ...props}></Component>

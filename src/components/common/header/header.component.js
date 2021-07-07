@@ -1,9 +1,8 @@
 import React from 'react' 
-import { Link, withRouter } from 'react-router-dom'
-import { AppBar, Toolbar } from '@material-ui/core'
+import { Link, withRouter } from 'react-router-dom' 
 
 import './header.component.css'
-import './../../../css/bstyle.css'
+import './../../../css/bstyle.css' 
  
 const Logout = (history) => {
     localStorage.clear()
@@ -57,13 +56,7 @@ const Header = function(props) {
     </ul>
 
     return (
-        <>  
-            {/* <AppBar>
-                <Toolbar position="sticky">
-                    {menu}
-                </Toolbar>
-            </AppBar> */}
-
+        <> 
             <header class="de-stickey">
                <section class="top-nav">
                 <div class="d-playstore">

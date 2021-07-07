@@ -1,10 +1,10 @@
-// 1. Import the initial variables
-@import "../node_modules/bulma/sass/utilities/initial-variables";
- @import "../node_modules/bulma/sass/utilities/functions";
+// 1. Import the initial variables  
+@import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "../../node_modules/bulma/sass/utilities/functions.sass";
  
 
 // 2. Set your own initial variables
-// Update blue
+// Update blue 
 $brandgreen: #149179;
 $pink : #77042a;
 $gray : #e5e5e5; 
@@ -657,7 +657,7 @@ body{
 
 
 // 6. Import the rest of Bulma
-@import "../node_modules/bulma/bulma.sass";
+@import "../../node_modules/bulma/bulma.sass"
 
 
 
