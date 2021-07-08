@@ -9,7 +9,19 @@ const Logout = (history) => {
     history.push('/login')
 }
 
+const ShowBurger = () => {
+  var burger = document.querySelector('.burger');
+  var nav = document.querySelector('#'+burger.dataset.target);
+
+  burger.addEventListener('click', function(){
+    burger.classList.toggle('is-active');
+    nav.classList.toggle('is-active')
+  });
+}
+
 const Header = function(props) {
+    
+  
     console.log('isLoggedUser >> ', props.isLoggedUser)
     let menu = props.isLoggedUser 
     ?
@@ -87,8 +99,7 @@ const Header = function(props) {
 
                    <div class="d-brand-logo">
                     <a href="index.html">
-                    <img src={process.env.PUBLIC_URL+"/assets/images/brand-logo/svg/brand-logo.svg"}/>
-                      {/* <img src="/images/brand-logo/svg/brand-logo.svg" alt="brand logo"></img> */}
+                      <img src={process.env.PUBLIC_URL+"/assets/images/brand-logo/svg/brand-logo.svg"}/>
                     </a>
                   </div>
 
@@ -113,7 +124,7 @@ const Header = function(props) {
                   </div>
                 </div>
               </nav>
-          </header>
+          </header> 
 
         </>  
     )

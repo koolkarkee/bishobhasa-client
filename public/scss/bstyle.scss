@@ -62,7 +62,7 @@ body{
   }  
   
   .book {
-	background-image: url(images/about-us/2.jpg);
+	//background-image: url(images/about-us/2.jpg);
 	height: 289px;
 	width : 289px;
 	background-size: 269px;
@@ -223,19 +223,28 @@ body{
 
   @media only screen and (max-width: 495px) {
 	.top-nav{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-bottom: 60px;
-		background: none;
-		flex-direction: row-reverse;
+		display: none;
+		height: 0vh;
+		// justify-content: center;
+		// align-items: center;
+		// margin-bottom: 60px;
+		// background: none;
+		// flex-direction: row-reverse;
+	}
+
+	.de-v-h-center{
+		margin-top: -51px;
+		padding-top: 59px; 
 	}
 
 	.d-playstore{
-		margin: 10px 0;
-	}
+		display: none;
+		//margin: 10px 0;
+	} 
 
-
+	#services{
+		margin-top: 30px;  
+	} 
   }
 
   @media only screen and (max-width: 567px) {
