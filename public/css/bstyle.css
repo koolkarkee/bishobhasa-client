@@ -3,6 +3,60 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+.p-img img {
+  border-radius: 5px;
+}
+
+.about-card-image-border {
+  border: 0px solid black;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  overflow: hidden;
+}
+
+.about-card-content-border {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.hr-break hr {
+  height: 5px;
+  border-width: 0;
+  color: #67b5a7;
+  background-color: #67b5a7;
+  margin: 0;
+  padding: 0;
+}
+
+.hr-break-contact hr {
+  height: 5px;
+  border-width: 0;
+  color: #e5e5e5;
+  background-color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+}
+
+.book {
+  background-image: url(images/about-us/2.jpg);
+  height: 289px;
+  width: 289px;
+  background-size: 269px;
+  border-radius: 20px;
+}
+
+/* temp css for barnd logo */
+.navbar-brand {
+  width: 170px;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-brand .navbar-item {
+  width: 100%;
+  height: 100%;
+}
+
 .de-stickey {
   position: sticky;
   top: 0;

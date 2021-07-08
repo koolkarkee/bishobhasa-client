@@ -10,6 +10,7 @@ import AboutUsComponent from '../components/site/aboutus.component'
 import TestimonialComponent from '../components/site/testimonial.component'
 import BookStoreComponent from '../components/site/bookstore.component'
 import ContactComponent from '../components/site/contact.component'
+import FooterComponent from '../components/site/footer.component'
 
 
 import PageNotFoundComponent from '../components/common/pagenotfound/pagenotfound.component'
@@ -104,33 +105,22 @@ const ProtectedRoute = ({component : Component, props}) => (
 const PublicRoute = ({component : Component, props}) => ( 
     <Route {...props} 
         render = {(props) => (
-            <> 
-                <div className="header">
-                    <Header isLoggedUser = { localStorage.getItem('token') ? true : false }></Header>  
-                </div>  
+            <>  
+                <Header isLoggedUser = { localStorage.getItem('token') ? true : false }></Header>  
+                <HomeComponent></HomeComponent>
+                <ServiceComponent></ServiceComponent>
+                <AboutUsComponent />
+                <TestimonialComponent />
+                <BookStoreComponent />
+                <ContactComponent />
+                <FooterComponent />
 
-                 <div>
-                     <HomeComponent></HomeComponent>
-                 </div>  
-                 <div>
-                     <ServiceComponent></ServiceComponent>
-                 </div>
-                 <div>
-                     <AboutUsComponent />
-                 </div>
-                 <div>
-                    <TestimonialComponent />
-                 </div>
-                 <div>
-                     <BookStoreComponent />
-                 </div>
-                 <div>
-                     <ContactComponent />
-                 </div>
+                <Component { ...props}></Component>
+                 
 
-                <div className="main">  
-                    <Component { ...props}></Component>
-                </div>
+                {/* <div className="main">  
+                 
+                </div> */}
             </> 
     )}> 
     </Route>  
@@ -142,9 +132,13 @@ const NotFoundRoute = () => (
         render = {() => (
             <>  
             {    
+                // !(localStorage.getItem('token'))
+                // ? <PublicRoute component={PageNotFoundComponent}></PublicRoute>   
+                // : <ProtectedRoute component={PageNotFoundComponent}></ProtectedRoute> 
+                
                 !(localStorage.getItem('token'))
                 ? <PublicRoute component={PageNotFoundComponent}></PublicRoute>   
-                : <ProtectedRoute component={PageNotFoundComponent}></ProtectedRoute>   
+                : <ProtectedRoute component={PageNotFoundComponent}></ProtectedRoute> 
             }  
             </> 
     )}> 

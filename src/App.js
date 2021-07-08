@@ -9,12 +9,12 @@ function Welcome(args){
   console.log('args >> ', args)
 
   return (
-    <div className="container"> 
+    <> 
       <Provider store={store}>
         <AppRoutes></AppRoutes>
         <ToastContainer></ToastContainer>
       </Provider>  
-    </div>
+    </>
   )  
 }
 

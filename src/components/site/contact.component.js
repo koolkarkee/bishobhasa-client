@@ -9,7 +9,7 @@ const ContactComponent = function(props) {
     
     return (
         <> 
-            <section class="hero notification is-dark">
+          <section class="hero notification is-dark">
             <div class="container my-3">
               
               <h2 class="title has-text-centered has-text-light">Contact Us</h2>
@@ -21,6 +21,7 @@ const ContactComponent = function(props) {
               </p>
 
               <div class="container"> 
+               
                 <div class="columns is-variable is-8">
 
                   <div class="column is-one-fifths">
@@ -29,7 +30,7 @@ const ContactComponent = function(props) {
                     </p>
                   </div>
 
-                  <div class="column is-one-fifths">
+                  <div class="column is-two-fifths">
 
                     <p class="subtitle is-size-1">
                       <div class="columns is-gapless is-mobile">
@@ -39,12 +40,13 @@ const ContactComponent = function(props) {
                           </span>
                         </div>
                         <div class="hr-break-contact ml-5 column is-11">
-                           <h2 class="is-unselectable is-size-6 mt-3">Chabahil-7, Kathmandu Nepal</h2>
-                          <hr class="m-1" />
+                          <h2 class="is-unselectable mb-3 is-size-6 mt-4">Chabahil-7, Kathmandu Nepal</h2>
+                          <hr style={{width:250}} />
                         </div>
                       </div> 
                     </p> 
 
+                    
                     <p class="subtitle is-size-1">
                       <div class="columns is-gapless is-mobile">
                         <div class="column is-1">
@@ -53,12 +55,13 @@ const ContactComponent = function(props) {
                           </span>
                         </div>
                         <div class="hr-break-contact ml-5 column is-11">
-                          <h2 class="is-unselectable is-size-6 mt-3">+977-9803645581</h2>
-                          <hr class="m-1"  />
+                          <h2 class="is-unselectable mb-3 is-size-6 mt-4">+977-9803645581</h2>
+                          <hr style={{width:250}} />
                         </div>
                       </div> 
                     </p> 
 
+                    
                     <p class="subtitle is-size-1">
                       <div class="columns is-gapless is-mobile">
                         <div class="column is-1">
@@ -67,8 +70,8 @@ const ContactComponent = function(props) {
                           </span>
                         </div>
                         <div class="hr-break-contact ml-5 column is-11">
-                          <h2 class="is-unselectable is-size-6 mt-3">bishobhashaschool@gmail.com</h2>
-                          <hr class="m-1"  />
+                          <h2 class="is-unselectable mb-3 is-size-6 mt-4">bishobhashaschool@gmail.com</h2>
+                          <hr style={{width:250}} />
                         </div>
                       </div> 
                     </p> 
