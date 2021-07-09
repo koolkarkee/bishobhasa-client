@@ -1,9 +1,12 @@
 import React from 'react' 
-import { Link, withRouter } from 'react-router-dom' 
- 
-import './../../css/bstyle.css'
+import { withRouter } from 'react-router-dom' 
 
-import serviceImage from './../../images/our-services/svg/our-services.jpg'
+const ServiceImage = () => {
+    return (
+        <img src={process.env.PUBLIC_URL+"/assets/images/our-services/svg/our-services.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/our-services/svg/our-services.jpg"} /> 
+    )
+}
+
 
 const ServiceComponent = function(props) { 
     
@@ -19,9 +22,10 @@ const ServiceComponent = function(props) {
                 </div> 
 
                 <div class="container de-container">
+                
                 <div class="de-card">
-                    <div class="imgBx"> 
-                        <img src={serviceImage} alt={serviceImage} />
+                    <div class="imgBx">
+                        <ServiceImage />
                     </div>
                     <div class="de-content">
                         <h2 class="title has-text-centered">languages</h2>
@@ -31,7 +35,7 @@ const ServiceComponent = function(props) {
 
                 <div class="de-card">
                     <div class="imgBx">
-                        <img src={serviceImage} alt={serviceImage} /> 
+                        <ServiceImage />
                     </div>
                     <div class="de-content">
                         <h2 class="title has-text-centered">Trainings</h2>
@@ -41,7 +45,7 @@ const ServiceComponent = function(props) {
 
                 <div class="de-card">
                     <div class="imgBx"> 
-                        <img src={serviceImage} alt={serviceImage} />
+                        <ServiceImage />
                     </div>
                     <div class="de-content">
                         <h2 class="title has-text-centered">Tuitions</h2>

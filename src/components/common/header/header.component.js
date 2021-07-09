@@ -2,58 +2,59 @@ import React from 'react'
 import { Link, withRouter } from 'react-router-dom' 
 
 import './header.component.css'
-import './../../../css/bstyle.css' 
+// import './../../../css/bstyle.css' 
  
-const Logout = (history) => {
-    localStorage.clear()
-    history.push('/login')
-} 
+// const Logout = (history) => {
+//     localStorage.clear()
+//     history.push('/login')
+// } 
 
 const Header = function(props) { 
     console.log('isLoggedUser >> ', props.isLoggedUser)
-    let menu = props.isLoggedUser 
-    ?
-    <ul className="ul">
-        <li className="nav-item">
-            <a href="#default" className="logo">DegoX</a> 
-        </li>
-        <li className="nav-item">
-            <Link to="/">Home</Link>
-        </li>
-        <li className="nav-item">
-            <Link to="/about">About Us</Link>
-        </li>
-        <li className="nav-item">
-            <Link to="/blog">Blog</Link>
-        </li> 
-        <li className="nav-item">
-            <Link to="/contact">Contact</Link>
-        </li>  
-        <li className="nav-item"> 
-            <Link to="/login" onClick={ () => Logout(props.history)}>Logout</Link>
-        </li> 
-    </ul>
-    :
-    <ul className="ul">
-        <li className="nav-item">
-            <a href="#default" className="logo">DegoX</a> 
-        </li>
-        <li className="nav-item">
-            <Link to="/">Home</Link>
-        </li>
-        <li className="nav-item">
-            <Link to="/about">About Us</Link>
-        </li>
-        <li className="nav-item">
-            <Link to="/blog">Blog</Link>
-        </li> 
-        <li className="nav-item">
-            <Link to="/contact">Contact</Link>
-        </li>  
-        <li className="nav-item">
-            <Link to="/login">Login</Link>
-        </li> 
-    </ul>
+
+    // let menu = props.isLoggedUser 
+    // ?
+    // <ul className="ul">
+    //     <li className="nav-item">
+    //         <a href="#default" className="logo">DegoX</a> 
+    //     </li>
+    //     <li className="nav-item">
+    //         <Link to="/">Home</Link>
+    //     </li>
+    //     <li className="nav-item">
+    //         <Link to="/about">About Us</Link>
+    //     </li>
+    //     <li className="nav-item">
+    //         <Link to="/blog">Blog</Link>
+    //     </li> 
+    //     <li className="nav-item">
+    //         <Link to="/contact">Contact</Link>
+    //     </li>  
+    //     <li className="nav-item"> 
+    //         <Link to="/login" onClick={ () => Logout(props.history)}>Logout</Link>
+    //     </li> 
+    // </ul>
+    // :
+    // <ul className="ul">
+    //     <li className="nav-item">
+    //         <a href="#default" className="logo">DegoX</a> 
+    //     </li>
+    //     <li className="nav-item">
+    //         <Link to="/">Home</Link>
+    //     </li>
+    //     <li className="nav-item">
+    //         <Link to="/about">About Us</Link>
+    //     </li>
+    //     <li className="nav-item">
+    //         <Link to="/blog">Blog</Link>
+    //     </li> 
+    //     <li className="nav-item">
+    //         <Link to="/contact">Contact</Link>
+    //     </li>  
+    //     <li className="nav-item">
+    //         <Link to="/login">Login</Link>
+    //     </li> 
+    // </ul>
 
     return (
         <> 
@@ -73,7 +74,7 @@ const Header = function(props) {
                 <div class="d-log-in-out">
                   <div class="d-log-in-out-ne">
                     <figure class="d-login-img">
-                      <a href="#"><i class="fas fa-sign-in-alt mr-1"></i></a>
+                      <Link href="#"><i class="fas fa-sign-in-alt mr-1"></i></Link>
                     </figure>
                     <a href="#"><span>
                         LOGIN | SIGNUP
@@ -86,9 +87,9 @@ const Header = function(props) {
                 <div class="container">
 
                    <div class="d-brand-logo">
-                    <a href="index.html">
+                    <Link href="index.html">
                       <img src={process.env.PUBLIC_URL+"/assets/images/brand-logo/svg/brand-logo.svg"}/>
-                    </a>
+                    </Link> 
                   </div>
 
                   <div class="navbar-brand is-pulled-right">
@@ -101,13 +102,13 @@ const Header = function(props) {
 
                   <div id="navMenu" class="navbar-menu">
                     <div class="navbar-end">
-                      <a href="#home" id="homeMenu" class="navbar-item">Home</a>
-                      <a href="#services" class="navbar-item">Our Services</a>
-                      <a href="#About-us" class="navbar-item">About Us</a>
-                      <a href="#Channel" class="navbar-item">Channel</a>
-                      <a href="#Testimonial" class="navbar-item">Testimonial</a>
-                      <a href="#Level-test" class="navbar-item">Level Test</a>
-                      <a href="#Bookstore" class="navbar-item">Bookstore</a>
+                      <Link to="/" id="homeMenu" class="navbar-item">Home</Link>
+                      <Link to="Services" class="navbar-item">Our Services</Link>
+                      <Link to="About" class="navbar-item">About Us</Link>
+                      <Link to="Channel" class="navbar-item">Channel</Link>
+                      <Link to="Testimonial" class="navbar-item">Testimonial</Link>
+                      <Link to="Leveltest" class="navbar-item">Level Test</Link>
+                      <Link to="Bookstore" class="navbar-item">Bookstore</Link>
                     </div>
                   </div>
 

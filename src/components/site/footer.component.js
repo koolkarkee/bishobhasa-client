@@ -1,7 +1,7 @@
 import React from 'react' 
-import { Link, withRouter } from 'react-router-dom' 
+import { withRouter } from 'react-router-dom' 
  
-import './../../css/bstyle.css'
+// import './../../css/bstyle.css'
 
 const FooterComponent = function(props) { 
     

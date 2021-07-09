@@ -243,58 +243,58 @@ body {
 
 @keyframes animate {
   0%, 100% {
-    background-image: url(./../images/slider/jpg/1.jpeg);
+    background-image: url(./../assets/images/slider/jpg/1.jpeg);
   }
   25% {
-    background-image: url(./../images/slider/jpg/2.jpeg);
+    background-image: url(./../assets/images/slider/jpg/2.jpeg);
   }
   50% {
-    background-image: url(./../images/slider/jpg/3.jpeg);
+    background-image: url(./../assets/images/slider/jpg/3.jpeg);
   }
   75% {
-    background-image: url(./../images/slider/jpg/4.jpeg);
+    background-image: url(./../assets/images/slider/jpg/4.jpeg);
   }
 }
 @-moz-keyframes animate {
   0%, 100% {
-    background-image: url(./../images/slider/jpg/1.jpeg);
+    background-image: url(./../assets/images/slider/jpg/1.jpeg);
   }
   25% {
-    background-image: url(./../images/slider/jpg/2.jpeg);
+    background-image: url(./../assets/images/slider/jpg/2.jpeg);
   }
   50% {
-    background-image: url(./../images/slider/jpg/3.jpeg);
+    background-image: url(./../assets/images/slider/jpg/3.jpeg);
   }
   75% {
-    background-image: url(./../images/slider/jpg/4.jpeg);
+    background-image: url(./../assets/images/slider/jpg/4.jpeg);
   }
 }
 @-o-keyframes animate {
   0%, 100% {
-    background-image: url(./../images/slider/jpg/1.jpeg);
+    background-image: url(./../assets/images/slider/jpg/1.jpeg);
   }
   25% {
-    background-image: url(./../images/slider/jpg/2.jpeg);
+    background-image: url(./../assets/images/slider/jpg/2.jpeg);
   }
   50% {
-    background-image: url(./../images/slider/jpg/3.jpeg);
+    background-image: url(./../assets/images/slider/jpg/3.jpeg);
   }
   75% {
-    background-image: url(./../images/slider/jpg/4.jpeg);
+    background-image: url(./../assets/images/slider/jpg/4.jpeg);
   }
 }
 @-ms-keyframes animate {
   0%, 100% {
-    background-image: url(./../images/slider/jpg/1.jpeg);
+    background-image: url(./../assets/images/slider/jpg/1.jpeg);
   }
   25% {
-    background-image: url(./../images/slider/jpg/2.jpeg);
+    background-image: url(./../assets/images/slider/jpg/2.jpeg);
   }
   50% {
-    background-image: url(./../images/slider/jpg/3.jpeg);
+    background-image: url(./../assets/images/slider/jpg/3.jpeg);
   }
   75% {
-    background-image: url(./../images/slider/jpg/4.jpeg);
+    background-image: url(./../assets/images/slider/jpg/4.jpeg);
   }
 }
 .outer {

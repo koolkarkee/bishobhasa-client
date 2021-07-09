@@ -1,9 +1,9 @@
 import React from 'react' 
-import { Link, withRouter } from 'react-router-dom' 
+import { withRouter } from 'react-router-dom' 
  
-import './../../css/bstyle.css'
+// import './../../css/bstyle.css'
 
-import serviceImage from './../../images/our-services/svg/our-services.jpg'
+//import serviceImage from './../../images/our-services/svg/our-services.jpg'
 
 const ContactComponent = function(props) { 
     
@@ -93,7 +93,7 @@ const ContactComponent = function(props) {
                           <textarea required class="textarea is-unselectable" placeholder="Enter your message"></textarea>
                         </div>
                         <div class="control block">
-                          <a class="button is-primary" type="submit">Send Message</a>
+                          <button class="button is-primary" type="submit">Send Message</button>
                         </div>
                     </form>
                   </div>

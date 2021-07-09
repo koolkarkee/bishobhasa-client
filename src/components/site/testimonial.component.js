@@ -1,14 +1,19 @@
-import React from 'react' 
-import { Link, withRouter } from 'react-router-dom' 
- 
-import './../../css/bstyle.css'
+import React from 'react'
+import { withRouter } from 'react-router-dom'
+  
+//import studentImage1 from './../../images/about-us/1.jpg'
+// import './../../css/bstyle.css'
 
-import studentImage1 from './../../images/about-us/1.jpg'
+const StudentImage = () => { 
+    return (
+        <img class="is-unselectable" src={process.env.PUBLIC_URL+"/assets/images/about-us/1.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/about-us/1.jpg"} />
+    )
+}
 
 const TestimonialComponent = function(props) { 
     
     return (
-        <> 
+        <>  
             <section class="hero is-light mt-5" id="Testimonial">
                 <div class="container">
 
@@ -54,7 +59,7 @@ const TestimonialComponent = function(props) {
                             <div class="column is-6">
                                  <div class="has-background-primary">
                                     <figure class="image"> 
-                                        <img class="is-unselectable" src={studentImage1} alt={studentImage1} />
+                                        <StudentImage />
                                     </figure>
                                 </div>
                             </div>
@@ -63,10 +68,7 @@ const TestimonialComponent = function(props) {
                 
 
                 </div>
-            </section>
-
-            
-                    
+            </section> 
  
         </>  
     )

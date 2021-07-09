@@ -1,15 +1,27 @@
 import React from 'react' 
-import { Link, withRouter } from 'react-router-dom' 
+import { withRouter } from 'react-router-dom' 
  
-import './../../css/bstyle.css'
+// import './../../css/bstyle.css'
 
-import bookImage1 from './../../images/bookstore/korean basic book-1.jpg'
-import bookImage2 from './../../images/bookstore/korean basic book-2.jpg'
+// import bookImage1 from './../../images/bookstore/korean basic book-1.jpg'
+// import bookImage2 from './../../images/bookstore/korean basic book-2.jpg'
 // import bookImage3 from './../../images/bookstore/korean basic book-3.jpg'
 // import bookImage4 from './../../images/bookstore/korean basic book-4.jpg'
 // import bookImage5 from './../../images/bookstore/korean basic book-5.jpg'
 // import bookImage6 from './../../images/bookstore/korean basic book-6.jpg'
 // import bookImage7 from './../../images/bookstore/korean basic book-7.jpg'
+
+const BookImage1 = () => {
+  return ( 
+    <img src={process.env.PUBLIC_URL+"/assets/images/bookstore/korean basic book-1.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/bookstore/korean basic book-1.jpg"} /> 
+  ) 
+}
+
+const BookImage2 = () => {
+  return (
+    <img src={process.env.PUBLIC_URL+"/assets/images/bookstore/korean basic book-2.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/bookstore/korean basic book-2.jpg"} /> 
+  )
+}
 
 
 const BookStoreComponent = function(props) { 
@@ -30,7 +42,8 @@ const BookStoreComponent = function(props) {
                     <div class="card-bstore">
                       <span></span>
                       <div class="imgBx">
-                          <img src={bookImage1} alt={bookImage1} /> 
+                          {/* <img src={bookImage1} alt={bookImage1} />  */}
+                          <BookImage1 />
                       </div>
                       <div class="content">
                         <div>
@@ -53,7 +66,7 @@ const BookStoreComponent = function(props) {
                     <div class="card-bstore">
                       <span></span>
                       <div class="imgBx">
-                          <img src={bookImage2} alt={bookImage2} /> 
+                          <BookImage1 />
                           {/* <img src="./images/bookstore/korean basic book-2.jpg"> */}
                         </div>
                       <div class="content">
@@ -77,8 +90,7 @@ const BookStoreComponent = function(props) {
                     <div class="card-bstore">
                       <span></span>
                       <div class="imgBx">
-                          {/* <img src="./images/bookstore/korean book-2.jpg"> */}
-                          <img src={bookImage2} alt={bookImage2} /> 
+                          <BookImage1 />
                       </div>
                       <div class="content">
                         <div>
@@ -99,7 +111,9 @@ const BookStoreComponent = function(props) {
                     </div>
                     <div class="card-bstore">
                       <span></span>
-                      <div class="imgBx"><img src={bookImage2} alt={bookImage2} /> </div>
+                      <div class="imgBx">
+                          <BookImage1 /> 
+                      </div>
                       <div class="content">
                         <div>
                           <div class="content-head">For sale</div>
@@ -119,7 +133,9 @@ const BookStoreComponent = function(props) {
                     </div>
                     <div class="card-bstore">
                       <span></span>
-                      <div class="imgBx"><img src={bookImage2} alt={bookImage2} /> </div>
+                      <div class="imgBx">
+                          <BookImage1 />
+                      </div>
                       <div class="content">
                         <div>
                           <div class="content-head">For sale</div>
@@ -139,7 +155,9 @@ const BookStoreComponent = function(props) {
                     </div>
                     <div class="card-bstore">
                       <span></span>
-                      <div class="imgBx"><img src={bookImage2} alt={bookImage2} /> </div>
+                      <div class="imgBx">
+                         <BookImage1 />
+                      </div>
                       <div class="content">
                         <div>
                           <div class="content-head">For sale</div>
@@ -159,7 +177,9 @@ const BookStoreComponent = function(props) {
                     </div>
                     <div class="card-bstore">
                       <span></span>
-                      <div class="imgBx"><img src={bookImage2} alt={bookImage2} /> </div>
+                      <div class="imgBx">
+                          <BookImage1 /> 
+                      </div>
                       <div class="content">
                         <div>
                           <div class="content-head">For sale</div>
@@ -179,7 +199,9 @@ const BookStoreComponent = function(props) {
                     </div>
                     <div class="card-bstore">
                       <span></span>
-                      <div class="imgBx"><img src={bookImage2} alt={bookImage2} /> </div>
+                      <div class="imgBx">
+                          <BookImage2 /> 
+                      </div>
                       <div class="content">
                         <div>
                           <div class="content-head">For sale</div>

@@ -1,8 +1,5 @@
 import React from 'react'; 
-import { Link, withRouter } from 'react-router-dom'; 
-
-//import './../../../css/bstyle.css' 
-import './../../css/bstyle.css'
+import { withRouter } from 'react-router-dom'; 
 
 const HomeComponent = function(props) { 
     

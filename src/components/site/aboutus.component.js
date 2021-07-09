@@ -1,14 +1,37 @@
 import React from 'react' 
-import { Link, withRouter } from 'react-router-dom' 
+import { withRouter } from 'react-router-dom' 
  
-import './../../css/bstyle.css'
+// import './../../css/bstyle.css'
 
-import sherpaImage from './../../images/about-us/sherpa.jpg' 
-import krishnaImage from './../../images/about-us/krishna.jpg' 
-import hyalmoImage from './../../images/about-us/hyolmo.jpg'
-import bibekImage from './../../images/about-us/bibek.jpg'
-import dharmaImage from './../../images/about-us/dharma.jpg'
+// import sherpaImage from './../../images/about-us/sherpa.jpg' 
+// import krishnaImage from './../../images/about-us/krishna.jpg' 
+// import hyalmoImage from './../../images/about-us/hyolmo.jpg'
+// import bibekImage from './../../images/about-us/bibek.jpg'
+// import dharmaImage from './../../images/about-us/dharma.jpg'
+
+
+const MemberImage = () => { 
+  return (
+      <img src={process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"} /> 
+  )
+}
+
+// const sherpaImage = () => {
+//   return process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"
+// }
  
+// const krishnaImage = () => {
+//   return process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"
+// }
+// const hyalmoImage = () => {
+//   return process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"
+// }
+// const bibekImage = () => {
+//   return process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"
+// }
+// const dharmaImage = () => {
+//   return process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"
+// }
 
 const AboutUsComponent = function(props) {  
     
@@ -31,87 +54,87 @@ const AboutUsComponent = function(props) {
           <section class="hero is-primary">
             <div class="container">
               <div class="columns is-multiline is-variable is-3">
-                
-              <article class="column is-4">
-                <div class="de-box">
-                  <div class="de-imgBx">
-                      <img src={sherpaImage} alt={sherpaImage} />
-                  </div>
-                  <ul class="social-icon"> 
-                      <li><a href="https://www.facebook.com/degox.solutions"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                  </ul>
-                  <div class="de-details">
-                      <h2>
-                        Mr. Sherpa Wangdi <br />
-                        <span>Vice-Chairman</span> 
-                      </h2>  
-                  </div>
-                </div>
-              </article>
+                    
+                  <article class="column is-4">
+                    <div class="de-box">
+                      <div class="de-imgBx">
+                        <MemberImage /> 
+                      </div>
+                      <ul class="social-icon"> 
+                          <li><a href="https://www.facebook.com/degox.solutions"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                      </ul>
+                      <div class="de-details">
+                          <h2>
+                            Mr. Sherpa Wangdi <br />
+                            <span>Vice-Chairman</span> 
+                          </h2>  
+                      </div>
+                    </div>
+                  </article>
 
-              <article class="column is-4">
-                <div class="de-box">
-                  <div class="de-imgBx">
-                        <img src={krishnaImage} alt={krishnaImage} />
-                  </div>
-                  <ul class="social-icon"> 
-                      <li><a href="https://www.facebook.com/degox.solutions"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                  </ul>
-                  <div class="de-details">
-                      <h2>
-                        Mr. Lama Kumar Krishna <br />
-                        <span>Chairman</span> 
-                      </h2>  
-                  </div>
-                </div>
-              </article>
+                  <article class="column is-4">
+                    <div class="de-box">
+                      <div class="de-imgBx">
+                        <MemberImage /> 
+                      </div>
+                      <ul class="social-icon"> 
+                          <li><a href="https://www.facebook.com/degox.solutions"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                      </ul>
+                      <div class="de-details">
+                          <h2>
+                            Mr. Lama Kumar Krishna <br />
+                            <span>Chairman</span> 
+                          </h2>  
+                      </div>
+                    </div>
+                  </article>
 
-              <article class="column is-4">
-                <div class="de-box">
-                  <div class="de-imgBx">
-                     <img src={hyalmoImage} alt={hyalmoImage} />
-                  </div>
-                  <ul class="social-icon"> 
-                      <li><a href="https://www.facebook.com/degox.solutions"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                  </ul>
-                  <div class="de-details">
-                      <h2>
-                        Ms. Hyolmo Phurdiki <br />
-                        <span>Admin Head</span> 
-                      </h2>  
-                  </div>
-                </div>
-              </article>
+                  <article class="column is-4">
+                    <div class="de-box">
+                      <div class="de-imgBx">
+                          <MemberImage /> 
+                      </div>
+                      <ul class="social-icon"> 
+                          <li><a href="https://www.facebook.com/degox.solutions"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                      </ul>
+                      <div class="de-details">
+                          <h2>
+                            Ms. Hyolmo Phurdiki <br />
+                            <span>Admin Head</span> 
+                          </h2>  
+                      </div>
+                    </div>
+                  </article>
 
-              <article class="column is-4">
-                <div class="de-box">
-                  <div class="de-imgBx">
-                     <img src={bibekImage} alt={bibekImage} /> 
-                  </div>
-                  <ul class="social-icon"> 
-                      <li><a href="https://www.facebook.com/degox.solutions"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                  </ul>
-                  <div class="de-details">
-                      <h2>
-                        Mr. Bibek Karki <br />
-                        <span>Senior Software Engineer</span> 
-                      </h2>  
-                  </div>
-                </div>
-              </article>
+                  <article class="column is-4">
+                    <div class="de-box">
+                      <div class="de-imgBx">
+                        <MemberImage /> 
+                      </div>
+                      <ul class="social-icon"> 
+                          <li><a href="https://www.facebook.com/degox.solutions"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                      </ul>
+                      <div class="de-details">
+                          <h2>
+                            Mr. Bibek Karki <br />
+                            <span>Senior Software Engineer</span> 
+                          </h2>  
+                      </div>
+                    </div>
+                  </article>
 
-              <article class="column is-4">
+                  <article class="column is-4">
                 <div class="de-box">
                   <div class="de-imgBx">
-                         <img src={dharmaImage} alt={dharmaImage} />
+                    <MemberImage /> 
                   </div>
                   <ul class="social-icon"> 
                       <li><a href="https://www.facebook.com/degox.solutions"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
@@ -126,8 +149,7 @@ const AboutUsComponent = function(props) {
                   </div>
                 </div>
               </article>
- 
-
+  
               </div>
             </div>
           </section>

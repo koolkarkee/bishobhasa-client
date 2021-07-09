@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Switch, Redirect }  from 'react-router-dom'
 import React from 'react'
 
-import { LoginComponent } from '../components/auth/login/login.component'
-import { RegisterComponent } from '../components/auth/register/register.component'
+// import { LoginComponent } from '../components/auth/login/login.component'
+// import { RegisterComponent } from '../components/auth/register/register.component'
 
 import HeaderComponent from '../components/common/header/header.component'
 import HomeComponent from '../components/site/home.componenet'
@@ -12,7 +12,6 @@ import TestimonialComponent from '../components/site/testimonial.component'
 import BookStoreComponent from '../components/site/bookstore.component'
 import ContactComponent from '../components/site/contact.component'
 import FooterComponent from '../components/site/footer.component'
-
 
 import PageNotFoundComponent from '../components/common/pagenotfound/pagenotfound.component'
 import DashBoardComponent from '../components/common/dashboard/dashboard.component'
@@ -32,6 +31,7 @@ import './../components/settings/industry-category/industrycategory.component.cs
 import './../routing/app.routing.css'
 
 import IndustryCategoryComponent from '../components/settings/industry-category/industrycategory.component'
+import bookstoreComponent from '../components/site/bookstore.component'
  
 
 //TODO : 
@@ -82,19 +82,34 @@ const ProtectedRoute = ({component : Component, props}) => (
     </Route>  
 )  
 
+const EntirePublicPageComponent = () => { 
+    return (
+        <>
+            <HomeComponent />
+            <ServiceComponent /> 
+            <AboutUsComponent />
+            <TestimonialComponent />
+            <BookStoreComponent />
+            <ContactComponent /> 
+            <FooterComponent />
+        </>
+    )
+}
+
 //public route
 const PublicRoute = ({component : Component, props}) => ( 
     <Route {...props} 
         render = {(props) => (
             <>  
                 {/* <Header isLoggedUser = { localStorage.getItem('token') ? true : false }></Header>   */}
-                <HeaderComponent></HeaderComponent>
-                <HomeComponent></HomeComponent>
-                <ServiceComponent></ServiceComponent>
+ 
+                {/* <HomeComponent />
+                <ServiceComponent /> 
                 <AboutUsComponent />
                 <TestimonialComponent />
                 <BookStoreComponent />
                 <ContactComponent /> 
+                <FooterComponent /> */}
 
                 <Component { ...props}></Component> 
             </> 
@@ -102,6 +117,7 @@ const PublicRoute = ({component : Component, props}) => (
     </Route>  
 ) 
 
+ 
 //page not found
 const NotFoundRoute = () => ( 
     <Route  
@@ -127,15 +143,28 @@ export default function AppRouting() {
     return (
         <Router>
             <>
+            <HeaderComponent />
+            
             <Switch> 
                 {/* <PublicRoute path="/home" exact component={HomeComponent}></PublicRoute> 
                 <PublicRoute path="/about" component={AboutUsComponent}></PublicRoute>
-                <PublicRoute path="/contact" component={ContactComponent}></PublicRoute>   */}
+                <PublicRoute path="/contact" component={ContactComponent}></PublicRoute>   */} 
+
                 
-                <PublicRoute path="/contact" component={ContactComponent}></PublicRoute> 
+                <PublicRoute path="/" exact component={EntirePublicPageComponent}></PublicRoute>
+                <PublicRoute path="/Home" exact component={EntirePublicPageComponent}></PublicRoute>
+                <PublicRoute path="/Index" exact component={EntirePublicPageComponent}></PublicRoute>
+
+                <PublicRoute path="/Services" exact component={ServiceComponent}></PublicRoute>
+                <PublicRoute path="/About" exact component={AboutUsComponent}></PublicRoute>
+                <PublicRoute path="/Testimonial" exact component={TestimonialComponent}></PublicRoute>
+                <PublicRoute path="/BookStore" exact component={bookstoreComponent}></PublicRoute>
+                <PublicRoute path="/Contact" exact component={ContactComponent}></PublicRoute>
+                <PublicRoute path="/Footer" exact component={FooterComponent}></PublicRoute>
+
                 <ProtectedRoute path ="/dashboard" component={DashBoardComponent} />
                 <ProtectedRoute path ="/settings/template/industry-category" component={IndustryCategoryComponent} />
-
+  
                 <NotFoundRoute></NotFoundRoute> 
             </Switch>
             </>  
