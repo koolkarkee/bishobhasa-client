@@ -217,19 +217,14 @@ body{
 	}
 	.navbar-item:hover{
 		color:blue !important;
-		background-color:whitesmoke !important;
+		// background-color:whitesmoke !important;
 	}
   }
 
   @media only screen and (max-width: 495px) {
 	.top-nav{
 		display: none;
-		height: 0vh;
-		// justify-content: center;
-		// align-items: center;
-		// margin-bottom: 60px;
-		// background: none;
-		// flex-direction: row-reverse;
+		height: 0vh; 
 	}
 
 	.de-v-h-center{
@@ -241,6 +236,23 @@ body{
 		display: none;
 		//margin: 10px 0;
 	} 
+
+	// .navbar-item{
+	// 	color: #fff !important;
+	// 	border-bottom: 1px solid white !important;
+	// }
+
+	// .navbar-end{
+	// 	padding: 0px 0px 0px 300px;
+	// }
+
+	// #homeMenu{
+	// 	margin-top: 3rem;
+	// }
+
+	// #navMenu{
+	// 	background-color:$primary;    
+	// } 
 
 	#services{
 		margin-top: 30px;  
@@ -273,15 +285,98 @@ body{
 }
 
 // background slider with login bottom & other information started
+@mixin animateSlider($value){
+	-webkit-animation: #{$value}; 
+    -moz-animation: #{$value}; 
+    -o-animation:  #{$value}; 
+    -ms-transition:  #{$value}; 
+    animation:  #{$value}; 
+}
+
+ 
 .container-slide{
 	position: absolute;
 	left: 0;
 	top: 103px;
     width: 100%;
     height: 100vh;
-	animation: animate 16s ease-in-out infinite;
+	animation: animate 12s ease-in-out infinite; 
 	background-size: cover;
+	
+	//-moz-transition: opacity 0.25s linear;
+	//-webkit-animation: animate 12s ease-in-out infinite; 
+    -moz-animation: 12s linear 1s ease-in-out paused opacity 100ms animate;
+	//transition: margin-right 2s ease-in-out;
+		// -moz-animation-name: animate;
+	// -moz-animation-timing-function: ease-in-out;
+	// -moz-animation-iteration-count: infinite;
+	// -moz-animation-duration: 12s;
+	// -moz-transform-style: flat;
+
+    // -o-animation: animate 12s ease-in-out infinite;
+    // -ms-transition: animate 12s ease-in-out infinite; 
+} 
+
+@keyframes animate{ 
+	0%,100%{
+		background-image: url(./../images/slider/jpg/1.jpeg);
+	}
+	25%{
+		background-image: url(./../images/slider/jpg/2.jpeg);
+	}
+	50%{
+		background-image: url(./../images/slider/jpg/3.jpeg);
+	}
+	75%{
+		background-image: url(./../images/slider/jpg/4.jpeg);
+	}
+}  
+
+@-moz-keyframes animate{  
+	0%,100%{
+		background-image: url(./../images/slider/jpg/1.jpeg);  
+	}
+	25%{
+		background-image: url(./../images/slider/jpg/2.jpeg);  
+	}
+	50%{ 
+		background-image: url(./../images/slider/jpg/3.jpeg);  
+	}
+	75%{ 
+		background-image: url(./../images/slider/jpg/4.jpeg);  
+	}
 }
+
+@-o-keyframes animate{ 
+	0%,100%{
+		background-image: url(./../images/slider/jpg/1.jpeg);
+	}
+	25%{
+		background-image: url(./../images/slider/jpg/2.jpeg);
+	}
+	50%{
+		background-image: url(./../images/slider/jpg/3.jpeg);
+	}
+	75%{
+		background-image: url(./../images/slider/jpg/4.jpeg);
+	}
+}
+
+@-ms-keyframes animate{ 
+	0%,100%{
+		background-image: url(./../images/slider/jpg/1.jpeg);
+	}
+	25%{
+		background-image: url(./../images/slider/jpg/2.jpeg);
+	}
+	50%{
+		background-image: url(./../images/slider/jpg/3.jpeg);
+	}
+	75%{
+		background-image: url(./../images/slider/jpg/4.jpeg);
+	}
+}
+
 
 .outer{
 	position: absolute;
@@ -334,22 +429,8 @@ body{
 
 .de-bottom a:hover{
 	color:yellow;
-}
+} 
 
-@keyframes animate{
-	0%,100%{
-		background-image: url(./../images/slider/jpg/1.jpeg);
-	}
-	25%{
-		background-image: url(./../images/slider/jpg/2.jpeg);
-	}
-	50%{
-		background-image: url(./../images/slider/jpg/3.jpeg);
-	}
-	75%{
-		background-image: url(./../images/slider/jpg/4.jpeg);
-	}
-}
 
 // mediaquey for slider section
 

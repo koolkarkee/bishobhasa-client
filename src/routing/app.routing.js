@@ -3,7 +3,8 @@ import React from 'react'
 
 import { LoginComponent } from '../components/auth/login/login.component'
 import { RegisterComponent } from '../components/auth/register/register.component'
-import Header from '../components/common/header/header.component'
+
+import HeaderComponent from '../components/common/header/header.component'
 import HomeComponent from '../components/site/home.componenet'
 import ServiceComponent from '../components/site/service.component'
 import AboutUsComponent from '../components/site/aboutus.component'
@@ -31,27 +32,7 @@ import './../components/settings/industry-category/industrycategory.component.cs
 import './../routing/app.routing.css'
 
 import IndustryCategoryComponent from '../components/settings/industry-category/industrycategory.component'
-
-const home = () => {
-    return (
-    <> 
-        <div>this is home component</div> 
-    </>
-    )
-}
-
-const about = () => {
-    return (<div>this is about component</div>)
-}
-
-const contact = () => {
-    return (<div>this is contact component</div>)
-}
-
-const blog = () => {
-    return (<div>this is blog component</div>) 
-}
-
+ 
 
 //TODO : 
 //1. add role and orderOfMenu and prepare data in back end
@@ -80,7 +61,7 @@ const ProtectedRoute = ({component : Component, props}) => (
                     ?
                     <>
                         <div id="header">
-                            <Header isLoggedUser = { true }></Header>  
+                            <HeaderComponent isLoggedUser = { true }></HeaderComponent>  
                         </div> 
                        
                         <div className="sidebar">
@@ -99,28 +80,23 @@ const ProtectedRoute = ({component : Component, props}) => (
             </> 
     )}> 
     </Route>  
-) 
+)  
 
 //public route
 const PublicRoute = ({component : Component, props}) => ( 
     <Route {...props} 
         render = {(props) => (
             <>  
-                <Header isLoggedUser = { localStorage.getItem('token') ? true : false }></Header>  
+                {/* <Header isLoggedUser = { localStorage.getItem('token') ? true : false }></Header>   */}
+                <HeaderComponent></HeaderComponent>
                 <HomeComponent></HomeComponent>
                 <ServiceComponent></ServiceComponent>
                 <AboutUsComponent />
                 <TestimonialComponent />
                 <BookStoreComponent />
-                <ContactComponent />
-                <FooterComponent />
+                <ContactComponent /> 
 
-                <Component { ...props}></Component>
-                 
-
-                {/* <div className="main">  
-                 
-                </div> */}
+                <Component { ...props}></Component> 
             </> 
     )}> 
     </Route>  
@@ -135,10 +111,11 @@ const NotFoundRoute = () => (
                 // !(localStorage.getItem('token'))
                 // ? <PublicRoute component={PageNotFoundComponent}></PublicRoute>   
                 // : <ProtectedRoute component={PageNotFoundComponent}></ProtectedRoute> 
-                
-                !(localStorage.getItem('token'))
+ 
+                !(localStorage.getItem('token')) 
                 ? <PublicRoute component={PageNotFoundComponent}></PublicRoute>   
                 : <ProtectedRoute component={PageNotFoundComponent}></ProtectedRoute> 
+ 
             }  
             </> 
     )}> 
@@ -146,19 +123,16 @@ const NotFoundRoute = () => (
 ) 
 
 
-
 export default function AppRouting() {
     return (
         <Router>
             <>
             <Switch> 
-                <PublicRoute path="/" exact component={home}></PublicRoute> 
-                <PublicRoute path="/about" component={about}></PublicRoute>
-                <PublicRoute path="/contact" component={contact}></PublicRoute>                          
-                <PublicRoute path="/blog" component={blog}></PublicRoute>   
-                <PublicRoute path="/login" component={LoginComponent}></PublicRoute>
-                <PublicRoute path="/register" component={RegisterComponent}></PublicRoute>  
+                {/* <PublicRoute path="/home" exact component={HomeComponent}></PublicRoute> 
+                <PublicRoute path="/about" component={AboutUsComponent}></PublicRoute>
+                <PublicRoute path="/contact" component={ContactComponent}></PublicRoute>   */}
                 
+                <PublicRoute path="/contact" component={ContactComponent}></PublicRoute> 
                 <ProtectedRoute path ="/dashboard" component={DashBoardComponent} />
                 <ProtectedRoute path ="/settings/template/industry-category" component={IndustryCategoryComponent} />
 

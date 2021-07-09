@@ -7,21 +7,9 @@ import './../../../css/bstyle.css'
 const Logout = (history) => {
     localStorage.clear()
     history.push('/login')
-}
+} 
 
-const ShowBurger = () => {
-  var burger = document.querySelector('.burger');
-  var nav = document.querySelector('#'+burger.dataset.target);
-
-  burger.addEventListener('click', function(){
-    burger.classList.toggle('is-active');
-    nav.classList.toggle('is-active')
-  });
-}
-
-const Header = function(props) {
-    
-  
+const Header = function(props) { 
     console.log('isLoggedUser >> ', props.isLoggedUser)
     let menu = props.isLoggedUser 
     ?
@@ -75,7 +63,7 @@ const Header = function(props) {
                   <figure class="d-playstore-img">
                     <i class="fab fa-google-play mr-1"></i>
                   </figure>
-                  <a href="www.google.com">
+                  <a href="#">
                     <span>
                        Download our APP
                     </span>
@@ -103,17 +91,17 @@ const Header = function(props) {
                     </a>
                   </div>
 
-                  <div class="navbar-brand">
+                  <div class="navbar-brand is-pulled-right">
                     <span class="navbar-burger burger" data-target="navMenu">
                       <span></span>
                       <span></span>
                       <span></span>
                     </span>
-                  </div>
+                  </div> 
 
                   <div id="navMenu" class="navbar-menu">
-                    <div class="navbar-end is-uppercase">
-                      <a href="#" class="navbar-item">Home</a>
+                    <div class="navbar-end">
+                      <a href="#home" id="homeMenu" class="navbar-item">Home</a>
                       <a href="#services" class="navbar-item">Our Services</a>
                       <a href="#About-us" class="navbar-item">About Us</a>
                       <a href="#Channel" class="navbar-item">Channel</a>
@@ -122,10 +110,14 @@ const Header = function(props) {
                       <a href="#Bookstore" class="navbar-item">Bookstore</a>
                     </div>
                   </div>
-                </div>
-              </nav>
-          </header> 
 
+                </div>
+                
+              </nav>
+
+            
+          </header> 
+           
         </>  
     )
 }

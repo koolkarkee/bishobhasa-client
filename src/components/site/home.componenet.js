@@ -1,6 +1,6 @@
-import React from 'react' 
-import { Link, withRouter } from 'react-router-dom' 
- 
+import React from 'react'; 
+import { Link, withRouter } from 'react-router-dom'; 
+
 //import './../../../css/bstyle.css' 
 import './../../css/bstyle.css'
 
@@ -32,6 +32,7 @@ const HomeComponent = function(props) {
                     </div>
                     </div>
             </div>
+ 
         </>  
     )
 }

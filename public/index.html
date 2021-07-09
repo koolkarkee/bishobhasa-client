@@ -29,8 +29,19 @@
 
     <!-- material icon include here -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    
   </head>
   <body id="App">
     
   </body>
 </html>
+
+<script>
+    var burger = document.querySelector('.burger');
+    var nav = document.querySelector('#'+burger.dataset.target); 
+      
+    burger.addEventListener('click', function(){
+      burger.classList.toggle('is-active')
+      nav.classList.toggle('is-active')
+    })  
+</script>
