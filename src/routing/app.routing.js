@@ -5,13 +5,14 @@ import React from 'react'
 // import { RegisterComponent } from '../components/auth/register/register.component'
 
 import HeaderComponent from '../components/common/header/header.component'
-import HomeComponent from '../components/site/home.componenet'
-import ServiceComponent from '../components/site/service.component'
-import AboutUsComponent from '../components/site/aboutus.component'
-import TestimonialComponent from '../components/site/testimonial.component'
-import BookStoreComponent from '../components/site/bookstore.component'
-import ContactComponent from '../components/site/contact.component'
-import FooterComponent from '../components/site/footer.component'
+import HomeComponent from '../components/site/home/home.componenet'
+import ServiceComponent from '../components/site/service/service.component'
+import AboutUsComponent from '../components/site/aboutus/aboutus.component'
+import TestimonialComponent from '../components/site/testimonial/testimonial.component'
+import BookStoreComponent from '../components/site/bookstore/bookstore.component'
+
+import ContactComponent from '../components/site/contact/contact.component'
+import FooterComponent from '../components/site/footer/footer.component'
 
 import PageNotFoundComponent from '../components/common/pagenotfound/pagenotfound.component'
 import DashBoardComponent from '../components/common/dashboard/dashboard.component'
@@ -31,8 +32,7 @@ import './../components/settings/industry-category/industrycategory.component.cs
 import './../routing/app.routing.css'
 
 import IndustryCategoryComponent from '../components/settings/industry-category/industrycategory.component'
-import bookstoreComponent from '../components/site/bookstore.component'
- 
+  
 
 //TODO : 
 //1. add role and orderOfMenu and prepare data in back end
@@ -84,7 +84,7 @@ const ProtectedRoute = ({component : Component, props}) => (
 
 const EntirePublicPageComponent = () => { 
     return (
-        <>
+        <> 
             <HomeComponent />
             <ServiceComponent /> 
             <AboutUsComponent />
@@ -159,7 +159,7 @@ export default function AppRouting() {
                 <PublicRoute path="/Services" exact component={ServiceComponent}></PublicRoute>
                 <PublicRoute path="/About" exact component={AboutUsComponent}></PublicRoute>
                 <PublicRoute path="/Testimonial" exact component={TestimonialComponent}></PublicRoute>
-                <PublicRoute path="/BookStore" exact component={bookstoreComponent}></PublicRoute>
+                <PublicRoute path="/BookStore" exact component={BookStoreComponent}></PublicRoute>
                 <PublicRoute path="/Contact" exact component={ContactComponent}></PublicRoute>
                 <PublicRoute path="/Footer" exact component={FooterComponent}></PublicRoute>
 

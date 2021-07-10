@@ -17,7 +17,7 @@ const ServiceComponent = function(props) {
                 <div class="container has-text-centered">
                     
                     <article class="d-article">
-                        <h2 class="title mt-6 mb-3 has-text-primary">Our Services</h2>
+                        <h2 class="title mt-2 mb-3 has-text-primary">Our Services</h2>
                     </article>
                 </div> 
 

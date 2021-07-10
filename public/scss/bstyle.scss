@@ -111,13 +111,13 @@ body{
 }
 
 .d-playstore:hover{
-	opacity: 0.5;
+	opacity: 0.8;
 	transition: 0.5s;
 }
 
 .d-playstore figure{
 	padding: 4px;
-	border: 1px solid #149179;
+	border: 2px solid $primary;
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
@@ -130,9 +130,9 @@ body{
 
 .d-playstore a{
 	text-decoration: none;
-	color: black;
-	padding: 5px;
-	border: 1px solid #149179;
+	color: $primary;
+	// padding: 6px;
+	// border: 2px solid $primary;
 	border-radius: 20px;
 }
 .d-log-in-out{

@@ -1,9 +1,15 @@
 import React from 'react' 
 import { Link, withRouter } from 'react-router-dom' 
-import { SvgIcon } from '@material-ui/core'
+import Slide from '@material-ui/core/Slide'
+
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 
 import './header.component.css'
-// import './../../../css/bstyle.css' 
 
 const SiteLogo = () => { 
   return (
@@ -12,6 +18,12 @@ const SiteLogo = () => {
     </Link> 
   )
 }
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
+
+
  
 // const Logout = (history) => {
 //     localStorage.clear()
@@ -20,6 +32,16 @@ const SiteLogo = () => {
 
 const Header = function(props) { 
     console.log('isLoggedUser >> ', props.isLoggedUser)
+
+    const [open, setOpen] = React.useState(false)
+
+    const handleClickOpen = () => {
+      setOpen(true)
+    }
+
+    const handleClose = () => {
+      setOpen(false);
+    }
 
     // let menu = props.isLoggedUser 
     // ?
@@ -70,10 +92,10 @@ const Header = function(props) {
             <header class="de-stickey">
                <section class="top-nav">
                 <div class="d-playstore">
-                  <figure class="d-playstore-img">
-                    <i class="fab fa-google-play mr-1"></i>
+                  <figure class="d-playstore-img has-background-white">
+                    <i class="fab fa-google-play mr-1 has-text-primary"></i>
                   </figure>
-                  <a href="#">
+                  <a class="button is-primary" href="#" onClick={handleClickOpen}>
                     <span>
                        Download our APP
                     </span>
@@ -117,7 +139,8 @@ const Header = function(props) {
                       <Link to="Channel" class="navbar-item">Channel</Link>
                       <Link to="Testimonial" class="navbar-item">Testimonial</Link>
                       <Link to="Leveltest" class="navbar-item">Level Test</Link>
-                      <Link to="Bookstore" class="navbar-item">Bookstore</Link>
+                      <Link to="Bookstore" class="navbar-item">Bookstore</Link> 
+                     
                     </div>
                   </div>
 
@@ -127,6 +150,29 @@ const Header = function(props) {
 
             
           </header> 
+
+          <> 
+            <Dialog
+              open={open}
+              TransitionComponent={Transition}
+              keepMounted
+              onClose={handleClose}
+              aria-labelledby="alert-dialog-slide-title"
+              aria-describedby="alert-dialog-slide-description"
+            >
+              <DialogTitle id="alert-dialog-slide-title"> 
+                <span class="has-text-primary">Mobile Application</span>
+              </DialogTitle>
+              <DialogContent>
+                <DialogContentText id="alert-dialog-slide-description">
+                  <p class="has-text-dark">Our Mobile Apps are coming soon. Stay tuned.</p>
+                </DialogContentText>
+              </DialogContent>
+              <DialogActions> 
+                  <a class="button is-link" onClick={handleClose}  > Close </a> 
+              </DialogActions>
+            </Dialog>
+          </>
            
         </>  
     )
