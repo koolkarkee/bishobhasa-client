@@ -97,7 +97,7 @@ const Header = function(props) {
                   </figure>
                   <a class="button is-primary" href="#" onClick={handleClickOpen}>
                     <span>
-                       Download our APP
+                       <i class="fa fa-download mr-1"></i>Download App
                     </span>
                   </a> 		
                 </div> 
