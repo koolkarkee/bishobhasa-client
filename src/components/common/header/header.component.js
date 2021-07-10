@@ -110,9 +110,10 @@ const Header = function(props) {
 
                   <div id="navMenu" class="navbar-menu">
                     <div class="navbar-end">
-                      <Link to="/" id="homeMenu" class="navbar-item">Home</Link>
-                      <Link to="Services" class="navbar-item">Our Services</Link>
+                      {/* <Link to="/" id="homeMenu" class="navbar-item">Home</Link> */}
                       <Link to="About" class="navbar-item">About Us</Link>
+                      <Link to="Services" class="navbar-item">Services</Link>
+                     
                       <Link to="Channel" class="navbar-item">Channel</Link>
                       <Link to="Testimonial" class="navbar-item">Testimonial</Link>
                       <Link to="Leveltest" class="navbar-item">Level Test</Link>

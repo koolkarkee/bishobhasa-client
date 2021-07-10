@@ -32,7 +32,7 @@ const BookStoreComponent = function(props) {
             <div class="container ">
 
               <div class="block">
-                <h1 class="title is-uppercase is-size-2 my-3 has-text-centered has-text-primary">Bookstore</h1>
+                <h1 class="title is-size-2 my-3 has-text-centered has-text-primary">Bookstore</h1>
                 <p class="has-text-justified is-size-6 mx-5">
                 Publication means a book stores. We have a qualified and best teams for the services we offer to our valued readers/users or students. Bishobhasha School's team members also publishes learning materials and publishes it as E-book and on paper book. Please get access to our website and empower your knowledge. You can also order your books contacting us. Deliver charges will be added on actual price. Please feel free to visit our office or contant us on email, or landline number.                
                 </p>  

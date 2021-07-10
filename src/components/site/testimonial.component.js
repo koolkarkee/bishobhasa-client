@@ -14,7 +14,7 @@ const TestimonialComponent = function(props) {
     
     return (
         <>  
-            <section class="hero is-light mt-5" id="Testimonial">
+            <section class="hero is-light" id="Testimonial">
                 <div class="container">
 
                     <div class="block">

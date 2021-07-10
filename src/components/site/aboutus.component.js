@@ -37,9 +37,9 @@ const AboutUsComponent = function(props) {
     
     return (
         <>  
-            <section class="hero is-light pb-5" id="About-us">
+            <section class="hero is-light" id="About-us">
                 <div class="container block">
-                    <h2 class="title my-6 has-text-primary has-text-centered">About Us</h2> 
+                    <h2 class="title mt-2 has-text-primary has-text-centered">About Us</h2> 
                     <article class="subtitle is-6 has-text-justified mx-5">
                         We are legally registered educational institution under the Nepal government policy and act in 2019, located in Kathmandu Metropolitan city Chabahil – 7 Gopikrishna Nagar. Our prime objectives are teaching various languages, job orientation and skill development trainings and abroad study counselling, documentation and processing. We have a very qualified and more than 5 to 10 years of experienced teams to offer you the above mention services.
                     </article> 
@@ -51,7 +51,7 @@ const AboutUsComponent = function(props) {
                 <br />
             </section>
           
-          <section class="hero is-primary">
+          <section class="hero is-light">
             <div class="container">
               <div class="columns is-multiline is-variable is-3">
                     
@@ -153,7 +153,10 @@ const AboutUsComponent = function(props) {
               </div>
             </div>
           </section>
-
+           
+          <section class="hero is-light">
+            <p class="is-invisible my-3">hidden</p>
+          </section>
         </>  
     )
 }

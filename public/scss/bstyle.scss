@@ -11,6 +11,7 @@ $gray : #e5e5e5;
 $black : #d40ab3;
 $white : #fff; 
 $secondary : #127dc0;
+$dark : #000;
 
 // 3. Set the derived variables
 // Use the new blue as the primary color 
@@ -56,8 +57,8 @@ body{
   .hr-break-contact hr { 
 	height: 5px;
 	border-width : 0;
-	color : #e5e5e5;
-	background-color : #e5e5e5;
+	color : $primary;
+	background-color : $primary;
 	margin: 0;
 	padding : 0; 
   }  
@@ -92,8 +93,8 @@ body{
 }
 
 .top-nav{
-	height: 50px;
-	background:#e5e5e5;
+	height: 51px;
+	background:$gray;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
@@ -139,8 +140,8 @@ body{
 	padding: 0 5px;
 	align-items: center;
 	text-decoration: none;
-	user-selection: none;
-	border-bottom: 50px solid #1dbc9c;
+	//user-selection: none;
+	border-bottom: 51px solid #1dbc9c;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	height: 0;
@@ -157,8 +158,7 @@ body{
 	align-items: center;
 	position: relative;
 	top: 25px;
-	left: 13%;
-	
+	left: 13%; 
 }
 .d-log-in-out figure{
 	width: 30px;
@@ -176,13 +176,11 @@ body{
 	width: 100px;
 	height: auto;   
 	margin-right: 15px;
-	bottom: -5px; 
-	//padding-top:-50px;
-    //margin-left:-10px;
+	bottom: -5px;  
 }
 
 .navbar-item:hover{
-    color:yellow !important;
+    color:$dark !important;
     background-color: $brandgreen !important;
 }
 
@@ -193,35 +191,42 @@ body{
 	bottom: 0;
 	height: 3px;
 	width: 100%;
-	background: yellow;
+	background: $dark;
 	transform: scaleX(0);
 	transform-origin: right;
-	transition: transform .4s linear;
+	transition: transform .45s linear;
 }
 
 .navbar-end a:hover:before{	
 	transform: scaleX(1);
-	transform-origin: left;
+	transform-origin: right;
 }
 
 // media query written for navigation bar
 
 @media only screen and (max-width: 1023px) {
 	.d-brand-logo{
-		position: absolute;
-		top: -35px;
-		width: 300px;
-		height: auto; 
+		// position: absolute;
+		// top: -35px;
+		// width: 300px;
+		// height: auto; 
+
+		position: relative;
+		top: -45px;
+		width: 100px;
+		height: auto;   
+		margin-right: 15px;
+		bottom: -5px;   
 	}
 
 	.navbar-menu .navbar-item{
 		color: $primary;
 		overflow: hidden !important;
-		text-align: center;
+		text-align: center; 
 	}
 	.navbar-item:hover{
-		color:blue !important;
-		// background-color:whitesmoke !important;
+		color:$dark !important;
+		background-color: $brandgreen !important; 
 	}
   }
 
@@ -266,8 +271,8 @@ body{
   @media only screen and (max-width: 567px) {
 	.d-brand-logo{
 		position: absolute;
-		top: -15px;
-		width: 240px;
+		top: -2px;
+		width: 64px;
 		height: auto;
 	}
 
@@ -380,8 +385,7 @@ body{
 	75%{
 		background-image: url(./../assets/images/slider/jpg/4.jpeg);
 	}
-}
-
+} 
 
 .outer{
 	position: absolute;
@@ -453,70 +457,70 @@ body{
 // background css end
 
 // Our services css start
-	.de-container{
-            position: relative;
-            // max-width: 1200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 30px;
-		}
+.de-container{
+	position: relative;
+	// max-width: 1200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px;
+} 
 		
-	.de-container .de-card{
-            position: relative;
-			width: 300px;
-			min-width: 300px;
-            height: 215px;
-            background: #fff;
-            margin: 30px 10px;
-            padding: 20px 15px;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 5px 202px rgba(0,0,0,0.5);
-            transition: 0.3s ease-in-out;
-        }
+.de-container .de-card{
+	position: relative;
+	width: 300px;
+	min-width: 300px;
+	height: 215px;
+	background: #fff;
+	margin: 30px 10px;
+	padding: 20px 15px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+	transition: 0.3s ease-in-out;
+}
 
-	.de-container .de-card:hover{
-            height: 420px;
-        }
+.de-container .de-card:hover{
+	height: 420px;
+}
 
-        .de-container .de-card .imgBx{
-			display: flex;
-			justify-content: center;
-			position: relative;
-            width: 260px;
-            height: 215px;
-            top: -60px;
-            left: 7px;
-            z-index: 1;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-            // overflow: hidden;
-        }
+.de-container .de-card .imgBx{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 260px;
+	height: 215px;
+	top: -60px;
+	left: 7px;
+	z-index: 1;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+	// overflow: hidden;
+}
 
-        .de-container .de-card .imgBx img{
-            width: 100%;
-            border-radius: 4px;
-        }
+.de-container .de-card .imgBx img{
+	width: 100%;
+	border-radius: 4px;
+}
 
-        .de-container .de-card .de-content{
-            position: relative;
-            margin-top: -135px;
-            padding: 10px 15px;
-            text-align: justify;
-            color: #111;
-            visibility: hidden;
-            opacity: 0;
-            transition: 0.3s ease-in-out;
-        }
+.de-container .de-card .de-content{
+	position: relative;
+	margin-top: -135px;
+	padding: 10px 15px;
+	text-align: justify;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
 
-        .de-container .de-card:hover .de-content{
-            visibility: visible;
-            opacity: 1;
-            margin-top: -40px;
-            transition-delay: 0.3s;
-		}		
-		
+.de-container .de-card:hover .de-content{
+	visibility: visible;
+	opacity: 1;
+	margin-top: -40px;
+	transition-delay: 0.3s;
+}		
+
 // our services css end
 
 // about us css start here
@@ -532,6 +536,7 @@ body{
 	overflow: hidden;
 	box-shadow: 0 5px 20px rgba(0,0,0,.3);
 }
+
 @media only screen and (max-width: 1215px){
 .de-box{
 	width: 312px;
@@ -556,9 +561,11 @@ body{
 	z-index: 2;
 	background: #000;
 }
+
 .de-box:hover .de-imgBx{
 	transform: translateY(-50px);
 }
+
 .de-box .de-imgBx img{
 	transition: 0.5s;
 }
@@ -566,6 +573,7 @@ body{
 .de-box:hover .de-imgBx img{
 	opacity: 0.5;
 }
+
 .de-box .social-icon{
 	position: absolute;
 	top: 50%;
@@ -576,9 +584,11 @@ body{
 	margin: 0;
 	padding: 0; 
 }
+
 .de-box .social-icon li{
 	list-style: none; 
 }
+
 .de-box .social-icon li a{
 	position: relative;
 	display: block;
@@ -592,6 +602,7 @@ body{
 	transform: translateY(200px);
 	opacity: 0;
 }
+
 .de-box:hover .social-icon li a{
 	transform: translateY(0px);
 	opacity: 1;
@@ -600,24 +611,30 @@ body{
 	display: inline-flex;
 	text-decoration: none;
 }
+
 .de-box .social-icon li a .fab{
 	transition: .5s;
 	font-size: 24px;
 	display: block; 
 	color: $primary;         
 }
+
 .de-box .social-icon li a:hover .fab{
 	transform: rotate(50deg);
 }
+
 .de-box:hover .social-icon li:nth-child(1) a{
 	transition-delay: 0s;
 }
+
 .de-box:hover .social-icon li:nth-child(2) a{
 	transition-delay: 0.2s;
 }
+
 .de-box:hover .social-icon li:nth-child(3) a{
 	transition-delay: .4s;
 } 
+
 .de-box .de-details{
 	position: absolute;
 	bottom: 0;
@@ -629,6 +646,7 @@ body{
 	box-sizing: border-box;
 	padding: 10px;
 }
+
 .de-box .de-details h2{
 	margin: 10px 0 0;
 	padding: 0;
@@ -642,15 +660,13 @@ body{
 .de-box .de-details h2 span{
 	display: block;
 	color: $secondary;
-	font-size: 18px;
-	
+	font-size: 18px; 
 	margin-top: 0;
 }
 
 // about us css end here
 
-// book store css started
-
+// book store css started 
 .dego-container{
 	display: flex;
 	justify-content: center;
@@ -737,6 +753,7 @@ body{
 	margin: 0;
 	padding: 0;
 }
+
 .dego-container .card-bstore .content .content-list{
 	display: flex;
 	justify-content: space-between;
@@ -759,6 +776,7 @@ body{
 	width: 270px;
 	height: 365px;
 }
+
 .dego-container .card-bstore:hover .content div{
 	visibility: visible;
 	opacity: 1;
@@ -796,8 +814,7 @@ body{
 
 *{
 	scroll-behavior: smooth;
-}
-
+} 
 //
 
 

@@ -9,24 +9,24 @@ const ContactComponent = function(props) {
     
     return (
         <> 
-          <section class="hero notification is-dark">
-            <div class="container my-3">
+          <section class="hero notification is-light mb-0">
+            <div class="container my-2">
               
-              <h2 class="title has-text-centered has-text-light">Contact Us</h2>
-              <p class="subtitle has-text-centered has-text-light mt-5">
+              <h2 class="title has-text-centered has-text-primary">Contact Us</h2>
+              <p class="subtitle has-text-centered has-text-dark mt-5">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, molestias! 
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, molestias! 
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, molestias! 
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, molestias! 
               </p>
 
-              <div class="container"> 
+              <div class="container is-dark"> 
                
                 <div class="columns is-variable is-8">
 
                   <div class="column is-one-fifths">
                     <p class="is-hidden">
-                      hidden column to manage space
+                      hidden column  
                     </p>
                   </div>
 
@@ -81,19 +81,19 @@ const ContactComponent = function(props) {
                   <div class="column is-two-fifths"> 
                     <form method="POST" class="field"> 
                         <div class="control block"> 
-                          <input required class="input is-unselectable" type="text" placeholder="Enter your full name" />                        
+                          <input required class="input is-hovered is-unselectable" type="text" placeholder="Enter your full name" />                        
                         </div> 
                         <div class="control block">
-                          <input required class="input is-unselectable" type="email" placeholder="Enter your email" />
+                          <input required class="input is-hovered is-unselectable" type="email" placeholder="Enter your email" />
                         </div>
                         <div class="control block">
-                          <input required class="input is-unselectable" type="number" placeholder="Enter your number" />
+                          <input required class="input is-hovered is-unselectable" type="text" placeholder="Enter your number" />
                         </div> 
                         <div class="control block">
-                          <textarea required class="textarea is-unselectable" placeholder="Enter your message"></textarea>
+                          <textarea required class="textarea is-hovered is-unselectable" placeholder="Enter your message"></textarea>
                         </div>
                         <div class="control block">
-                          <button class="button is-primary" type="submit">Send Message</button>
+                          <button class="button is-link" type="submit">Send Message</button>
                         </div>
                     </form>
                   </div>
@@ -108,8 +108,7 @@ const ContactComponent = function(props) {
               </div>
 
             </div>
-          </section>
-         
+          </section> 
         </>  
     )
 }

@@ -8,7 +8,7 @@ const FooterComponent = function(props) {
     return (
         <> 
            <section class="hero notification is-primary">
-            <div class="container my-6">
+            <div class="container my-2">
               <footer class="columns">
 
                 <div class="column is-3">
