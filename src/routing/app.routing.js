@@ -154,6 +154,7 @@ export default function AppRouting() {
                 <PublicRoute path="/" exact component={EntirePublicPageComponent}></PublicRoute>
                 <PublicRoute path="/Home" exact component={EntirePublicPageComponent}></PublicRoute>
                 <PublicRoute path="/Index" exact component={EntirePublicPageComponent}></PublicRoute>
+            
 
                 <PublicRoute path="/Services" exact component={ServiceComponent}></PublicRoute>
                 <PublicRoute path="/About" exact component={AboutUsComponent}></PublicRoute>

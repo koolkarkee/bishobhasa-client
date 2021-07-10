@@ -13,7 +13,8 @@ $white : #fff;
 $secondary : #127dc0;
 
 // 3. Set the derived variables
-// Use the new blue as the primary color
+// Use the new blue as the primary color 
+
 $primary: $brandgreen;
 $danger: $pink; 
 $info: $gray;
@@ -167,14 +168,17 @@ body{
 	text-decoration: none;
 	color: white;
 }
-
-
+ 
 // css for brand logo
 .d-brand-logo{
-	position: absolute;
-	top: -35px;
-	width: 350px;
-	height: auto;
+	position: relative;
+	top: -45px;
+	width: 100px;
+	height: auto;   
+	margin-right: 15px;
+	bottom: -5px; 
+	//padding-top:-50px;
+    //margin-left:-10px;
 }
 
 .navbar-item:hover{
@@ -207,7 +211,7 @@ body{
 		position: absolute;
 		top: -35px;
 		width: 300px;
-		height: auto;
+		height: auto; 
 	}
 
 	.navbar-menu .navbar-item{

@@ -1,8 +1,17 @@
 import React from 'react' 
 import { Link, withRouter } from 'react-router-dom' 
+import { SvgIcon } from '@material-ui/core'
 
 import './header.component.css'
 // import './../../../css/bstyle.css' 
+
+const SiteLogo = () => { 
+  return (
+    <Link to="/index" >   
+        <img src={process.env.PUBLIC_URL+"/assets/images/brand-logo/png/brand-logo.png"} />
+    </Link> 
+  )
+}
  
 // const Logout = (history) => {
 //     localStorage.clear()
@@ -69,12 +78,12 @@ const Header = function(props) {
                        Download our APP
                     </span>
                   </a> 		
-                </div>
+                </div> 
                 
                 <div class="d-log-in-out">
                   <div class="d-log-in-out-ne">
                     <figure class="d-login-img">
-                      <Link href="#"><i class="fas fa-sign-in-alt mr-1"></i></Link>
+                      <Link to="#"><i class="fas fa-sign-in-alt mr-1"></i></Link>
                     </figure>
                     <a href="#"><span>
                         LOGIN | SIGNUP
@@ -83,16 +92,15 @@ const Header = function(props) {
                 </div>
               </section>
 
-              <nav class="navbar is-primary is-fixed-top-degox">
-                <div class="container">
+              <nav class="navbar is-primary is-fixed-top-degox"> 
 
-                   <div class="d-brand-logo">
-                    <Link href="index.html">
-                      <img src={process.env.PUBLIC_URL+"/assets/images/brand-logo/svg/brand-logo.svg"}/>
-                    </Link> 
+                <div class="container" style={{height:1}}> 
+
+                  <div class="d-brand-logo">
+                     <SiteLogo /> 
                   </div>
-
-                  <div class="navbar-brand is-pulled-right">
+ 
+                  <div class="navbar-brand is-pulled-right" >
                     <span class="navbar-burger burger" data-target="navMenu">
                       <span></span>
                       <span></span>
