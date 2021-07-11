@@ -44,7 +44,7 @@ const AboutUsComponent = function(props) {
                         We are legally registered educational institution under the Nepal government policy and act in 2019, located in Kathmandu Metropolitan city Chabahil – 7 Gopikrishna Nagar. Our prime objectives are teaching various languages, job orientation and skill development trainings and abroad study counselling, documentation and processing. We have a very qualified and more than 5 to 10 years of experienced teams to offer you the above mention services.
                     </article> 
                     <br />
-                    <h2 class="title is-4 has-text-primary mx-5">
+                    <h2 class="title is-4 has-text-primary mx-5 has-text-centered">
                         The founders of Bishobhasa School & Consultancy | Team Members
                     </h2> 
                 </div>  

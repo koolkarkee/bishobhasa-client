@@ -23,7 +23,99 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
+const MobileHeader = () => {
+  return (
+    <ul> 
+        <li>  
+          <a>
+            <Link to="About">About Us <i class="fa fa-info-circle mr-1"></i></Link> 
+          </a> 
+        </li>
+        <li>  
+          <a>
+            <Link to="Services">Services <i class=" fa fa-graduation-cap mr-1"></i></Link>
+          </a> 
+        </li>
+        <li>  
+          <a>
+            <Link to="Channel">Channel <i class="fa fa-youtube-play mr-1"></i></Link>
+          </a> 
+        </li>
+        <li>  
+          <a>
+            <Link to="Testimonial">Testimonial <i class="fas fa-users mr-1"></i></Link>
+          </a> 
+        </li>
+        <li>  
+          <a>
+            <Link to="Leveltest">Level Test <i class="fa fa-info-circle mr-1"></i></Link>
+          </a> 
+        </li>
+        <li>  
+          <a>
+            <Link to="Bookstore">Book Store <i class="fas fa-store mr-1"></i></Link>
+          </a> 
+        </li> 
+      
+        <li><a class="m-balanced" href="#">LOGIN | SIGNUP</a></li>
+      </ul>
+  )
+}
 
+const DesktopHeader = () => {
+  return (
+    <div id="navMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <Link to="About" class="navbar-item">About Us</Link>
+        <Link to="Services" class="navbar-item">Services</Link>
+      
+        <Link to="Channel" class="navbar-item">Channel</Link>
+        <Link to="Testimonial" class="navbar-item">Testimonial</Link>
+        <Link to="Leveltest" class="navbar-item">Level Test</Link>
+        <Link to="Bookstore" class="navbar-item">Bookstore</Link> 
+      
+      </div>
+    </div>
+  )
+}
+
+const TopNavSection = () => {
+  const [open, setOpen] = React.useState(false)
+
+  const handleClickOpen = () => {
+    setOpen(true)
+  }
+
+  const handleClose = () => {
+    setOpen(false);
+  } 
+
+  return (
+    <>
+       <div class="d-playstore">
+          <figure class="d-playstore-img has-background-white">
+            <i class="fab fa-google-play mr-1 has-text-primary"></i>
+          </figure>
+          <a class="button is-primary" href="#" onClick={handleClickOpen}>
+            <span>
+                <i class="fa fa-download mr-1"></i>Download App
+            </span>
+          </a> 		
+       </div> 
+                
+      <div class="d-log-in-out">
+        <div class="d-log-in-out-ne">
+          <figure class="d-login-img">
+            <Link to="#"><i class="fas fa-sign-in-alt mr-1"></i></Link>
+          </figure>
+          <a href="#"><span>
+              LOGIN | SIGNUP
+            </span></a>
+        </div>
+      </div>       
+    </>
+  )
+}
  
 // const Logout = (history) => {
 //     localStorage.clear()
@@ -41,78 +133,14 @@ const Header = function(props) {
 
     const handleClose = () => {
       setOpen(false);
-    }
-
-    // let menu = props.isLoggedUser 
-    // ?
-    // <ul className="ul">
-    //     <li className="nav-item">
-    //         <a href="#default" className="logo">DegoX</a> 
-    //     </li>
-    //     <li className="nav-item">
-    //         <Link to="/">Home</Link>
-    //     </li>
-    //     <li className="nav-item">
-    //         <Link to="/about">About Us</Link>
-    //     </li>
-    //     <li className="nav-item">
-    //         <Link to="/blog">Blog</Link>
-    //     </li> 
-    //     <li className="nav-item">
-    //         <Link to="/contact">Contact</Link>
-    //     </li>  
-    //     <li className="nav-item"> 
-    //         <Link to="/login" onClick={ () => Logout(props.history)}>Logout</Link>
-    //     </li> 
-    // </ul>
-    // :
-    // <ul className="ul">
-    //     <li className="nav-item">
-    //         <a href="#default" className="logo">DegoX</a> 
-    //     </li>
-    //     <li className="nav-item">
-    //         <Link to="/">Home</Link>
-    //     </li>
-    //     <li className="nav-item">
-    //         <Link to="/about">About Us</Link>
-    //     </li>
-    //     <li className="nav-item">
-    //         <Link to="/blog">Blog</Link>
-    //     </li> 
-    //     <li className="nav-item">
-    //         <Link to="/contact">Contact</Link>
-    //     </li>  
-    //     <li className="nav-item">
-    //         <Link to="/login">Login</Link>
-    //     </li> 
-    // </ul>
+    } 
 
     return (
         <> 
             <header class="de-stickey">
                <section class="top-nav">
-                <div class="d-playstore">
-                  <figure class="d-playstore-img has-background-white">
-                    <i class="fab fa-google-play mr-1 has-text-primary"></i>
-                  </figure>
-                  <a class="button is-primary" href="#" onClick={handleClickOpen}>
-                    <span>
-                       <i class="fa fa-download mr-1"></i>Download App
-                    </span>
-                  </a> 		
-                </div> 
-                
-                <div class="d-log-in-out">
-                  <div class="d-log-in-out-ne">
-                    <figure class="d-login-img">
-                      <Link to="#"><i class="fas fa-sign-in-alt mr-1"></i></Link>
-                    </figure>
-                    <a href="#"><span>
-                        LOGIN | SIGNUP
-                      </span></a>
-                  </div>
-                </div>
-              </section>
+                  <TopNavSection open={open} />
+               </section>
 
               <nav class="navbar is-primary is-fixed-top-degox"> 
 
@@ -120,28 +148,19 @@ const Header = function(props) {
 
                   <div class="d-brand-logo">
                      <SiteLogo /> 
-                  </div>
- 
-                  <div class="navbar-brand is-pulled-right" >
-                    <span class="navbar-burger burger" data-target="navMenu">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </span>
                   </div> 
 
-                  <div id="navMenu" class="navbar-menu">
-                    <div class="navbar-end">
-                      {/* <Link to="/" id="homeMenu" class="navbar-item">Home</Link> */}
-                      <Link to="About" class="navbar-item">About Us</Link>
-                      <Link to="Services" class="navbar-item">Services</Link>
-                     
-                      <Link to="Channel" class="navbar-item">Channel</Link>
-                      <Link to="Testimonial" class="navbar-item">Testimonial</Link>
-                      <Link to="Leveltest" class="navbar-item">Level Test</Link>
-                      <Link to="Bookstore" class="navbar-item">Bookstore</Link> 
-                     
-                    </div>
+                  <DesktopHeader />
+
+                  {/* mobile view menu bar goes here */}
+                  <div id="nav-small">
+                    <input type="checkbox" id="click"></input>
+                    <label for="click" class="menu-bt">
+                      <i class="fas fa-bars"></i>
+                    </label>
+
+                      <MobileHeader />
+                    
                   </div>
 
                 </div>

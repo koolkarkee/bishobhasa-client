@@ -18,7 +18,7 @@ const TestimonialComponent = function(props) {
                 <div class="container">
 
                     <div class="block">
-                        <h1 class="title is-size-2 my-3 has-text-centered has-text-primary mt-5">Voice of our student</h1>
+                        <h1 class="title is-size-2 my-3 has-text-centered has-text-primary mt-5">Student's Voice</h1>
                         <p class="has-text-justified is-size-6 mx-5">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,

@@ -29,7 +29,7 @@ const FooterComponent = function(props) {
 
                 <div class="column is-3">
                   <h2 class="title is-4">
-                    <strong class="is-uppercase has-text-dark">Learning Center</strong>
+                    <strong class="has-text-dark">Learning Center</strong>
                   </h2>
                   <p class="subtitle is-6 is-unselectable"> 
                     <a class="button is-text is-primary">Test Your Korean</a><br />  
@@ -45,7 +45,7 @@ const FooterComponent = function(props) {
                 
                 <div class="column is-6">
                   <h2 class="title is-4 has-text-dark">
-                    SUBSCRIBE TO BISHOBHASHA NEWSLETTER  
+                    Subscribe to Bishobhasa newsletter   
                   </h2>  
                   <p class="subtitle is-6 is-unselectable">
                     <br/> 
