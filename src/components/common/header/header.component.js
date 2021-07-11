@@ -25,40 +25,52 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const MobileHeader = () => {
   return (
-    <ul> 
-        <li>  
-          <a>
-            <Link to="About">About Us <i class="fa fa-info-circle mr-1"></i></Link> 
-          </a> 
-        </li>
-        <li>  
-          <a>
-            <Link to="Services">Services <i class=" fa fa-graduation-cap mr-1"></i></Link>
-          </a> 
-        </li>
-        <li>  
-          <a>
-            <Link to="Channel">Channel <i class="fa fa-youtube-play mr-1"></i></Link>
-          </a> 
-        </li>
-        <li>  
-          <a>
-            <Link to="Testimonial">Testimonial <i class="fas fa-users mr-1"></i></Link>
-          </a> 
-        </li>
-        <li>  
-          <a>
-            <Link to="Leveltest">Level Test <i class="fa fa-info-circle mr-1"></i></Link>
-          </a> 
-        </li>
-        <li>  
-          <a>
-            <Link to="Bookstore">Book Store <i class="fas fa-store mr-1"></i></Link>
-          </a> 
-        </li> 
+    <>
+      {/* mobile view menu bar goes here */}
+      <div id="nav-small">
+          <input type="checkbox" id="burgerMenuPublic"></input>
+          <label for="burgerMenuPublic" class="menu-bt">
+            <i class="fas fa-bars"></i> 
+          </label> 
+
+          <ul id="myUl"> 
+            <li class="burgerMenuItems">  
+              <a>
+                <Link to="About">About Us <i class="fa fa-info-circle mx-1"></i></Link> 
+              </a> 
+            </li>
+            <li class="burgerMenuItems">  
+              <a>
+                <Link to="Services">Services <i class="fa fa-gift mx-1"></i></Link> 
+              </a> 
+            </li>
+            <li class="burgerMenuItems">  
+              <a>
+                <Link to="Channel">Channel <i class="fa fa-youtube-play mx-1"></i></Link>
+              </a> 
+            </li>
+            <li class="burgerMenuItems">  
+              <a>
+                <Link to="Testimonial">Testimonial <i class="fas fa-users mx-1"></i></Link>
+              </a> 
+            </li>
+            <li class="burgerMenuItems">  
+              <a>
+                <Link to="Leveltest">Level Test <i class="fa fa-check-circle mx-1"></i></Link>
+              </a> 
+            </li>
+            <li class="burgerMenuItems">  
+              <a>
+                <Link to="Bookstore">Book Store <i class="fas fa-book mx-1"></i></Link>
+              </a> 
+            </li> 
       
-        <li><a class="m-balanced" href="#">LOGIN | SIGNUP</a></li>
-      </ul>
+            <li><a class="m-balanced" href="#">LOGIN | SIGNUP</a></li>
+          </ul>
+                    
+      </div> 
+    </> 
+    
   )
 }
 
@@ -112,34 +124,46 @@ const TopNavSection = () => {
               LOGIN | SIGNUP
             </span></a>
         </div>
-      </div>       
+      </div>   
+      <> 
+          <Dialog
+            open={open}
+            TransitionComponent={Transition}
+            keepMounted
+            onClose={handleClose}
+            aria-labelledby="alert-dialog-slide-title"
+            aria-describedby="alert-dialog-slide-description"
+          >
+            <DialogTitle id="alert-dialog-slide-title"> 
+              <span class="has-text-primary">Mobile Application</span>
+            </DialogTitle>
+            <DialogContent>
+              <DialogContentText id="alert-dialog-slide-description">
+                <p class="has-text-dark">Our Mobile Apps are coming soon. Stay tuned.</p>
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions> 
+                <a class="button is-link" onClick={handleClose}  > Close </a> 
+            </DialogActions>
+          </Dialog> 
+      </>
     </>
   )
 }
- 
+
 // const Logout = (history) => {
 //     localStorage.clear()
 //     history.push('/login')
 // } 
 
 const Header = function(props) { 
-    console.log('isLoggedUser >> ', props.isLoggedUser)
-
-    const [open, setOpen] = React.useState(false)
-
-    const handleClickOpen = () => {
-      setOpen(true)
-    }
-
-    const handleClose = () => {
-      setOpen(false);
-    } 
+    console.log('isLoggedUser >> ', props.isLoggedUser) 
 
     return (
         <> 
-            <header class="de-stickey">
-               <section class="top-nav">
-                  <TopNavSection open={open} />
+          <header class="de-stickey">
+               <section class="top-nav">   
+                    <TopNavSection />                         
                </section>
 
               <nav class="navbar is-primary is-fixed-top-degox"> 
@@ -153,46 +177,11 @@ const Header = function(props) {
                   <DesktopHeader />
 
                   {/* mobile view menu bar goes here */}
-                  <div id="nav-small">
-                    <input type="checkbox" id="click"></input>
-                    <label for="click" class="menu-bt">
-                      <i class="fas fa-bars"></i>
-                    </label>
-
-                      <MobileHeader />
-                    
-                  </div>
-
+                  <MobileHeader />
                 </div>
                 
-              </nav>
-
-            
+              </nav> 
           </header> 
-
-          <> 
-            <Dialog
-              open={open}
-              TransitionComponent={Transition}
-              keepMounted
-              onClose={handleClose}
-              aria-labelledby="alert-dialog-slide-title"
-              aria-describedby="alert-dialog-slide-description"
-            >
-              <DialogTitle id="alert-dialog-slide-title"> 
-                <span class="has-text-primary">Mobile Application</span>
-              </DialogTitle>
-              <DialogContent>
-                <DialogContentText id="alert-dialog-slide-description">
-                  <p class="has-text-dark">Our Mobile Apps are coming soon. Stay tuned.</p>
-                </DialogContentText>
-              </DialogContent>
-              <DialogActions> 
-                  <a class="button is-link" onClick={handleClose}  > Close </a> 
-              </DialogActions>
-            </Dialog>
-          </>
-           
         </>  
     )
 }

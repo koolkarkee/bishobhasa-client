@@ -38,12 +38,17 @@
   </body>
 </html>
 
-<script>
-    var burger = document.querySelector('.burger');
-    var nav = document.querySelector('#'+burger.dataset.target); 
-      
-    burger.addEventListener('click', function(){
-      burger.classList.toggle('is-active')
-      nav.classList.toggle('is-active')
-    })  
+<script> 
+    var items = document.querySelectorAll('.burgerMenuItems') 
+
+    items.forEach(x => {
+        x.addEventListener('click', function(){ 
+             var burgerChecked = document.getElementById("burgerMenuPublic").checked;   
+             
+             if(burgerChecked){
+                document.getElementById("burgerMenuPublic").checked = false
+             }
+       }) 
+    }) 
+   
 </script>

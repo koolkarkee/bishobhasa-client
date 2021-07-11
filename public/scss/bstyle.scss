@@ -128,17 +128,16 @@ body{
 
 .d-playstore a{
 	text-decoration: none;
-	color: $primary;
-	// padding: 6px;
-	// border: 2px solid $primary;
+	color: $primary; 
 	border-radius: 20px;
 }
 .d-log-in-out{
 	display: flex;
 	padding: 0 5px;
 	align-items: center;
-	text-decoration: none; 
-	border-bottom: 51px solid $primary;
+	text-decoration: none;  
+	border-bottom: 51px solid #19a187;
+
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	height: 0;
@@ -221,31 +220,15 @@ input[type="checkbox"]{
 		display: block;
 	} 
 	
-	.d-brand-logo{
-		// position: absolute;
-		// top: -35px;
-		// width: 300px;
-		// height: auto;
-		// z-index: 1000; 
-
+	.d-brand-logo{  
 		position: relative;
 		top: -45px;
 		left: 10px;
-		width: 100px;
+		width:64px;
 		height: auto;   
 		margin-right: 15px;
 		bottom: -5px;    
-	}
-
-	// .navbar-menu .navbar-item{
-	// 	color: $primary;
-	// 	overflow: hidden !important;
-	// 	text-align: center; 
-	// }
-	// .navbar-item:hover{
-	// 	color:$dark !important;
-	// 	background-color: $brandgreen !important; 
-	// }
+	} 
 
 	.menu-bt i{
 		color: #fff;
@@ -254,10 +237,10 @@ input[type="checkbox"]{
 		position: absolute;
 		right: 30px;
 		top: 15px;
-	  }
+	}
 
-	  #click:checked ~ .menu-bt i:before{
-		content: "\f00d";
+	#burgerMenuPublic:checked ~ .menu-bt i:before{
+		content: "\f00d"; 
 	}
 
 	#nav-small ul{
@@ -274,13 +257,15 @@ input[type="checkbox"]{
 		transition: all 0.3s ease;
 		padding: 0 25px;
 	  }
+
 	  li .m-balanced{
 		display: none !important;
 	  }
 
-	  #click:checked ~ ul{
+	  #burgerMenuPublic:checked:checked ~ ul{
 		left: 0;
 	  }
+
 	  #nav-small ul li{
 		width: 100%;
 		margin: 10px 0;
@@ -291,26 +276,13 @@ input[type="checkbox"]{
 		margin-left: -100%;
 		display: block;
 		font-size: 20px;
-		color: #fff;
+		color: $white;
 		transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	  }
-	  #click:checked ~ ul li a{
+
+	  #burgerMenuPublic:checked ~ ul li a{
 		margin-left: 0px;
-	  }
-	  #nav-small ul li .active, #nav-small ul li a:hover{
-		  background-color: #0ba88a;
-		  color: white;
-	  }
-	  
-	  // .navbar-menu .navbar-item{
-	// 	color: $primary;
-	// 	overflow: hidden !important;
-	// 	text-align: center; 
-	// }
-	// .navbar-item:hover{
-	// 	color:$dark !important;
-	// 	background-color: $brandgreen !important; 
-	// }
+	  } 
 
 	.navbar-item-mobile{ 
 		padding: 15px 0;
@@ -322,23 +294,22 @@ input[type="checkbox"]{
 		transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	} 
 
+	.de-v-h-center{
+		//margin-top: -51px;
+		padding-top: 59px; 
+		height: 500px !important;  
+	}
+
   }
 
-  @media only screen and (max-width: 495px) {
-	// .top-nav{
-	// 	display: none;
-	// 	// height: 0vh; 
-	// }
+
+  @media only screen and (max-width: 495px) { 
 
 	.de-v-h-center{
 		margin-top: -51px;
 		padding-top: 59px; 
+		height: 520px !important; 
 	}
-
-	// .d-playstore{
-	// 	display: none;
-	// 	//margin: 10px 0;
-	// } 
 
 	.top-nav{
 		display: none;
@@ -359,24 +330,7 @@ input[type="checkbox"]{
 		left: 5px;
 		width: 16px;
 		height: auto;
-	}
-
-	// .navbar-item{
-	// 	color: #fff !important;
-	// 	border-bottom: 1px solid white !important;
-	// }
-
-	// .navbar-end{
-	// 	padding: 0px 0px 0px 300px;
-	// }
-
-	// #homeMenu{
-	// 	margin-top: 3rem;
-	// }
-
-	// #navMenu{
-	// 	background-color:$primary;    
-	// } 
+	} 
 
 	#services{
 		padding-top: 50px; 
@@ -390,15 +344,21 @@ input[type="checkbox"]{
 		left: 5px;
 		width: 64px;
 		height: auto;
+	} 
+
+	.de-v-h-center{
+		margin-top: -51px;
+		padding-top: 59px; 
+		height: 500px !important; 
+		margin-bottom: 50px;
+	}
+	 
+	.top-nav{
+		display: none;
 	}
 
   }
-
-// @media only screen and (max-width: 567px) {
-// 	.container-slide{  
-// 		height: 10vh; 
-// 	} 
-// }
+ 
 
 // all nav bar css end
 
@@ -432,20 +392,8 @@ input[type="checkbox"]{
     width: 100%;
     height: 100vh;
 	animation: animate 12s ease-in-out infinite; 
-	background-size: cover;
-	
-	//-moz-transition: opacity 0.25s linear;
-	//-webkit-animation: animate 12s ease-in-out infinite; 
-    -moz-animation: 12s linear 1s ease-in-out paused opacity 100ms animate;
-	//transition: margin-right 2s ease-in-out;
-		// -moz-animation-name: animate;
-	// -moz-animation-timing-function: ease-in-out;
-	// -moz-animation-iteration-count: infinite;
-	// -moz-animation-duration: 12s;
-	// -moz-transform-style: flat;
-
-    // -o-animation: animate 12s ease-in-out infinite;
-    // -ms-transition: animate 12s ease-in-out infinite; 
+	background-size: cover; 
+    -moz-animation: 12s linear 1s ease-in-out paused opacity 100ms animate; 
 } 
 
 @keyframes animate{ 
@@ -514,7 +462,7 @@ input[type="checkbox"]{
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 100vh;
+	height: 100vh; 
 	background: rgba(0,0,0,0.5)
 }
 
