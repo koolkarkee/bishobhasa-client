@@ -14,7 +14,7 @@ import './header.component.css'
 const SiteLogo = () => { 
   return (
     <Link to="/index" >   
-        <img src={process.env.PUBLIC_URL+"/assets/images/brand-logo/png/brand-logo.png"} />
+        <img src={process.env.PUBLIC_URL+"/assets/images/brand-logo/svg/brand-logo.svg"} />
     </Link> 
   )
 }
@@ -25,15 +25,14 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const MobileHeader = () => {
   return (
-    <>
-      {/* mobile view menu bar goes here */}
+    <> 
       <div id="nav-small">
           <input type="checkbox" id="burgerMenuPublic"></input>
           <label for="burgerMenuPublic" class="menu-bt">
             <i class="fas fa-bars"></i> 
           </label> 
 
-          <ul id="myUl"> 
+          <ul id="myUl" style={{overflow:'scroll'}}> 
             <li class="burgerMenuItems">  
               <a>
                 <Link to="About">About Us <i class="fa fa-info-circle mx-1"></i></Link> 
@@ -63,11 +62,14 @@ const MobileHeader = () => {
               <a>
                 <Link to="Bookstore">Book Store <i class="fas fa-book mx-1"></i></Link>
               </a> 
+            </li>  
+            <li class="burgerMenuItems">  
+              <a>
+                <Link to="Contact">Contact <i class="fas fa-envelope mx-1"></i></Link>
+              </a> 
             </li> 
-      
             <li><a class="m-balanced" href="#">LOGIN | SIGNUP</a></li>
           </ul>
-                    
       </div> 
     </> 
     
@@ -84,8 +86,7 @@ const DesktopHeader = () => {
         <Link to="Channel" class="navbar-item">Channel</Link>
         <Link to="Testimonial" class="navbar-item">Testimonial</Link>
         <Link to="Leveltest" class="navbar-item">Level Test</Link>
-        <Link to="Bookstore" class="navbar-item">Bookstore</Link> 
-      
+        <Link to="Bookstore" class="navbar-item">Bookstore</Link>  
       </div>
     </div>
   )
