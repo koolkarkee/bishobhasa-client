@@ -302,6 +302,28 @@ input[type="checkbox"]{
 
   }
 
+  @media only screen and (max-width: 320px){
+	.de-container .de-card {
+		right: 9%;
+		width: 290px;
+		max-width: 290px;
+	}
+
+	.de-container .de-card .imgBx {
+		left: 1px;
+	}
+  }
+
+
+  @media only screen and (max-width: 411px){
+	.outer h1 {
+	  font-size: 24px !important;
+	}
+	.outer p{
+		font-size: 18px !important;
+	}
+  }
+
 
   @media only screen and (max-width: 495px) { 
 
@@ -337,13 +359,15 @@ input[type="checkbox"]{
 	} 
   }
 
+ 
   @media only screen and (max-width: 567px) {
 	.d-brand-logo{
 		position: absolute;
-		top: -2px;
+		top: 2px;
 		left: 5px;
 		width: 64px;
 		height: auto;
+		z-index: 1000;
 	} 
 
 	.de-v-h-center{
@@ -352,9 +376,17 @@ input[type="checkbox"]{
 		height: 500px !important; 
 		margin-bottom: 50px;
 	}
-	 
+ 
 	.top-nav{
 		display: none;
+	}
+
+	#nav-small ul {
+		top: 52px;
+	}
+
+	.details h1{
+		font-size: 30px;
 	}
 
   }
