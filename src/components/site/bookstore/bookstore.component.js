@@ -1,5 +1,5 @@
 import React from 'react' 
-import { withRouter } from 'react-router-dom' 
+import { withRouter, Link } from 'react-router-dom' 
  
 // import './../../css/bstyle.css'
 
@@ -17,9 +17,42 @@ const BookImage1 = () => {
   ) 
 }
 
-const BookImage2 = () => {
+// const BookImage2 = () => {
+//   return (
+//     <img src={process.env.PUBLIC_URL+"/assets/images/bookstore/korean basic book-2.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/bookstore/korean basic book-2.jpg"} /> 
+//   )
+// }
+
+const BookItem = () => {
   return (
-    <img src={process.env.PUBLIC_URL+"/assets/images/bookstore/korean basic book-2.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/bookstore/korean basic book-2.jpg"} /> 
+    <>
+      <div class="card-bstore">
+        <span></span>
+        <div class="imgBx">
+            <BookImage1 /> 
+          </div>
+        <div class="content">
+          <div>
+            <div class="content-head">For sale</div>
+            <div class="content-h2">Korean Book store</div>
+
+            <div class="content-list">
+              <p><del>$500.00</del></p>
+              <p>$131.75</p>
+              <p>
+                <button class="button is-text is-primary">
+                  <Link to="/"><i class="fas fa-shopping-cart"></i></Link>
+                </button><br />   
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-highlight">
+          <h2>Grammar Textbooks<br />
+            & Workbooks</h2>
+        </div>
+      </div> 
+    </>
   )
 }
 
@@ -39,186 +72,14 @@ const BookStoreComponent = function(props) {
                 <br />
 
                   <div class="dego-container">
-                    <div class="card-bstore">
-                      <span></span>
-                      <div class="imgBx">
-                          {/* <img src={bookImage1} alt={bookImage1} />  */}
-                          <BookImage1 />
-                      </div>
-                      <div class="content">
-                        <div>
-                          <div class="content-head">For sale</div>
-                          <div class="content-h2">Korean Book store</div>
-              
-                          <div class="content-list">
-                            <p><del>$500.00</del></p>
-                            <p>$131.75</p>
-                            <p><a href="#"><i class="fas fa-shopping-cart"></i></a></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-highlight">
-                        <h2>Grammar Textbooks<br />
-                          & Workbooks</h2>
-                      </div>
-                    </div>
-                  
-                    <div class="card-bstore">
-                      <span></span>
-                      <div class="imgBx">
-                          <BookImage1 />
-                          {/* <img src="./images/bookstore/korean basic book-2.jpg"> */}
-                        </div>
-                      <div class="content">
-                        <div>
-                          <div class="content-head">For sale</div>
-                          <div class="content-h2">Korean Book store</div>
-              
-                          <div class="content-list">
-                            <p><del>$500.00</del></p>
-                            <p>$131.75</p>
-                            <p><a href="#"><i class="fas fa-shopping-cart"></i></a></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-highlight">
-                        <h2>Grammar Textbooks<br />
-                          & Workbooks</h2>
-                      </div>
-                    </div>
-  
-                    <div class="card-bstore">
-                      <span></span>
-                      <div class="imgBx">
-                          <BookImage1 />
-                      </div>
-                      <div class="content">
-                        <div>
-                          <div class="content-head">For sale</div>
-                          <div class="content-h2">Korean Book store</div>
-              
-                          <div class="content-list">
-                            <p><del>$500.00</del></p>
-                            <p>$131.75</p>
-                            <p><a href="#"><i class="fas fa-shopping-cart"></i></a></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-highlight">
-                        <h2>Grammar Textbooks<br />
-                          & Workbooks</h2>
-                      </div>
-                    </div>
-                    <div class="card-bstore">
-                      <span></span>
-                      <div class="imgBx">
-                          <BookImage1 /> 
-                      </div>
-                      <div class="content">
-                        <div>
-                          <div class="content-head">For sale</div>
-                          <div class="content-h2">Korean Book store</div>
-              
-                          <div class="content-list">
-                            <p><del>$500.00</del></p>
-                            <p>$131.75</p>
-                            <p><a href="#"><i class="fas fa-shopping-cart"></i></a></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-highlight">
-                        <h2>Grammar Textbooks<br />
-                          & Workbooks</h2>
-                      </div>
-                    </div>
-                    <div class="card-bstore">
-                      <span></span>
-                      <div class="imgBx">
-                          <BookImage1 />
-                      </div>
-                      <div class="content">
-                        <div>
-                          <div class="content-head">For sale</div>
-                          <div class="content-h2">Korean Book store</div>
-              
-                          <div class="content-list">
-                            <p><del>$500.00</del></p>
-                            <p>$131.75</p>
-                            <p><a href="#"><i class="fas fa-shopping-cart"></i></a></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-highlight">
-                        <h2>Grammar Textbooks<br />
-                          & Workbooks</h2>
-                      </div>
-                    </div>
-                    <div class="card-bstore">
-                      <span></span>
-                      <div class="imgBx">
-                         <BookImage1 />
-                      </div>
-                      <div class="content">
-                        <div>
-                          <div class="content-head">For sale</div>
-                          <div class="content-h2">Korean Book store</div>
-              
-                          <div class="content-list">
-                            <p><del>$500.00</del></p>
-                            <p>$131.75</p>
-                            <p><a href="#"><i class="fas fa-shopping-cart"></i></a></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-highlight">
-                        <h2>Grammar Textbooks<br />
-                          & Workbooks</h2>
-                      </div>
-                    </div>
-                    <div class="card-bstore">
-                      <span></span>
-                      <div class="imgBx">
-                          <BookImage1 /> 
-                      </div>
-                      <div class="content">
-                        <div>
-                          <div class="content-head">For sale</div>
-                          <div class="content-h2">Korean Book store</div>
-              
-                          <div class="content-list">
-                            <p><del>$500.00</del></p>
-                            <p>$131.75</p>
-                            <p><a href="#"><i class="fas fa-shopping-cart"></i></a></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-highlight">
-                        <h2>Grammar Textbooks<br />
-                          & Workbooks</h2>
-                      </div>
-                    </div>
-                    <div class="card-bstore">
-                      <span></span>
-                      <div class="imgBx">
-                          <BookImage2 /> 
-                      </div>
-                      <div class="content">
-                        <div>
-                          <div class="content-head">For sale</div>
-                          <div class="content-h2">Korean Book store</div>
-              
-                          <div class="content-list">
-                            <p><del>$500.00</del></p>
-                            <p>$131.75</p>
-                            <p><a href="#"><i class="fas fa-shopping-cart"></i></a></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-highlight">
-                        <h2>Grammar Textbooks<br />
-                          & Workbooks</h2>
-                      </div>
-                    </div>
+                    <BookItem />
+                    <BookItem />
+                    <BookItem />
+                    <BookItem />
+                    <BookItem />
+                    <BookItem />
+                    <BookItem />
+                    <BookItem />
                   </div>
 
 

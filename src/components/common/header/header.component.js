@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, withRouter } from 'react-router-dom' 
 import Slide from '@material-ui/core/Slide'
 
-import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
@@ -18,7 +17,7 @@ import { Hidden } from '@material-ui/core';
 const SiteLogo = () => { 
   return (
     <Link to="/index" >   
-        <img src={process.env.PUBLIC_URL+"/assets/images/brand-logo/svg/brand-logo.svg"} />
+        <img src={process.env.PUBLIC_URL+"/assets/images/brand-logo/svg/brand-logo.svg"} alt={process.env.PUBLIC_URL+"/assets/images/brand-logo/svg/brand-logo.svg"} />
     </Link> 
   )
 }
@@ -35,104 +34,64 @@ const MobileListHrBreak = () => {
   )
 }
 
+const MobileMenuListItem = (props) => {
+  return(
+    <li class="burgerMenuItems">  
+      
+        <ListItem button style={{textAlign:'right', padding:0}}>
+          <ListItemText>
+            <Link to={props.pageUrl}>{props.pageTitle} 
+              <i class={props.faIcon}></i>  
+            </Link>  
+          </ListItemText>
+        </ListItem> 
+      
+      <MobileListHrBreak />  
+    </li>   
+  )
+}
+
 const MobileHeader = () => {
   return (
-    <> 
-      <div id="nav-small">
+    <>  
+      <div id="nav-small"> 
           <input type="checkbox" id="burgerMenuPublic"></input>
           <label for="burgerMenuPublic" class="menu-bt">
             <i class="fas fa-bars"></i> 
-          </label> 
+          </label>  
 
           <ul id="myUl" style={{overflow:'scroll'}}> 
-            <li class="burgerMenuItems">  
-              <a> 
-                <ListItem button style={{textAlign:'right', padding:0}}>
-                  <ListItemText>
-                    <Link to="About">About Us <i class="fa fa-info-circle mx-1"></i></Link> 
-                  </ListItemText> 
-                </ListItem> 
-              </a>  
-              <MobileListHrBreak />
-            </li>
 
             <li class="burgerMenuItems">  
-              <a> 
-                <ListItem button style={{textAlign:'right', padding:0}}>
-                  <ListItemText>
-                    <Link to="Services">Services <i class="fa fa-gift mx-1"></i></Link> 
-                  </ListItemText>
-                </ListItem> 
-              </a>  
-              <MobileListHrBreak/>
-            </li>
-            
-            <li class="burgerMenuItems">  
-              <a> 
-                <ListItem button style={{textAlign:'right', padding:0}}>
-                  <ListItemText>
-                    <Link to="Channel">Channel <i class="fa fa-youtube-play mx-1"></i></Link>
-                  </ListItemText>
-                </ListItem> 
-              </a>  
-              <MobileListHrBreak/>
-            </li>
-            
-            <li class="burgerMenuItems">  
-              <a> 
-                <ListItem button style={{textAlign:'right', padding:0}}>
-                  <ListItemText>
-                    <Link to="Testimonial">Testimonial <i class="fas fa-users mx-1"></i></Link>
-                  </ListItemText>
-                </ListItem> 
-              </a>  
-              <MobileListHrBreak/>
-            </li>
-
-            <li class="burgerMenuItems">  
-              <a> 
-                <ListItem button style={{textAlign:'right', padding:0}}>
-                  <ListItemText>
-                    <Link to="Leveltest">Level Test <i class="fa fa-check-circle mx-1"></i></Link>
-                  </ListItemText>
-                </ListItem> 
-              </a>  
-              <MobileListHrBreak/>
-            </li> 
-            
-            <li class="burgerMenuItems">  
-              <a> 
-                <ListItem button style={{textAlign:'right', padding:0}}>
-                  <ListItemText>
-                    <Link to="Bookstore">Book Store <i class="fas fa-book mx-1"></i></Link>
-                  </ListItemText>
-                </ListItem> 
-              </a>  
-              <MobileListHrBreak/>
-            </li> 
-            
-            <li class="burgerMenuItems">  
-              <a> 
-                <ListItem button style={{textAlign:'right', padding:0}}>
-                  <ListItemText>
-                    <Link to="Contact">Contact <i class="fas fa-envelope mx-1"></i></Link>
-                  </ListItemText>
-                </ListItem> 
-              </a>  
-              <MobileListHrBreak/>
-            </li>   
-
-            <li class="burgerMenuItems">  
-              <a> 
+              
                 <ListItem button style={{textAlign:'right', padding:0}}>
                   <ListItemText>
                        <Hidden> </Hidden>
                    </ListItemText>
                 </ListItem> 
-              </a>  
+              
+              <MobileListHrBreak />  
             </li>   
-            
-            <li><a class="m-balanced" href="#">LOGIN | SIGNUP</a></li>
+
+            <MobileMenuListItem pageUrl="About" pageTitle="About Us" faIcon="fa fa-info-circle mx-2" />
+            <MobileMenuListItem pageUrl="Services" pageTitle="Services" faIcon="fa fa-gift mx-2" />
+            <MobileMenuListItem pageUrl="Channel" pageTitle="Channel" faIcon="fa fa-youtube-play mx-2" />
+            <MobileMenuListItem pageUrl="Testimonial" pageTitle="Testimonial" faIcon="fas fa-users mx-2" />
+            <MobileMenuListItem pageUrl="Leveltest" pageTitle="Level Test" faIcon="fa fa-check-circle mx-2" />
+            <MobileMenuListItem pageUrl="Bookstore" pageTitle="About Us" faIcon="fas fa-book mx-2" />  
+             
+            <li class="burgerMenuItems" style={{paddingBottom:60}}>  
+               
+                <ListItem button style={{textAlign:'right', padding:0}}>
+                  <ListItemText>
+                    <Link to="Contact">Contact <i class="fas fa-envelope mx-1"></i></Link>
+                  </ListItemText>
+                </ListItem> 
+              
+              <MobileListHrBreak/>
+            </li>   
+ 
+            {/* <li><a class="m-balanced" href="#">LOGIN | SIGNUP</a></li> */}
           </ul>
       </div> 
     </> 
@@ -173,11 +132,11 @@ const TopNavSection = () => {
           <figure class="d-playstore-img has-background-white">
             <i class="fab fa-google-play mr-1 has-text-primary"></i>
           </figure>
-          <a class="button is-primary" href="#" onClick={handleClickOpen}>
+          <button class="button is-primary" onClick={handleClickOpen}>
             <span>
                 <i class="fa fa-download mr-1"></i>Download App
             </span>
-          </a> 		
+          </button> 		
        </div> 
                 
       <div class="d-log-in-out">
@@ -185,9 +144,16 @@ const TopNavSection = () => {
           <figure class="d-login-img">
             <Link to="#"><i class="fas fa-sign-in-alt mr-1"></i></Link>
           </figure>
-          <a href="#"><span>
-              LOGIN | SIGNUP
-            </span></a>
+
+          <Link to="/"> 
+            <span>
+              LOGIN | SIGNUP 
+            </span>
+          </Link> 
+
+          {/* <a href="">
+            
+          </a> */} 
         </div>
       </div>   
       <> 
@@ -208,7 +174,7 @@ const TopNavSection = () => {
               </DialogContentText>
             </DialogContent>
             <DialogActions> 
-                <a class="button is-link" onClick={handleClose}  > Close </a> 
+                <button class="button is-link" onClick={handleClose}  > Close </button>  
             </DialogActions>
           </Dialog> 
       </>

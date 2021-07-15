@@ -33,7 +33,7 @@ const TestimonialComponent = function(props) {
                         <div class="columns">
                             <div class="column is-6">
 
-                                <div class="has-background-primary">
+                                <div class="has-background-primary" style={{opacity:0.92}}>
                                     <p class="is-invisible pb-3"> 
                                         just a box filled with color <br/> 
                                         just a box filled with color <br/> 
