@@ -12,19 +12,19 @@ const HomeComponent = function(props) {
                         <div class="details de-v-h-center">
                         <h1>Make no bad choices, choose us.</h1>
                         <p class="subtitle mt-2">
-                            Be a family of Bishobhasha. We care on shaping your goal. <br />  We have the best team for your service.
+                            Be a family of Bishobhasha. We care on shaping your goal. <br />  Opportunities don't happen, you create them.
                         </p>
 
-                        <div class="de-bottom">
+                        {/* <div class="de-bottom">
                             <figure>
                             <a href="#"><i class="fas fa-sign-in-alt mr-1"></i></a>
                             <a href="#">Login | signup</a>
                             </figure>
-                        </div>
+                        </div> */}
 
-                        <p class="subtitle mt-2">
+                        {/* <p class="subtitle mt-2">
                             Opportunities don't happen, you create them.
-                        </p>
+                        </p> */}
                         </div>
                     </div>
                     </div>

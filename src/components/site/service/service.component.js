@@ -12,12 +12,12 @@ const ServiceComponent = function(props) {
     
     return (
         <> 
-           <section class="hero is-light" id="services">
+           <section class="hero is-light pt-6" id="services">
 
                 <div class="container has-text-centered">
                     
                     <article class="d-article">
-                        <h2 class="title mt-2 mb-3 has-text-primary">Our Services</h2>
+                        <h2 class="title mb-5 has-text-primary">Our Services</h2>
                     </article>
                 </div> 
 

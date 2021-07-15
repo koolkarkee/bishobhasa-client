@@ -13,13 +13,15 @@ const ContactComponent = function(props) {
             <div class="container my-2">
               
               <h2 class="title has-text-centered has-text-primary">Contact Us</h2>
-              <p class="subtitle has-text-centered has-text-dark mt-5">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, molestias! 
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, molestias! 
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, molestias! 
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, molestias! 
+              
+              <p class="has-text-justified is-size-6 mx-5 mb-6">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, 
+                molestias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, 
+                molestias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, 
+                molestias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, 
+                molestias!
               </p>
-
+              
               <div class="container is-dark"> 
                
                 <div class="columns is-variable is-8">
