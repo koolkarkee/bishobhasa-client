@@ -187,6 +187,11 @@ input[type=checkbox] {
   display: none;
 }
 
+@media only screen and (max-width: 1215px) {
+  .de-box {
+    padding: 50px !important;
+  }
+}
 @media only screen and (max-width: 1023px) {
   #nav-small {
     display: block;
@@ -489,12 +494,12 @@ input[type=checkbox] {
   }
 }
 .de-container {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 30px;
+  margin: 0 auto;
 }
 
 .de-container .de-card {
@@ -503,7 +508,7 @@ input[type=checkbox] {
   min-width: 300px;
   height: 215px;
   background: #fff;
-  margin: 30px 10px;
+  margin: 30px 16px 80px 16px;
   padding: 20px 15px;
   display: flex;
   flex-direction: column;
@@ -512,7 +517,7 @@ input[type=checkbox] {
 }
 
 .de-container .de-card:hover {
-  height: 420px;
+  height: 480px;
 }
 
 .de-container .de-card .imgBx {
@@ -565,7 +570,7 @@ input[type=checkbox] {
 
 @media only screen and (max-width: 1215px) {
   .de-box {
-    width: 312px;
+    width: 299px;
     height: 395px;
   }
 }
