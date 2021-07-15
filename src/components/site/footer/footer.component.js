@@ -1,73 +1,100 @@
 import React from 'react' 
-import { withRouter } from 'react-router-dom' 
+import { withRouter, Link } from 'react-router-dom' 
  
 // import './../../css/bstyle.css'
+
+const BishoBhasaConsultancySection = () => {
+  return(
+    <>
+      <h2 class="title is-4 has-text-dark">  
+          Bisho Bhasha School 
+          & Consultancy 
+      </h2>
+
+       <p class="subtitle is-6 is-unselectable">        
+          <button class="button is-text is-primary"><Link to="/"> Bishobhasa Team </Link></button><br />        
+          <button class="button is-text is-primary"><Link to="/"> FAQ </Link></button><br />         
+          <button class="button is-text is-primary"><Link to="/Contact"> Contact Us </Link></button><br />       
+      </p> 
+    </>
+  )
+}
+
+const LearningCenterSection = () => {
+  return(
+    <>
+      <h2 class="title is-4">
+        <strong class="has-text-dark">Learning Center</strong>
+      </h2>
+      <p class="subtitle is-6 is-unselectable"> 
+        <button class="button is-text is-primary"><Link to="/"> Test Your Korean </Link> </button><br /> 
+        
+        <button class="button is-text is-primary"><Link to="/"> My Learning Center </Link></button><br />  
+      
+        <button class="button is-text is-primary"><Link to="/"> Courses</Link></button><br />  
+      
+        <button class="button is-text is-primary"><Link to="/"> Bookstore </Link></button><br />  
+      
+        <button class="button is-text is-primary"><Link to="/"> My Account </Link></button><br />  
+      
+        <button class="button is-text is-primary"><Link to="/"> Book Audio </Link></button><br />  
+        
+        <button class="button is-text is-primary"><Link to="/"> Download App </Link></button><br />   
+              
+      </p>
+    </>
+  )
+}
+
+const SubscribeToNewsletterSection = () => {
+  return (
+    <>
+      <h2 class="title is-4 has-text-dark">
+        Subscribe to Bishobhasa newsletter   
+      </h2>  
+      <p class="subtitle is-6 is-unselectable">
+        <br/> 
+        Receive our latest updates about upcoming
+        sale, courses and books before anyone else﻿! 
+      </p>                  
+    
+      <article class="field has-addons is-expanded">
+        <div class="control has-icons-left" > 
+          <input class="input is-rounded mr-6 is-unselectable" type="email" placeholder="Your email address" />
+          <span class="icon is-medium is-left">
+            <i class="fas fa-envelope has-text-link"></i>
+          </span>
+        </div>
+        <div class="control">
+          <button class="button is-link is-rounded is-fullwidth" >
+            Subscribe
+          </button>
+        </div>
+      </article>
+    </>
+  )
+}
 
 const FooterComponent = function(props) { 
     
     return (
         <> 
-           <section class="hero notification is-primary">
+           <section class="hero notification is-primary" style={{opacity:0.92}}>
             <div class="container my-2">
               <footer class="columns">
 
-                <div class="column is-3">
-                  <h2 class="title is-4 has-text-dark">  
-                      Bisho Bhasha School 
-                      & Consultancy 
-                  </h2>
-
-                  <p class="subtitle is-6 is-unselectable">
-                    <a class="button is-text is-primary">Bisho Bhasha Team</a><br /> 
-                    <a class="button is-text is-primary">FAQ</a><br />
-                    <a class="button is-text is-primary">Contact Us</a><br /> 
-                    <a class="button is-text is-primary">How to Use the website</a><br />
-                    <a class="button is-text is-primary">Join our chatroom (Discord)</a><br />
-                    <a class="button is-text is-primary">Group Membership discount</a><br />                    
-                  </p> 
+                <div class="column is-3"> 
+                  <BishoBhasaConsultancySection/>
                 </div>
 
-                <div class="column is-3">
-                  <h2 class="title is-4">
-                    <strong class="has-text-dark">Learning Center</strong>
-                  </h2>
-                  <p class="subtitle is-6 is-unselectable"> 
-                    <a class="button is-text is-primary">Test Your Korean</a><br />  
-                    <a class="button is-text is-primary">My Learning Center</a><br />  
-                    <a class="button is-text is-primary">Courses</a><br />  
-                    <a class="button is-text is-primary">Bookstore</a><br />  
-                    <a class="button is-text is-primary">My Account</a><br />  
-                    <a class="button is-text is-primary">Book Audio</a><br />  
-                    <a class="button is-text is-primary">DownloadApp</a><br />  
-                  </p>
-                </div>
-
+                <div class="column is-3"> 
+                  <LearningCenterSection />
+                </div> 
                 
                 <div class="column is-6">
-                  <h2 class="title is-4 has-text-dark">
-                    Subscribe to Bishobhasa newsletter   
-                  </h2>  
-                  <p class="subtitle is-6 is-unselectable">
-                    <br/> 
-                    Receive our latest updates about upcoming
-                    sale, courses and books before anyone else﻿! 
-                  </p>                  
-               
-                  <article class="field has-addons is-expanded">
-                    <div class="control has-icons-left" > 
-                      <input class="input is-rounded mr-6 is-unselectable" type="email" placeholder="Your email address" />
-                      <span class="icon is-medium is-left">
-                        <i class="fas fa-envelope has-text-link"></i>
-                      </span>
-                    </div>
-                    <div class="control">
-                      <a class="button is-link is-rounded is-fullwidth" >
-                        Subscribe
-                      </a>
-                    </div>
-                  </article>
-
+                  <SubscribeToNewsletterSection />
                 </div>
+
               </footer>
             </div>
           </section> 

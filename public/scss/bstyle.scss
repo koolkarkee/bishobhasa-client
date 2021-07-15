@@ -5,7 +5,7 @@
 
 // 2. Set your own initial variables
 // Update blue 
-$brandgreen: #149179;
+$brandgreen: #149179; 
 $pink : #77042a;
 $gray : #e5e5e5; 
 $black : #000000;
@@ -13,13 +13,14 @@ $white : #fff;
 $secondary : #127dc0;
 $dark : #000;
 
+
 // 3. Set the derived variables
 // Use the new blue as the primary color 
 
 $primary: $brandgreen;
 $danger: $pink; 
 $info: $gray;
-$success: $black;
+$success: $secondary; 
 $clean: $white; 
 
 
@@ -254,10 +255,10 @@ input[type="checkbox"]{
 		top: 102px;
 		left: -100%;
 		background: rgba($brandgreen, .96);
-		height: 100vh;
+		height: 100%;
 		width: 100%;
 		border-top: 10px solid #FFF;
-		text-align: right;
+		text-align: left; 
 		 
 		display: block;
 		transition: all 0.3s ease;
@@ -276,7 +277,8 @@ input[type="checkbox"]{
 		width: 100%;
 		margin: 0rem 0;
 	  }
-	  #nav-small ul li a{
+
+	  #nav-small ul li button{
 		// padding: 2px 0;
 		width: 100%;
 		margin-left: -100%;

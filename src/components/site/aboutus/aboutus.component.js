@@ -1,5 +1,5 @@
 import React from 'react' 
-import { withRouter } from 'react-router-dom' 
+import { withRouter, Link } from 'react-router-dom' 
  
 // import './../../css/bstyle.css'
 
@@ -13,6 +13,37 @@ import { withRouter } from 'react-router-dom'
 const MemberImage = () => { 
   return (
       <img src={process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"} /> 
+  )
+}
+
+const MemberProfile = () => {
+  return (
+    <>
+       <article class="column is-4 mb-6">
+            <div class="de-box">
+              <div class="de-imgBx">
+                <MemberImage /> 
+              </div>
+              <ul class="social-icon"> 
+                  <li>
+                     <Link to="https://www.facebook.com/degox.solutions"> <i class="fab fa-facebook-f"></i></Link> 
+                  </li>
+                  <li>
+                     <Link to="https://www.facebook.com/degox.solutions"> <i class="fab fa-linkedin-in"></i></Link> 
+                  </li>
+                  <li>
+                     <Link to="https://www.facebook.com/degox.solutions"> <i class="fab fa-instagram"></i></Link> 
+                  </li> 
+              </ul>
+              <div class="de-details">
+                  <h2>
+                    Mr. Sherpa Wangdi <br />
+                    <span>Vice-Chairman</span> 
+                  </h2>  
+              </div>
+            </div>
+       </article>
+    </>
   )
 }
 
@@ -57,98 +88,11 @@ const AboutUsComponent = function(props) {
           <section class="hero is-light">
             <div class="container px-5">
               <div class="columns is-multiline is-variable is-3">
-                    
-                  <article class="column is-4 mb-6">
-                    <div class="de-box">
-                      <div class="de-imgBx">
-                        <MemberImage /> 
-                      </div>
-                      <ul class="social-icon"> 
-                          <li><a href="https://www.facebook.com/degox.solutions"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                      </ul>
-                      <div class="de-details">
-                          <h2>
-                            Mr. Sherpa Wangdi <br />
-                            <span>Vice-Chairman</span> 
-                          </h2>  
-                      </div>
-                    </div>
-                  </article>
-                  <article class="column is-4 mb-6">
-                    <div class="de-box">
-                      <div class="de-imgBx">
-                        <MemberImage /> 
-                      </div>
-                      <ul class="social-icon"> 
-                          <li><a href="https://www.facebook.com/degox.solutions"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                      </ul>
-                      <div class="de-details">
-                          <h2>
-                            Mr. Lama Kumar Krishna <br />
-                            <span>Chairman</span> 
-                          </h2>  
-                      </div>
-                    </div>
-                  </article>
-                  <article class="column is-4 mb-6">
-                    <div class="de-box">
-                      <div class="de-imgBx">
-                          <MemberImage /> 
-                      </div>
-                      <ul class="social-icon"> 
-                          <li><a href="https://www.facebook.com/degox.solutions"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                      </ul>
-                      <div class="de-details">
-                          <h2>
-                            Ms. Hyolmo Phurdiki <br />
-                            <span>Admin Head</span> 
-                          </h2>  
-                      </div>
-                    </div>
-                  </article>
-                  <article class="column is-4 mb-6">
-                    <div class="de-box">
-                      <div class="de-imgBx">
-                        <MemberImage /> 
-                      </div>
-                      <ul class="social-icon"> 
-                          <li><a href="https://www.facebook.com/degox.solutions"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                      </ul>
-                      <div class="de-details">
-                          <h2>
-                            Mr. Bibek Karki <br />
-                            <span>Senior Software Engineer</span> 
-                          </h2>  
-                      </div>
-                    </div>
-                  </article>
-                  <article class="column is-4 mb-6">
-                <div class="de-box">
-                  <div class="de-imgBx">
-                    <MemberImage /> 
-                  </div>
-                  <ul class="social-icon"> 
-                      <li><a href="https://www.facebook.com/degox.solutions"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                  </ul>
-                  <div class="de-details">
-                      <h2>
-                        Mr. Dharma Raj Lama <br />
-                        <span>Senior Graphic Designer</span> 
-                      </h2>  
-                  </div>
-                </div>
-              </article>
-  
+                     <MemberProfile />
+                     <MemberProfile />
+                     <MemberProfile />
+                     <MemberProfile />
+                     <MemberProfile />
               </div>
             </div>
           </section>
