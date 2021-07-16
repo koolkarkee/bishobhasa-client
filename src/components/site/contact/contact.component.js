@@ -49,7 +49,7 @@ const ContactComponent = function(props) {
                     </div> 
 
                     
-                    <p class="subtitle is-size-1">
+                    <div class="subtitle is-size-1">
                       <div class="columns is-gapless is-mobile">
                         <div class="column is-1">
                           <span class="mt-1 has-text-right is-size-4">
@@ -61,10 +61,10 @@ const ContactComponent = function(props) {
                           <hr style={{width:250}} />
                         </div>
                       </div> 
-                    </p> 
+                    </div>  
 
                     
-                    <p class="subtitle is-size-1">
+                    <div class="subtitle is-size-1">
                       <div class="columns is-gapless is-mobile">
                         <div class="column is-1">
                           <span class="mt-1 has-text-right is-size-4">
@@ -76,7 +76,7 @@ const ContactComponent = function(props) {
                           <hr style={{width:250}} />
                         </div>
                       </div> 
-                    </p> 
+                    </div> 
   
                   </div>
 

@@ -8,6 +8,7 @@ import HeaderComponent from '../components/common/header/header.component'
 import HomeComponent from '../components/site/home/home.componenet'
 import ServiceComponent from '../components/site/service/service.component'
 import AboutUsComponent from '../components/site/aboutus/aboutus.component'
+import AboutTeamComponent from '../components/site/aboutus/team.component'
 import TestimonialComponent from '../components/site/testimonial/testimonial.component'
 import BookStoreComponent from '../components/site/bookstore/bookstore.component'
 
@@ -124,10 +125,6 @@ const NotFoundRoute = () => (
         render = {() => (
             <>  
             {    
-                // !(localStorage.getItem('token'))
-                // ? <PublicRoute component={PageNotFoundComponent}></PublicRoute>   
-                // : <ProtectedRoute component={PageNotFoundComponent}></ProtectedRoute> 
- 
                 !(localStorage.getItem('token')) 
                 ? <PublicRoute component={PageNotFoundComponent}></PublicRoute>   
                 : <ProtectedRoute component={PageNotFoundComponent}></ProtectedRoute> 
@@ -145,12 +142,7 @@ export default function AppRouting() {
             <>
             <HeaderComponent />
             
-            <Switch> 
-                {/* <PublicRoute path="/home" exact component={HomeComponent}></PublicRoute> 
-                <PublicRoute path="/about" component={AboutUsComponent}></PublicRoute>
-                <PublicRoute path="/contact" component={ContactComponent}></PublicRoute>   */} 
-
-                
+            <Switch>  
                 <PublicRoute path="/" exact component={EntirePublicPageComponent}></PublicRoute>
                 <PublicRoute path="/Home" exact component={EntirePublicPageComponent}></PublicRoute>
                 <PublicRoute path="/Index" exact component={EntirePublicPageComponent}></PublicRoute>
@@ -158,6 +150,7 @@ export default function AppRouting() {
 
                 <PublicRoute path="/Services" exact component={ServiceComponent}></PublicRoute>
                 <PublicRoute path="/About" exact component={AboutUsComponent}></PublicRoute>
+                <PublicRoute path="/Team" exact component={AboutTeamComponent}></PublicRoute>
                 <PublicRoute path="/Testimonial" exact component={TestimonialComponent}></PublicRoute>
                 <PublicRoute path="/BookStore" exact component={BookStoreComponent}></PublicRoute>
                 <PublicRoute path="/Contact" exact component={ContactComponent}></PublicRoute>

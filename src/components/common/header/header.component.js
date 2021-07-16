@@ -56,7 +56,7 @@ const MobileHeader = () => {
     <>  
       <div id="nav-small"> 
           <input type="checkbox" id="burgerMenuPublic"></input>
-          <label for="burgerMenuPublic" class="menu-bt">
+          <label htmlFor="burgerMenuPublic" class="menu-bt">
             <i class="fas fa-bars"></i> 
           </label>  
 
@@ -171,7 +171,7 @@ const TopNavSection = () => {
             </DialogTitle>
             <DialogContent>
               <DialogContentText id="alert-dialog-slide-description">
-                <p class="has-text-dark">Our Mobile Apps are coming soon. Stay tuned.</p>
+                <span class="has-text-dark">Our Mobile Apps are coming soon. Stay tuned.</span>
               </DialogContentText>
             </DialogContent>
             <DialogActions> 

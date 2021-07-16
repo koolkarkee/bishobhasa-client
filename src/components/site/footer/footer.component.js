@@ -12,7 +12,7 @@ const BishoBhasaConsultancySection = () => {
       </h2>
 
        <p class="subtitle is-6 is-unselectable">        
-          <button class="button is-text is-primary"><Link to="/"> Bishobhasa Team </Link></button><br />        
+          <button class="button is-text is-primary"><Link to="/Team"> Bishobhasa Team </Link></button><br />        
           <button class="button is-text is-primary"><Link to="/"> FAQ </Link></button><br />         
           <button class="button is-text is-primary"><Link to="/Contact"> Contact Us </Link></button><br />       
       </p> 
