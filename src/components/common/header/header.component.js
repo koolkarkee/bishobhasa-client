@@ -38,7 +38,7 @@ const MobileMenuListItem = (props) => {
   return(
     <li class="burgerMenuItems">  
       
-        <ListItem button style={{textAlign:'right', padding:0}}>
+        <ListItem button style={{textAlign:'right', paddingTop:5, paddingBottom:5}}>
           <ListItemText>
             <Link to={props.pageUrl}>{props.pageTitle} 
               <i class={props.faIcon}></i>  
@@ -78,17 +78,18 @@ const MobileHeader = () => {
             <MobileMenuListItem pageUrl="Channel" pageTitle="Channel" faIcon="fa fa-youtube-play mx-2" />
             <MobileMenuListItem pageUrl="Testimonial" pageTitle="Testimonial" faIcon="fas fa-users mx-2" />
             <MobileMenuListItem pageUrl="Leveltest" pageTitle="Level Test" faIcon="fa fa-check-circle mx-2" />
-            <MobileMenuListItem pageUrl="Bookstore" pageTitle="About Us" faIcon="fas fa-book mx-2" />  
-             
+            <MobileMenuListItem pageUrl="Bookstore" pageTitle="Book Store" faIcon="fas fa-book mx-2" />  
+            <MobileMenuListItem pageUrl="Contact" pageTitle="Contact" faIcon="fas fa-envelope mx-2" />  
+
             <li class="burgerMenuItems" style={{paddingBottom:60}}>  
                
                 <ListItem button style={{textAlign:'right', padding:0}}>
                   <ListItemText>
-                    <Link to="Contact">Contact <i class="fas fa-envelope mx-1"></i></Link>
+                     <Hidden> </Hidden>
                   </ListItemText>
                 </ListItem> 
               
-              <MobileListHrBreak/>
+              {/* <MobileListHrBreak/> */}
             </li>   
  
             {/* <li><a class="m-balanced" href="#">LOGIN | SIGNUP</a></li> */}

@@ -60,14 +60,14 @@ const SubscribeToNewsletterSection = () => {
     
       <article class="field has-addons is-expanded">
         <div class="control has-icons-left" > 
-          <input class="input is-rounded mr-6 is-unselectable" type="email" placeholder="Your email address" />
+          <input class="input is-rounded mr-6 is-unselectable has-text-dark" type="email" placeholder="Your email address" />
           <span class="icon is-medium is-left">
-            <i class="fas fa-envelope has-text-link"></i>
+            <i class="fas fa-envelope has-text-primary"></i>
           </span>
         </div>
         <div class="control">
           <button class="button is-link is-rounded is-fullwidth" >
-            Subscribe
+             Subscribe
           </button>
         </div>
       </article>
