@@ -82,7 +82,7 @@ const MobileHeader = () => {
             <MobileMenuListItem pageUrl="Contact" pageTitle="Contact Us" faIcon="fa fa-building-o ml-4" />  
             <MobileMenuListItem pageUrl="/index" pageTitle="Back To Home" faIcon="fa fa-home ml-4" />  
 
-            <li class="burgerMenuItems" style={{paddingBottom:60, paddingTop:50}}>  
+            <li class="burgerMenuItems" style={{paddingBottom:60, marginTop:50}}>  
                
                 <ListItem button style={{textAlign:'right', padding:0}}>
                   <ListItemText>
