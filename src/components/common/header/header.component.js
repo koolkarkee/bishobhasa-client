@@ -73,13 +73,14 @@ const MobileHeader = () => {
               <MobileListHrBreak />  
             </li>   
 
-            <MobileMenuListItem pageUrl="About" pageTitle="About Us" faIcon="fa fa-info-circle mx-2" />
-            <MobileMenuListItem pageUrl="Services" pageTitle="Services" faIcon="fa fa-wrench mx-2" />
-            <MobileMenuListItem pageUrl="Channel" pageTitle="Channel" faIcon="fa fa-youtube-play mx-2" />
-            <MobileMenuListItem pageUrl="Testimonial" pageTitle="Testimonial" faIcon="fa fa-comments mx-2" />
-            <MobileMenuListItem pageUrl="Leveltest" pageTitle="Level Test" faIcon="fa fa-check-circle mx-2" />
-            <MobileMenuListItem pageUrl="Bookstore" pageTitle="Book Store" faIcon="fas fa-book mx-2" />  
-            <MobileMenuListItem pageUrl="Contact" pageTitle="Contact Us" faIcon="fa fa-building-o mx-2" />  
+            <MobileMenuListItem pageUrl="Services" pageTitle="Services" faIcon="fa fa-wrench ml-4" />
+            <MobileMenuListItem pageUrl="About" pageTitle="About Us" faIcon="fa fa-info-circle ml-4" />
+            <MobileMenuListItem pageUrl="Channel" pageTitle="Channel" faIcon="fa fa-youtube-play ml-4" />
+            <MobileMenuListItem pageUrl="Testimonial" pageTitle="Testimonial" faIcon="fa fa-comments ml-4" />
+            <MobileMenuListItem pageUrl="Leveltest" pageTitle="Level Test" faIcon="fa fa-check-circle ml-4" />
+            <MobileMenuListItem pageUrl="Bookstore" pageTitle="Book Store" faIcon="fas fa-book ml-4" />  
+            <MobileMenuListItem pageUrl="Contact" pageTitle="Contact Us" faIcon="fa fa-building-o ml-4" />  
+            <MobileMenuListItem pageUrl="/index" pageTitle="Back To Home" faIcon="fa fa-home ml-4" />  
 
             <li class="burgerMenuItems" style={{paddingBottom:60, paddingTop:50}}>  
                
