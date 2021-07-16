@@ -74,22 +74,21 @@ const MobileHeader = () => {
             </li>   
 
             <MobileMenuListItem pageUrl="About" pageTitle="About Us" faIcon="fa fa-info-circle mx-2" />
-            <MobileMenuListItem pageUrl="Services" pageTitle="Services" faIcon="fa fa-gift mx-2" />
+            <MobileMenuListItem pageUrl="Services" pageTitle="Services" faIcon="fa fa-wrench mx-2" />
             <MobileMenuListItem pageUrl="Channel" pageTitle="Channel" faIcon="fa fa-youtube-play mx-2" />
-            <MobileMenuListItem pageUrl="Testimonial" pageTitle="Testimonial" faIcon="fas fa-users mx-2" />
+            <MobileMenuListItem pageUrl="Testimonial" pageTitle="Testimonial" faIcon="fa fa-comments mx-2" />
             <MobileMenuListItem pageUrl="Leveltest" pageTitle="Level Test" faIcon="fa fa-check-circle mx-2" />
             <MobileMenuListItem pageUrl="Bookstore" pageTitle="Book Store" faIcon="fas fa-book mx-2" />  
-            <MobileMenuListItem pageUrl="Contact" pageTitle="Contact" faIcon="fas fa-envelope mx-2" />  
+            <MobileMenuListItem pageUrl="Contact" pageTitle="Contact Us" faIcon="fa fa-building-o mx-2" />  
 
-            <li class="burgerMenuItems" style={{paddingBottom:60}}>  
+            <li class="burgerMenuItems" style={{paddingBottom:60, paddingTop:50}}>  
                
                 <ListItem button style={{textAlign:'right', padding:0}}>
                   <ListItemText>
                      <Hidden> </Hidden>
                   </ListItemText>
-                </ListItem> 
-              
-              {/* <MobileListHrBreak/> */}
+                </ListItem>  
+             
             </li>   
  
             {/* <li><a class="m-balanced" href="#">LOGIN | SIGNUP</a></li> */}
