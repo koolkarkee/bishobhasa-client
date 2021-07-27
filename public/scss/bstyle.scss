@@ -922,6 +922,38 @@ input[type="checkbox"]{
 //
 
 
+// about us new css start here 
+.column-left, .column-right{
+	margin-bottom: 4.5rem !important;
+}
+
+.timeline{
+	position: relative;
+	padding: 0;
+}
+.timeline::before{
+	position: absolute;
+	left: 50%;
+	top: 12px;
+	bottom: 20px;
+	background-color: #e9ecef;
+	width: 4px;
+	content: "";
+}
+
+
+// css for copywrite section
+.copywrite {
+    margin-top: -8px;
+}
+.bt-style{
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+
+
+
 // 6. Import the rest of Bulma
 @import "../../node_modules/bulma/bulma.sass"
 
