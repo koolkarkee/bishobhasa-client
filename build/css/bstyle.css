@@ -705,22 +705,6 @@ input[type="checkbox"] {
 * {
   scroll-behavior: smooth; }
 
-.column-left, .column-right {
-  margin-bottom: 4.5rem !important; }
-
-.timeline {
-  position: relative;
-  padding: 0; }
-
-.timeline::before {
-  position: absolute;
-  left: 50%;
-  top: 12px;
-  bottom: 20px;
-  background-color: #e9ecef;
-  width: 4px;
-  content: ""; }
-
 .copywrite {
   margin-top: -8px; }
 
@@ -728,6 +712,12 @@ input[type="checkbox"] {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important; }
+
+.error-img {
+  max-width: 300px;
+  max-height: 337.533px;
+  margin-top: 20px;
+  margin-bottom: 150px; }
 
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
