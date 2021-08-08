@@ -627,7 +627,7 @@ input[type="checkbox"]{
 
 // our services css end
 
-// about us css start here
+
 .de-box{
 	position: relative;
 	top: 2%;
@@ -921,27 +921,7 @@ input[type="checkbox"]{
 } 
 //
 
-
-// about us new css start here 
-.column-left, .column-right{
-	margin-bottom: 4.5rem !important;
-}
-
-.timeline{
-	position: relative;
-	padding: 0;
-}
-.timeline::before{
-	position: absolute;
-	left: 50%;
-	top: 12px;
-	bottom: 20px;
-	background-color: #e9ecef;
-	width: 4px;
-	content: "";
-}
-
-
+ 
 // css for copywrite section
 .copywrite {
     margin-top: -8px;
@@ -953,6 +933,14 @@ input[type="checkbox"]{
 }
 
 
+//for error page 
+.error-img{
+	// margin: 0 auto;
+	max-width: 300px;
+	max-height: 337.533px;
+	margin-top: 20px;
+	margin-bottom: 150px;
+}  
 
 // 6. Import the rest of Bulma
 @import "../../node_modules/bulma/bulma.sass"
@@ -960,5 +948,3 @@ input[type="checkbox"]{
 
 
 // scss for registration page
-
-

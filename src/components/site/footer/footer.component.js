@@ -1,8 +1,6 @@
 import React from 'react' 
 import { withRouter, Link } from 'react-router-dom' 
  
-// import './../../css/bstyle.css'
-
 const BishoBhasaConsultancySection = () => {
   return(
     <>
@@ -98,9 +96,26 @@ const FooterComponent = function(props) {
               </footer>
             </div>
           </section> 
+
+          <section class="hero">
+            <div class="copywrite">
+                <div class="container">
+                  <div class="columns is-vcentered">
+                    <div class="column is-12">
+                      <p class="subtitle is-6 is-unselectable has-text-centered">
+                        <strong>
+                           Copyright &copy; Bishwo Bhasha School 2019 
+                        </strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
          
         </>  
     )
+
 }
 
 export default withRouter(FooterComponent)
