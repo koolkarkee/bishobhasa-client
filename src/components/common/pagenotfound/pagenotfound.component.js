@@ -1,18 +1,27 @@
 import React, { Component } from 'react'
 
+const NotFoundImage = () => { 
+  return (
+      <img class="error-img" src={process.env.PUBLIC_URL+"/assets/images/notfound/404-Not-Found-Error-Bishobhasa.png"} alt={process.env.PUBLIC_URL+"/assets/images/notfound/404-Not-Found-Error-Bishobhasa.png"} /> 
+  )
+}
+
 export default class PageNotFound extends Component {
     render() {
         return (
             <>
-            <div className="img-notfound">  
-                 <h2><p>page not found</p></h2>
-                 <img 
-                    src="https://i1.wp.com/saedx.com/blog/wp-content/uploads/2019/01/saedx-blog-featured-70.jpg?fit=1200%2C500&ssl=1"
-                    width = "400"
-                    height = "auto" 
-                    alt = "page not found"
-                 />
-            </div> 
+                <section class="hero is-info">
+                    <div class="container mt-5">
+                    <h1 class="title is-size-1 has-text-centered has-text-primary my-1">404 Not Found! Oops!</h1>
+                    <p class="has-text-centered is-size-4 mx-5">
+                        The requested URL was not found on this server.
+                    </p>
+                    </div>
+
+                    <div class="container">
+                        <NotFoundImage />
+                    </div>
+                </section> 
             </>
         )
     }
