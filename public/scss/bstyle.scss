@@ -307,9 +307,9 @@ input[type="checkbox"]{
 		height: 500px !important;  
 	}
 
-  }
+}
 
-  @media only screen and (max-width: 320px){
+@media only screen and (max-width: 320px){
 	.de-container .de-card {
 		right: 9%;
 		width: 290px;
@@ -319,20 +319,18 @@ input[type="checkbox"]{
 	.de-container .de-card .imgBx {
 		left: 1px;
 	}
-  }
-
-
-  @media only screen and (max-width: 411px){
+}
+ 
+@media only screen and (max-width: 411px){
 	.outer h1 {
 	  font-size: 24px !important;
 	}
 	.outer p{
 		font-size: 18px !important;
 	}
-  }
-
-
-  @media only screen and (max-width: 495px) { 
+}
+ 
+@media only screen and (max-width: 495px) { 
 
 	.de-v-h-center{
 		margin-top: -51px;
@@ -364,10 +362,9 @@ input[type="checkbox"]{
 	#services{
 		padding-top: 50px; 
 	} 
-  }
-
+}
  
-  @media only screen and (max-width: 567px) {
+@media only screen and (max-width: 567px) {
 	.d-brand-logo{
 		position: absolute;
 		top: 2px;
@@ -396,7 +393,7 @@ input[type="checkbox"]{
 		font-size: 30px;
 	}
 
-  }
+} 
  
 
 // all nav bar css end
@@ -960,11 +957,13 @@ input[type="checkbox"]{
 	width: 700px;
 	height: 160px;
 	transform: translateX(-50%);
+	overflow: hidden;
 } 
 
 .comingSoonBackground{
 	background-image: url(./../assets/images/comingsoon/comingsoon.png);  
 	height: 100vh;
+	overflow: hidden;
 }
 
 .comingSoon{ 
@@ -973,6 +972,21 @@ input[type="checkbox"]{
 	animation-duration: 3s;
     font-size: 40px; 
 	padding-bottom: 20px;
+}
+
+/* media query for coming soon background*/
+@media only screen and (max-width: 360px){ 
+	.comingSoonBackground{
+		height: 100vh;
+		overflow: hidden;
+	}
+    
+	.comingsoontext-background {  
+		width: 360px;
+		height: 160px;
+		transform: translateX(-50%);
+		overflow: hidden;
+	} 
 }
 
 @keyframes header-bbs {
