@@ -75,9 +75,9 @@ const MobileHeader = () => {
 
             <MobileMenuListItem pageUrl="Services" pageTitle="Services" faIcon="fa fa-wrench ml-4" />
             <MobileMenuListItem pageUrl="About" pageTitle="About Us" faIcon="fa fa-info-circle ml-4" />
-            <MobileMenuListItem pageUrl="Channel" pageTitle="Channel" faIcon="fa fa-youtube-play ml-4" />
+            <MobileMenuListItem pageUrl="ComingSoon" pageTitle="Channel" faIcon="fa fa-youtube-play ml-4" />
             <MobileMenuListItem pageUrl="Testimonial" pageTitle="Testimonial" faIcon="fa fa-comments ml-4" />
-            <MobileMenuListItem pageUrl="Leveltest" pageTitle="Level Test" faIcon="fa fa-check-circle ml-4" />
+            <MobileMenuListItem pageUrl="ComingSoon" pageTitle="Level Test" faIcon="fa fa-check-circle ml-4" />
             <MobileMenuListItem pageUrl="Bookstore" pageTitle="Book Store" faIcon="fas fa-book ml-4" />  
             <MobileMenuListItem pageUrl="Contact" pageTitle="Contact Us" faIcon="fa fa-building-o ml-4" />  
             <MobileMenuListItem pageUrl="/index" pageTitle="Back To Home" faIcon="fa fa-home ml-4" />  
@@ -107,9 +107,9 @@ const DesktopHeader = () => {
         <Link to="About" class="navbar-item">About Us</Link>
         <Link to="Services" class="navbar-item">Services</Link>
       
-        <Link to="Channel" class="navbar-item">Channel</Link>
+        <Link to="ComingSoon" class="navbar-item">Channel</Link>
         <Link to="Testimonial" class="navbar-item">Testimonial</Link>
-        <Link to="Leveltest" class="navbar-item">Level Test</Link>
+        <Link to="ComingSoon" class="navbar-item">Level Test</Link>
         <Link to="Bookstore" class="navbar-item">Bookstore</Link>  
       </div>
     </div>
