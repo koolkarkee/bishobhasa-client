@@ -1,5 +1,5 @@
 import { Divider } from '@material-ui/core'
-import React from 'react' 
+import React, { useEffect } from 'react' 
 import { withRouter } from 'react-router-dom' 
 
 const qas = [
@@ -109,7 +109,10 @@ const FaqRow = (props) => {
 }
  
 const FaqComponent = function(props) { 
-    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
         <> 
           <section class="hero notification is-light mb-0">

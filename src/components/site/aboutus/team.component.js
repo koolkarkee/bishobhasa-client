@@ -1,4 +1,4 @@
-import React from 'react' 
+import React, {useEffect} from 'react' 
 import { withRouter, Link } from 'react-router-dom' 
  
 // import './../../css/bstyle.css'
@@ -65,7 +65,10 @@ const MemberProfile = () => {
 // }
 
 const AboutTeamComponent = function(props) {  
-    
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
+
     return (
         <>  
             <section class="hero is-light" id="About-us">

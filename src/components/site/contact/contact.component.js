@@ -1,4 +1,4 @@
-import React from 'react' 
+import React, { useEffect } from 'react' 
 import { withRouter } from 'react-router-dom' 
  
 // import './../../css/bstyle.css'
@@ -6,6 +6,9 @@ import { withRouter } from 'react-router-dom'
 //import serviceImage from './../../images/our-services/svg/our-services.jpg'
 
 const ContactComponent = function(props) { 
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
     
     return (
         <> 
