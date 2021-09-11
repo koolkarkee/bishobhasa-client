@@ -14,6 +14,7 @@ import BookStoreComponent from '../components/site/bookstore/bookstore.component
 
 import ContactComponent from '../components/site/contact/contact.component'
 import FooterComponent from '../components/site/footer/footer.component'
+import FaqComponent from '../components/site/footer/faq.component';
 
 import PageNotFoundComponent from '../components/common/pagenotfound/pagenotfound.component'
 import ComingSoonComponent from '../components/common/comingsoon/comingsoon.component'
@@ -157,6 +158,7 @@ export default function AppRouting() {
                 <PublicRoute path="/Contact" exact component={ContactComponent}></PublicRoute>
                 <PublicRoute path="/Footer" exact component={FooterComponent}></PublicRoute>
                 <PublicRoute path="/ComingSoon" exact component={ComingSoonComponent}></PublicRoute>
+                <PublicRoute path="/faq" exact component={FaqComponent}></PublicRoute>
 
                 <ProtectedRoute path ="/dashboard" component={DashBoardComponent} />
                 <ProtectedRoute path ="/settings/template/industry-category" component={IndustryCategoryComponent} />
