@@ -7,38 +7,65 @@ import { withRouter, Link } from 'react-router-dom'
 // import krishnaImage from './../../images/about-us/krishna.jpg' 
 // import hyalmoImage from './../../images/about-us/hyolmo.jpg'
 // import bibekImage from './../../images/about-us/bibek.jpg'
-// import dharmaImage from './../../images/about-us/dharma.jpg'
+// import dharmaImage from './../../images/about-us/dharma.jpg'  
 
 
-const MemberImage = () => { 
-  return (
-      <img src={process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"} /> 
-  )
+const MemberImage = (props) => { 
+  if(props.order === "1"){
+    return (
+      <SherpaImage />
+    )
+  } 
+
+  if(props.order === "2"){
+    return (
+      <HyalmoImage />
+    )
+  } 
+
+  if(props.order === "3"){
+    return (
+      <KrishnaImage />
+    )
+  } 
+
+  if(props.order === "4"){
+    return (
+      <BibekImage />
+    )
+  } 
+
+  if(props.order === "5"){
+    return (
+      <DharmaImage />
+    )
+  } 
+
 }
 
-const MemberProfile = () => {
+const MemberProfile = (props) => {
   return (
     <>
        <article class="column is-4 mb-6">
             <div class="de-box">
-              <div class="de-imgBx">
-                <MemberImage /> 
+              <div class="de-imgBx"> 
+                <MemberImage order={props.order} />
               </div>
               <ul class="social-icon"> 
                   <li>
-                     <Link to={{ pathname: "https://www.facebook.com/degox.solutions" }} target="_blank"> <i class="fab fa-facebook-f"></i></Link> 
+                     <Link to={{ pathname: props.facebook }} target="_blank"> <i class="fab fa-facebook-f"></i></Link> 
                   </li>
                   <li>
-                     <Link to={{ pathname: "https://www.facebook.com/degox.solutions" }} target="_blank"> <i class="fab fa-linkedin-in"></i></Link> 
+                     <Link to={{ pathname: props.linkedin }} target="_blank"> <i class="fab fa-linkedin-in"></i></Link> 
                   </li>
                   <li>
-                     <Link to={{ pathname: "https://www.facebook.com/degox.solutions" }} target="_blank"> <i class="fab fa-instagram"></i></Link> 
+                     <Link to={{ pathname: props.instagram }} target="_blank"> <i class="fab fa-instagram"></i></Link> 
                   </li> 
               </ul>
               <div class="de-details">
                   <h2>
-                    Mr. Sherpa Wangdi <br />
-                    <span>Vice-Chairman</span> 
+                    {props.name } <br />
+                    <span>{props.position}</span> 
                   </h2>  
               </div>
             </div>
@@ -47,23 +74,37 @@ const MemberProfile = () => {
   )
 }
 
-// const sherpaImage = () => {
-//   return process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"
-// }
- 
-// const krishnaImage = () => {
-//   return process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"
-// }
-// const hyalmoImage = () => {
-//   return process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"
-// }
-// const bibekImage = () => {
-//   return process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"
-// }
-// const dharmaImage = () => {
-//   return process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"
-// }
 
+const SherpaImage = () => { 
+  return (
+      <img src={process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"} /> 
+  )
+}
+
+const HyalmoImage = () => {
+   return (
+      <img src={process.env.PUBLIC_URL+"/assets/images/about-us/hyolmo.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/about-us/hyolmo.jpg"} /> 
+  )
+}
+ 
+const KrishnaImage = () => {
+   return (
+      <img src={process.env.PUBLIC_URL+"/assets/images/about-us/krishna.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/about-us/krishna.jpg"} /> 
+  )
+} 
+
+const BibekImage = () => {
+  return (
+     <img src={process.env.PUBLIC_URL+"/assets/images/about-us/bibek.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/about-us/bibek.jpg"} /> 
+ )
+} 
+
+const DharmaImage = () => {
+  return (
+     <img src={process.env.PUBLIC_URL+"/assets/images/about-us/dharma.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/about-us/dharma.jpg"} /> 
+ )
+} 
+ 
 const AboutTeamComponent = function(props) {  
     useEffect(() => {
       window.scrollTo(0, 0)
@@ -86,12 +127,42 @@ const AboutTeamComponent = function(props) {
           
           <section class="hero is-light">
             <div class="container px-5">
-              <div class="columns is-multiline is-variable is-3">
-                     <MemberProfile />
-                     <MemberProfile />
-                     <MemberProfile />
-                     <MemberProfile />
-                     <MemberProfile />
+              <div class="columns is-multiline is-variable is-3"> 
+                     <MemberProfile  
+                              order = "1" 
+                              facebook="https://www.facebook.com/profile.php?id=100002431209867" 
+                              linkedin="#"
+                              instagram="#"
+                              name="Mr. Sherpa Wangdi" 
+                              position="Board Member" />
+                     <MemberProfile 
+                              order = "2"
+                              facebook="#" 
+                              linkedin="#"
+                              instagram="#"
+                              name="Ms. Hyolmo (Sherpa) Phurdiki" 
+                              position="Board Member" />
+                     <MemberProfile 
+                              order = "3"
+                              facebook="http://www.facebook.com/krhna.lama" 
+                              linkedin="#"
+                              instagram="#"
+                              name="Mr. Krishna Kumar Lama (Tamang)" 
+                              position="Founder/CEO" />
+                     <MemberProfile 
+                              order = "4"
+                              facebook="http://www.facebook.com/carcii.bib" 
+                              linkedin="http://www.linkedin.com/in/koolkarkee"
+                              instagram="https://www.instagram.com/carcii.bib/"
+                              name="Mr. Bibek Karki" 
+                              position="IT Support" />
+                     <MemberProfile   
+                              order = "5"
+                              facebook="http://www.facebook.com/dukebal" 
+                              linkedin="http://www.linkedin.com/in/dharma-raj-lama"
+                              instagram="https://www.instagram.com/dezinerdharma/"
+                              name="Mr. Dharma Raj Lama" 
+                              position="IT Support" /> 
               </div>
             </div>
           </section>
