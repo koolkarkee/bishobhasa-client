@@ -140,14 +140,14 @@ const AboutTeamComponent = function(props) {
                               facebook="#" 
                               linkedin="#"
                               instagram="#"
-                              name="Ms. Hyolmo (Sherpa) Phurdiki" 
+                              name="Ms. Hyolmo Phurdiki" 
                               position="Board Member" />
                      <MemberProfile 
                               order = "3"
                               facebook="http://www.facebook.com/krhna.lama" 
                               linkedin="#"
                               instagram="#"
-                              name="Mr. Krishna Kumar Lama (Tamang)" 
+                              name="Mr. Krishna Kumar Lama" 
                               position="Founder/CEO" />
                      <MemberProfile 
                               order = "4"
