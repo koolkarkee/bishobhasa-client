@@ -1,35 +1,70 @@
 import React from 'react' 
 import { withRouter, Link } from 'react-router-dom' 
  
-// import './../../css/bstyle.css'
 
-// import bookImage1 from './../../images/bookstore/korean basic book-1.jpg'
-// import bookImage2 from './../../images/bookstore/korean basic book-2.jpg'
-// import bookImage3 from './../../images/bookstore/korean basic book-3.jpg'
-// import bookImage4 from './../../images/bookstore/korean basic book-4.jpg'
-// import bookImage5 from './../../images/bookstore/korean basic book-5.jpg'
-// import bookImage6 from './../../images/bookstore/korean basic book-6.jpg'
-// import bookImage7 from './../../images/bookstore/korean basic book-7.jpg'
+const path1 = "/assets/images/bookstore/Korean-basic-book-part-1.jpg" 
+const path2 = "/assets/images/bookstore/Korean-basic-book-part-2.jpg"
+const path3 = "/assets/images/bookstore/Korean-language-intermediate-part-1.jpg" 
+const path4 = "/assets/images/bookstore/Korean-language-intermediate-part-2.jpg" 
+const path5 = "/assets/images/bookstore/Korean-language-advance-book.jpg"
+const path6 = "/assets/images/bookstore/Korean-Language-EPS-Question-Bank.jpg" 
+const path7 = "/assets/images/bookstore/Korean-language-EPS-Skill-Test-and-exam-related-book.jpg"
+ 
 
-const BookImage1 = () => {
-  return ( 
-    <img src={process.env.PUBLIC_URL+"/assets/images/bookstore/korean basic book-1.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/bookstore/korean basic book-1.jpg"} /> 
-  ) 
+const BookImage = (props) => {
+  if(props.order === "1"){
+    return (
+      <img src={process.env.PUBLIC_URL+ path1} alt={process.env.PUBLIC_URL+ path1} /> 
+    )
+  } 
+
+  if(props.order === "2"){
+    return (
+      <img src={process.env.PUBLIC_URL+ path2} alt={process.env.PUBLIC_URL+ path2} /> 
+    )
+  } 
+
+  if(props.order === "3"){
+    return (
+      <img src={process.env.PUBLIC_URL+ path3} alt={process.env.PUBLIC_URL+ path3} /> 
+    )
+  } 
+
+  if(props.order === "4"){
+    return (
+      <img src={process.env.PUBLIC_URL+ path4} alt={process.env.PUBLIC_URL+ path4} /> 
+    )
+  } 
+
+  if(props.order === "5"){
+    return (
+      <img src={process.env.PUBLIC_URL+ path5} alt={process.env.PUBLIC_URL+ path5} /> 
+    )
+  } 
+
+  if(props.order === "6"){
+    return (
+      <img src={process.env.PUBLIC_URL+ path6} alt={process.env.PUBLIC_URL+ path6} /> 
+    )
+  } 
+
+  if(props.order === "7"){
+    return (
+      <img src={process.env.PUBLIC_URL+ path7} alt={process.env.PUBLIC_URL+ path7} /> 
+    )
+  } 
+ 
+ 
 }
+ 
 
-// const BookImage2 = () => {
-//   return (
-//     <img src={process.env.PUBLIC_URL+"/assets/images/bookstore/korean basic book-2.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/bookstore/korean basic book-2.jpg"} /> 
-//   )
-// }
-
-const BookItem = () => {
+const BookItem = (props) => {
   return (
     <>
       <div class="card-bstore">
         <span></span>
         <div class="imgBx">
-            <BookImage1 /> 
+            <BookImage order={props.order} /> 
           </div>
         <div class="content">
           <div>
@@ -37,20 +72,20 @@ const BookItem = () => {
             <div class="content-h2">Korean Book store</div>
 
             <div class="content-list">
-              <p><del>$500.00</del></p>
-              <p>$131.75</p>
+              <p><del>Rs. {props.price}</del></p>
+              <p>Rs. {props.discountedPrice}</p>
               <p>
-                <button class="button is-text is-primary">
+                <button disabled class="button is-text is-primary">
                   <Link to="/"><i class="fas fa-shopping-cart"></i></Link>
                 </button><br />   
               </p>
             </div>
           </div>
         </div>
-        <div class="card-highlight">
+        {/* <div class="card-highlight">
           <h2>Grammar Textbooks<br />
             & Workbooks</h2>
-        </div>
+        </div> */}
       </div> 
     </>
   )
@@ -72,17 +107,15 @@ const BookStoreComponent = function(props) {
                 <br />
 
                   <div class="dego-container">
-                    <BookItem />
-                    <BookItem />
-                    <BookItem />
-                    <BookItem />
-                    <BookItem />
-                    <BookItem />
-                    <BookItem />
-                    <BookItem />
+                    <BookItem order="1" price="750" discountedPrice="600" />
+                    <BookItem order="2" price="750" discountedPrice="600" />
+                    <BookItem order="3" price="750" discountedPrice="600" />
+                    <BookItem order="4" price="750" discountedPrice="600" />
+                    <BookItem order="5" price="750" discountedPrice="600" />
+                    <BookItem order="6" price="750" discountedPrice="600" />
+                    <BookItem order="7" price="750" discountedPrice="600" /> 
                   </div>
-
-
+ 
               </div> 
               
             </div>
