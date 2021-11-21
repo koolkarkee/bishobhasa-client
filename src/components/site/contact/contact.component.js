@@ -50,7 +50,7 @@ const ContactComponent = function(props) {
                           </span>
                         </div>
                         <div class="hr-break-contact ml-5 column is-11">
-                          <h2 class="is-unselectable mb-3 is-size-6 mt-4">+977-9803645581</h2>
+                          <h2 class="is-unselectable mb-3 is-size-6 mt-4">+977 1 4813 102</h2>
                           <hr style={{width:250}} />
                         </div>
                       </div> 
