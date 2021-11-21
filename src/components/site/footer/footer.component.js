@@ -13,7 +13,12 @@ const BishoBhasaConsultancySection = () => {
           <button class="button is-text is-primary"><Link to="/Team"> Bishobhasa Team </Link></button><br />        
           <button class="button is-text is-primary"><Link to="/faq"> FAQ </Link></button><br />         
           <button class="button is-text is-primary"><Link to="/Contact"> Contact Us </Link></button><br />       
-      </p> 
+          <button class="button is-text is-primary">
+            <a href="https://portal.termshub.io/bishobhasa.com/website_tos/" target="_blank">
+              Terms and Condtions 
+            </a>
+          </button><br />  
+      </p>  
     </>
   )
 }
@@ -68,7 +73,7 @@ const SubscribeToNewsletterSection = () => {
              Subscribe
           </button>
         </div>
-      </article>
+      </article> 
     </>
   )
 }
