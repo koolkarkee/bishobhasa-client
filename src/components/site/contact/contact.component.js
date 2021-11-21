@@ -18,24 +18,14 @@ const ContactComponent = function(props) {
               <h2 class="title has-text-centered has-text-primary">Contact Us</h2>
               
               <p class="has-text-justified is-size-6 mx-5 mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, 
-                molestias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, 
-                molestias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, 
-                molestias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, 
-                molestias!
+                  Need more information? Please fill out the form and we will get in touch soon  
               </p>
               
               <div class="container is-dark"> 
                
                 <div class="columns is-variable is-8">
-
-                  <div class="column is-one-fifths">
-                    <p class="is-hidden">
-                      hidden column  
-                    </p>
-                  </div>
-
-                  <div class="column is-two-fifths">
+  
+                  <div class="column is-three-fifths">
 
                     <div class="subtitle is-size-1">
                       <div class="columns is-gapless is-mobile">
@@ -83,7 +73,7 @@ const ContactComponent = function(props) {
   
                   </div>
 
-                  <div class="column is-two-fifths"> 
+                  <div class="column is-three-fifths"> 
                     <form method="POST" class="field"> 
                         <div class="control block"> 
                           <input required class="input is-hovered is-unselectable" type="text" placeholder="Enter your full name" />                        
@@ -102,13 +92,7 @@ const ContactComponent = function(props) {
                         </div>
                     </form>
                   </div>
-
-                  <div class="column is-one-fifths">
-                    <p class="is-hidden">
-                      hidden column to manage space
-                    </p>
-                  </div>
-
+ 
                 </div> 
               </div>
 

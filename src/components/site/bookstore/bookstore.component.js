@@ -102,8 +102,12 @@ const BookStoreComponent = function(props) {
               <div class="block">
                 <h1 class="title is-size-2 my-3 has-text-centered has-text-primary">Book Store</h1>
                 <p class="has-text-justified is-size-6 mx-5">
-                Publication means a book stores. We have a qualified and best teams for the services we offer to our valued readers/users or students. Bishobhasha School's team members also publishes learning materials and publishes it as E-book and on paper book. Please get access to our website and empower your knowledge. You can also order your books contacting us. Deliver charges will be added on actual price. Please feel free to visit our office or contant us on email, or landline number.                
+                  Publication means a book stores. 
+                  We have a qualified and best teams for the services we offer to our valued readers/users or students. 
+                  Bishobhasha School's team members also publishes learning materials and publishes it as E-book and on paper book. 
+                  Please get access to our website and empower your knowledge. 
                 </p>  
+             
                 <br />
 
                   <div class="dego-container">
@@ -114,6 +118,12 @@ const BookStoreComponent = function(props) {
                     <BookItem order="5" price="750" discountedPrice="600" />
                     <BookItem order="6" price="750" discountedPrice="600" />
                     <BookItem order="7" price="750" discountedPrice="600" /> 
+
+                    <p class="has-text-justified is-size-6 mx-5 has-text-primary"> 
+                      You can also order your books contacting us. 
+                      Delivery charges will be added on actual price. 
+                      Please feel free to visit our office or contant us on email, or landline number.                
+                    </p>  
                   </div>
  
               </div> 

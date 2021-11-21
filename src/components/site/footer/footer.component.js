@@ -14,7 +14,7 @@ const BishoBhasaConsultancySection = () => {
           <button class="button is-text is-primary"><Link to="/faq"> FAQ </Link></button><br />         
           <button class="button is-text is-primary"><Link to="/Contact"> Contact Us </Link></button><br />       
           <button class="button is-text is-primary">
-            <a href="https://portal.termshub.io/bishobhasa.com/website_tos/" target="_blank">
+            <a href="https://portal.termshub.io/bishobhasa.com/website_tos/" target="_blank" rel="noopener noreferrer">
               Terms and Condtions 
             </a>
           </button><br />  
@@ -42,7 +42,7 @@ const LearningCenterSection = () => {
       
         <button class="button is-text is-primary"><Link to="/"> Book Audio </Link></button><br />  
         
-        <button class="button is-text is-primary"><Link to="/"> Download App </Link></button><br />   
+        {/* <button class="button is-text is-primary"><Link to="/"> Download App </Link></button><br />    */}
               
       </p>
     </>
