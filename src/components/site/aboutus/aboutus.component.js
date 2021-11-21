@@ -44,8 +44,8 @@ const History = () => {
     <>
       <TimelineItem> 
         <TimelineSeparator>
-          <TimelineDot>
-            <HistoryIcon /> 
+          <TimelineDot color="#149179">
+            <HistoryIcon style={{fill: "#149179"}}/> 
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -55,9 +55,61 @@ const History = () => {
               History  <Divider style={{width:80}} />
             </h1> 
             
-            <p>
-              We are legally registered educational institution under the Nepal government policy and act in 2019
-            </p> 
+            <p class="pb-2">
+              <ul class="ml-3">
+                <li class="has-text-primary">2011 - 2015 </li>
+                <li>
+                  <span class="mt-1 mr-2 has-text-left is-size-6">
+                   <i class="fa fa-plane has-text-primary pl-2"></i>  
+                  </span> 
+                  <span>
+                    Moved to South Korea
+                  </span> 
+                </li>
+                <li>
+                  <span class="mt-1 mr-2 has-text-left is-size-6">
+                   <i class="fa fa-check pl-2"></i>  
+                  </span> 
+                  <span>
+                   Studied Korean  
+                  </span> 
+                </li>
+                <li class="pb-4">
+                  <span class="mt-1 mr-2 has-text-left is-size-6">
+                   <i class="fa fa-check pl-2"></i>  
+                  </span> 
+                  <span>
+                  Formed a team in Nepal
+                  </span> 
+                </li>
+ 
+                <li class="has-text-primary">2019 - present </li>
+                <li>
+                  <span class="mt-1 mr-2 has-text-left is-size-6">
+                   <i class="fa fa-building has-text-primary pl-2"></i>  
+                  </span> 
+                  <span>
+                    Founded Bishwobhasha    
+                  </span> 
+                </li>  
+                <li>
+                  <span class="mt-1 mr-2 has-text-left is-size-6">
+                   <i class="fa fa-check pl-2"></i>  
+                  </span> 
+                  <span>
+                  Teaching Korean  
+                  </span> 
+                </li> 
+                <li>
+                  <span class="mt-1 mr-2 has-text-left is-size-6">
+                   <i class="fa fa-check pl-2"></i>  
+                  </span> 
+                  <span>
+                  Writing Korean books
+                  </span> 
+                </li>  
+              </ul> 
+            </p>  
           </Paper>
         </TimelineContent>
       </TimelineItem> 
@@ -72,8 +124,8 @@ const Mission = () => {
     <> 
       <TimelineItem> 
           <TimelineSeparator>
-            <TimelineDot  >
-              <CenterFocusStrongIcon />
+            <TimelineDot color="#149179">
+              <CenterFocusStrongIcon style={{fill: "#149179"}} />
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
@@ -85,7 +137,32 @@ const Mission = () => {
                 </h1> 
                 <Divider style={{width:80, float:'right'}} />  
                 <p style={{clear:'right'}}>
-                   We are legally registered educational institution under the Nepal government policy and act in 2019
+                  <ul>
+                    <li>
+                       <span>
+                          Teaching languages 
+                        </span> 
+                        <span class="mt-1 mr-2 has-text-left is-size-6">
+                          <i class="fa fa-check pl-2"></i>  
+                        </span>  
+                    </li>  
+                    <li>
+                      <span>
+                        Korean Language   
+                      </span> 
+                      <span class="mt-1 mr-2 has-text-left is-size-6">
+                        <i class="fa fa-check pl-2"></i>  
+                      </span>  
+                    </li> 
+                    <li>
+                      <span>
+                       Career development  
+                      </span> 
+                      <span class="mt-1 mr-2 has-text-left is-size-6">
+                        <i class="fa fa-check pl-2"></i>  
+                      </span>  
+                    </li> 
+                  </ul>
                 </p> 
             </Paper>
           </TimelineContent>
@@ -101,8 +178,8 @@ const Vision = () => {
     <> 
         <TimelineItem> 
           <TimelineSeparator>
-            <TimelineDot>
-              <ArrowForwardIcon />
+            <TimelineDot color="#149179">
+              <ArrowForwardIcon style={{fill: "#149179"}} />
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
@@ -112,7 +189,7 @@ const Vision = () => {
                   Vision <Divider style={{width:80}} /> 
                 </h1> 
                 <p>
-                  We are legally registered educational institution under the Nepal government policy and act in 2019
+                  We have a vision to run a language school of an international level.
                 </p> 
             </Paper>
           </TimelineContent>
@@ -144,8 +221,15 @@ const AboutUsComponent = function(props) {
           <section class="hero is-light pb-5" id="About-us">
             <div class="container block">
               <h1 class="title is-size-2 has-text-centered has-text-primary mb-5">About</h1>
+              <p class="has-text-justified is-size-6 mx-5 pb-4">
+                In search of better life people always seek an opportunity. 
+                We believe opportunity rarely happens and it should be created. 
+                Hence, we are here to help you to give a shape towards the successful journey. 
+              </p>
               <p class="has-text-justified is-size-6 mx-5">
-                We are legally registered educational institution under the Nepal government policy and act in 2019, located in Kathmandu Metropolitan city Chabahil – 7 Gopikrishna Nagar. Our prime objectives are teaching various languages, job orientation and skill development trainings and abroad study counselling, documentation and processing. We have a very qualified and more than 5 to 10 years of experienced teams to offer you the above mention services.
+                 Our main objectives are teaching various international languages; 
+                 conduct a useful and important job orientation trainings, skill and career development trainings for abroad study and abroad employment. 
+                 Apart from that, we provide counseling, documentation and processing for abroad study in different countries.  
               </p>
             </div>
  
