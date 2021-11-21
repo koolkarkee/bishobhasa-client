@@ -47,8 +47,25 @@ const ServiceComponent = function(props) {
                         <ServiceImage order="1" />
                     </div>
                     <div class="de-content">
-                        <h2 class="title has-text-centered">Languages</h2>
-                        <p class="subtitle is-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit dicta deleniti amet hic quae ex. Voluptatum beatae aliquam molestias modi repellat provident exercitationem, consequuntur quae aspernatur. Dolorem quos adipisci voluptatem?</p>
+                        {/* <h2 class="title has-text-centered pb-3">Languages</h2>  */}
+                        <p class="subtitle is-6">
+                            <aside class="menu">
+                                <p class="menu-label has-text-primary has-text-weight-bold">
+                                    Languages
+                                </p> 
+                                <ul class="menu-list ml-2">
+                                    <li class="pb-1">Korean (EPS)</li>
+                                    <li class="pb-1">Japanese</li>
+                                    <li class="pb-1">English</li>
+                                    <li class="pb-1">Chinese</li>
+                                    <li class="pb-1">Germany</li>
+                                    <li class="pb-1">Nepali</li> 
+                                </ul>
+                            </aside> 
+                        </p>
+                        {/* <p class="subtitle is-6">
+                                View More
+                        </p> */}
                     </div>
                 </div>
 
@@ -56,20 +73,44 @@ const ServiceComponent = function(props) {
                     <div class="imgBx">
                         <ServiceImage order="2" />
                     </div>
+                    
                     <div class="de-content">
-                        <h2 class="title has-text-centered">Trainings</h2>
-                        <p class="subtitle is-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit dicta deleniti amet hic quae ex. Voluptatum beatae aliquam molestias modi repellat provident exercitationem, consequuntur quae aspernatur. Dolorem quos adipisci voluptatem?</p>
-                    </div>
+                        <p class="subtitle is-6">
+                                <aside class="menu">
+                                    <p class="menu-label has-text-primary has-text-weight-bold">
+                                        Trainings
+                                    </p> 
+                                    <ul class="menu-list ml-2">
+                                        <li class="pb-1">EPS Skill Test </li>
+                                        <li class="pb-1"> Caregiver </li>
+                                        <li class="pb-1">Other Foreign Employment </li>
+                                        <li class="pb-1">Job orientation trainings</li> 
+                                    </ul>
+                                </aside> 
+                        </p>
+                    </div> 
                 </div>
 
                 <div class="de-card">
                     <div class="imgBx"> 
                         <ServiceImage order="3" />
                     </div>
-                    <div class="de-content">
-                        <h2 class="title has-text-centered">Tuitions</h2>
-                        <p class="subtitle is-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit dicta deleniti amet hic quae ex. Voluptatum beatae aliquam molestias modi repellat provident exercitationem, consequuntur quae aspernatur. Dolorem quos adipisci voluptatem?</p>
-                    </div>
+                    <div class="de-content"> 
+                      <p class="subtitle is-6">
+                            <aside class="menu">
+                                <p class="menu-label has-text-primary has-text-weight-bold">
+                                    Abroad Study 
+                                </p> 
+                                <ul class="menu-list ml-2">
+                                    <li class="pb-1">South Korea</li>
+                                    <li class="pb-1"> Japan </li>
+                                    <li class="pb-1">USA </li>
+                                    <li class="pb-1">Austraila</li> 
+                                    <li class="pb-1">China</li> 
+                                </ul>
+                            </aside> 
+                        </p>
+                    </div> 
                 </div>    
                 
 

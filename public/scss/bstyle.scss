@@ -569,10 +569,9 @@ input[type="checkbox"]{
 		
 .de-container .de-card{
 	position: relative;
-	width: 300px;
-	min-width: 300px;
-	height: 215px;
-	background: #fff;
+	width: 300px;  
+	height: 400px; 
+	background: #ffffff;
 	margin: 30px 16px 80px 16px;
 	padding: 20px 15px;
 	display: flex;
@@ -582,7 +581,15 @@ input[type="checkbox"]{
 }
 
 .de-container .de-card:hover{
-	height: 480px;
+	//height: 480px;
+	background: $primary;
+	margin-top: 5px;
+	transition: 0.3s ease-in-out;
+}
+
+
+.de-container .de-card:hover p .menu-label {
+	color: white !important;
 }
 
 .de-container .de-card .imgBx{
@@ -606,20 +613,20 @@ input[type="checkbox"]{
 
 .de-container .de-card .de-content{
 	position: relative;
-	margin-top: -135px;
+	margin-top: -25px;
 	padding: 10px 15px;
 	text-align: justify;
 	color: #111;
-	visibility: hidden;
-	opacity: 0;
-	transition: 0.3s ease-in-out;
+	visibility: visible;
+	opacity: 01;
+	//transition: 0.3s ease-in-out;
 }
 
 .de-container .de-card:hover .de-content{
-	visibility: visible;
-	opacity: 1;
-	margin-top: -40px;
-	transition-delay: 0.3s;
+	//visibility: visible;
+	//opacity: 1;
+	//margin-top: -40px;
+	//transition-delay: 0.3s;
 }		
 
 // our services css end
