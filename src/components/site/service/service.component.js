@@ -1,10 +1,29 @@
 import React from 'react' 
 import { withRouter } from 'react-router-dom' 
 
-const ServiceImage = () => {
-    return (
-        <img src={process.env.PUBLIC_URL+"/assets/images/our-services/svg/our-services.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/our-services/svg/our-services.jpg"} /> 
-    )
+
+const path1 = "/assets/images/our-services/language.jpg" 
+const path2 = "/assets/images/our-services/training.jpg" 
+const path3 = "/assets/images/our-services/tuition.jpg" 
+
+const ServiceImage = (props) => {
+    if(props.order === "1"){
+        return (
+          <img src={process.env.PUBLIC_URL+ path1} alt={process.env.PUBLIC_URL+ path1} /> 
+        )
+      } 
+    
+      if(props.order === "2"){
+        return (
+          <img src={process.env.PUBLIC_URL+ path2} alt={process.env.PUBLIC_URL+ path2} /> 
+        )
+      } 
+    
+      if(props.order === "3"){
+        return (
+          <img src={process.env.PUBLIC_URL+ path3} alt={process.env.PUBLIC_URL+ path3} /> 
+        )
+      } 
 }
 
 
@@ -25,17 +44,17 @@ const ServiceComponent = function(props) {
                 
                 <div class="de-card">
                     <div class="imgBx">
-                        <ServiceImage />
+                        <ServiceImage order="1" />
                     </div>
                     <div class="de-content">
-                        <h2 class="title has-text-centered">languages</h2>
+                        <h2 class="title has-text-centered">Languages</h2>
                         <p class="subtitle is-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit dicta deleniti amet hic quae ex. Voluptatum beatae aliquam molestias modi repellat provident exercitationem, consequuntur quae aspernatur. Dolorem quos adipisci voluptatem?</p>
                     </div>
                 </div>
 
                 <div class="de-card">
                     <div class="imgBx">
-                        <ServiceImage />
+                        <ServiceImage order="2" />
                     </div>
                     <div class="de-content">
                         <h2 class="title has-text-centered">Trainings</h2>
@@ -45,7 +64,7 @@ const ServiceComponent = function(props) {
 
                 <div class="de-card">
                     <div class="imgBx"> 
-                        <ServiceImage />
+                        <ServiceImage order="3" />
                     </div>
                     <div class="de-content">
                         <h2 class="title has-text-centered">Tuitions</h2>
