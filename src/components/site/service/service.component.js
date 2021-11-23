@@ -50,9 +50,9 @@ const ServiceComponent = function(props) {
                         {/* <h2 class="title has-text-centered pb-3">Languages</h2>  */}
                         <div class="subtitle is-6">
                             <aside class="menu">
-                                <span class="menu-label has-text-primary has-text-weight-bold">
+                                <p class="menu-label has-text-primary has-text-weight-bold">
                                     Languages
-                                </span> 
+                                </p> 
                                 <ul class="menu-list ml-2">
                                     <li class="pb-1">Korean (EPS)</li>
                                     <li class="pb-1">Japanese</li>
@@ -98,9 +98,9 @@ const ServiceComponent = function(props) {
                     <div class="de-content"> 
                       <div class="subtitle is-6">
                             <aside class="menu">
-                                <span class="menu-label has-text-primary has-text-weight-bold">
+                                <p class="menu-label has-text-primary has-text-weight-bold">
                                     Abroad Study 
-                                </span> 
+                                </p> 
                                 <ul class="menu-list ml-2">
                                     <li class="pb-1">South Korea</li>
                                     <li class="pb-1"> Japan </li>

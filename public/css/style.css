@@ -522,7 +522,7 @@ input[type=checkbox] {
   transition: 0.3s ease-in-out;
 }
 
-.de-container .de-card:hover p .menu-label {
+.de-container .de-card:hover .menu-label {
   color: white !important;
 }
 
