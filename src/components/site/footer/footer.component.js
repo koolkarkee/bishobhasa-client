@@ -75,32 +75,35 @@ const SubscribeToNewsletterSection = () => {
         </div> 
       </article> 
 
-      <div class="control ml-2 pt-3">
+      <article class="subtitle is-6 is-unselectable">
+          <p class="mb-1">
+            Find Bishobhasa School & Consultancy on social media links below
+          </p>  
+
           <div class="columns is-mobile">
 
-            <div class="column">
-              <a href="https://facebook.com/bishobhasa" target="_blank" rel="noopener noreferrer">
-                <span>
-                  <i class="fa fa-facebook is-size-3"> 
-                  </i>
-                </span>
-              </a> 
-            </div>
+              <div class="column">
+                <a href="https://facebook.com/bishobhasa" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook is-size-4"> 
+                    </i> 
+                </a> 
+              </div>
 
-            <div class="column">
-              <a href="https://www.youtube.com/channel/UCNGZChMdPeUXQfHgW5k_LPA" target="_blank" rel="noopener noreferrer">
-                <span>
-                  <i class="fa fa-youtube-play is-size-3"></i>
-                </span>
-              </a> 
-            </div> 
+              <div class="column">
+                <a href="https://www.youtube.com/channel/UCNGZChMdPeUXQfHgW5k_LPA" target="_blank" rel="noopener noreferrer">
+                   <i class="fa fa-youtube-play is-size-4"></i> 
+                </a> 
+              </div> 
 
-            <div class="column is-10">
+              <div class="column is-10">
 
-            </div>
+              </div>
 
-          </div> 
-          
+          </div>  
+      </article>         
+
+      <div class="control ml-2 pt-3">
+
       </div>
     </>
   )
@@ -137,7 +140,7 @@ const FooterComponent = function(props) {
                     <div class="column is-12">
                       <p class="subtitle is-6 is-unselectable has-text-centered">
                         <strong>
-                           Copyright &copy; Bishwo Bhasha School 2019 
+                           Copyright &copy; Bishwo Bhasha School & Consultancy 2019 
                         </strong>
                       </p>
                     </div>
