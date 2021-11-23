@@ -80,20 +80,20 @@ const ContactComponent = function(props) {
                           <input required class="input is-hovered is-unselectable" 
                               type="text" placeholder="Enter your full name" 
                               pattern="[a-zA-Z0-9]+"
-                              minlength="4" maxlength="50"
+                              minLength="4" maxLength="50"
                           />                        
                         </div> 
                         <div class="control block">
                           <input required class="input is-hovered is-unselectable" 
                               type="email" 
                               placeholder="Enter your email" 
-                              minlength="5" maxlength="50"
+                              minLength="5" maxLength="50"
                          />
                         </div>
                         <div class="control block">
                           <input required class="input is-hovered is-unselectable" 
                               type="text" placeholder="Enter your subject" 
-                              minlength="5" maxlength="50"
+                              minLength="5" maxLength="50"
                           />
                         </div>
                         <div class="control block">
@@ -122,7 +122,7 @@ const ContactComponent = function(props) {
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d220.75956785730145!2d85.3220703!3d27.7125593!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3bffdf1430cf013d!2sIDP+Education+Nepal+-+International+Education+Specialists!5e0!3m2!1sen!2sin!4v1546500493448" 
                 height="450" title="bishobhasamap"
-                frameborder="0" style={{border:1}} allowfullscreen=""></iframe>
+                style={{border:1}}></iframe>
           </section>
         </>  
     )

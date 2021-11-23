@@ -48,11 +48,11 @@ const ServiceComponent = function(props) {
                     </div>
                     <div class="de-content">
                         {/* <h2 class="title has-text-centered pb-3">Languages</h2>  */}
-                        <p class="subtitle is-6">
+                        <div class="subtitle is-6">
                             <aside class="menu">
-                                <p class="menu-label has-text-primary has-text-weight-bold">
+                                <span class="menu-label has-text-primary has-text-weight-bold">
                                     Languages
-                                </p> 
+                                </span> 
                                 <ul class="menu-list ml-2">
                                     <li class="pb-1">Korean (EPS)</li>
                                     <li class="pb-1">Japanese</li>
@@ -62,7 +62,7 @@ const ServiceComponent = function(props) {
                                     <li class="pb-1">Nepali</li> 
                                 </ul>
                             </aside> 
-                        </p>
+                        </div>
                         {/* <p class="subtitle is-6">
                                 View More
                         </p> */}
@@ -75,7 +75,7 @@ const ServiceComponent = function(props) {
                     </div>
                     
                     <div class="de-content">
-                        <p class="subtitle is-6">
+                        <div class="subtitle is-6">
                                 <aside class="menu">
                                     <p class="menu-label has-text-primary has-text-weight-bold">
                                         Trainings
@@ -87,7 +87,7 @@ const ServiceComponent = function(props) {
                                         <li class="pb-1">Job Orientation Trainings</li> 
                                     </ul>
                                 </aside> 
-                        </p>
+                        </div>
                     </div> 
                 </div>
 
@@ -96,11 +96,11 @@ const ServiceComponent = function(props) {
                         <ServiceImage order="3" />
                     </div>
                     <div class="de-content"> 
-                      <p class="subtitle is-6">
+                      <div class="subtitle is-6">
                             <aside class="menu">
-                                <p class="menu-label has-text-primary has-text-weight-bold">
+                                <span class="menu-label has-text-primary has-text-weight-bold">
                                     Abroad Study 
-                                </p> 
+                                </span> 
                                 <ul class="menu-list ml-2">
                                     <li class="pb-1">South Korea</li>
                                     <li class="pb-1"> Japan </li>
@@ -109,7 +109,7 @@ const ServiceComponent = function(props) {
                                     <li class="pb-1">China</li> 
                                 </ul>
                             </aside> 
-                        </p>
+                        </div>
                     </div> 
                 </div>    
                 

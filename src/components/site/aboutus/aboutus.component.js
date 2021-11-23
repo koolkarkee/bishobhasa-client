@@ -21,8 +21,12 @@ const useStyles = makeStyles((theme) => ({
   },
   secondaryTail: {
     backgroundColor: theme.palette.secondary.main,
-  },
+  }, 
+  iconColor : {
+    color : "#149179"
+  }
 }));
+ 
 
 // const HistoryImage = () => {
 //   return (
@@ -44,8 +48,8 @@ const History = () => {
     <>
       <TimelineItem> 
         <TimelineSeparator>
-          <TimelineDot color="#149179">
-            <HistoryIcon style={{fill: "#149179"}}/> 
+          <TimelineDot>
+            <HistoryIcon className={classes.iconColor} /> 
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -55,7 +59,7 @@ const History = () => {
               History  <Divider style={{width:80}} />
             </h1> 
             
-            <p class="pb-2">
+            <div class="pb-2">
               <ul class="ml-3">
                 <li class="has-text-primary">2011 - 2015 </li>
                 <li>
@@ -109,7 +113,7 @@ const History = () => {
                   </span> 
                 </li>  
               </ul> 
-            </p>  
+            </div>  
           </Paper>
         </TimelineContent>
       </TimelineItem> 
@@ -124,7 +128,7 @@ const Mission = () => {
     <> 
       <TimelineItem> 
           <TimelineSeparator>
-            <TimelineDot color="#149179">
+            <TimelineDot className={classes.iconColor}>
               <CenterFocusStrongIcon style={{fill: "#149179"}} />
             </TimelineDot>
             <TimelineConnector />
@@ -136,7 +140,7 @@ const Mission = () => {
                     Mission  
                 </h1> 
                 <Divider style={{width:80, float:'right'}} />  
-                <p style={{clear:'right'}}>
+                <div style={{clear:'right'}}>
                   <ul>
                     <li>
                        <span>
@@ -163,7 +167,7 @@ const Mission = () => {
                       </span>  
                     </li> 
                   </ul>
-                </p> 
+                </div> 
             </Paper>
           </TimelineContent>
         </TimelineItem>
@@ -178,7 +182,7 @@ const Vision = () => {
     <> 
         <TimelineItem> 
           <TimelineSeparator>
-            <TimelineDot color="#149179">
+            <TimelineDot className={classes.iconColor}>
               <ArrowForwardIcon style={{fill: "#149179"}} />
             </TimelineDot>
             <TimelineConnector />
