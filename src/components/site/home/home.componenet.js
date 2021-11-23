@@ -12,7 +12,8 @@ const HomeComponent = function(props) {
                         <div class="details de-v-h-center">
                         <h1>Make no bad choices, choose us.</h1>
                         <p class="subtitle mt-2">
-                            Be a family of Bishobhasha. We care on shaping your goal. <br />  Opportunities don't happen, you create them.
+                            Be a family of Bishobhasha. We care on shaping your goals. <br />  
+                            Opportunities don't happen, you create them.
                         </p>
 
                         {/* <div class="de-bottom">

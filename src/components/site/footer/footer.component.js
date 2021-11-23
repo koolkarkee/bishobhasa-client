@@ -72,8 +72,36 @@ const SubscribeToNewsletterSection = () => {
           <button class="button is-link is-rounded is-fullwidth" >
              Subscribe
           </button>
-        </div>
+        </div> 
       </article> 
+
+      <div class="control ml-2 pt-3">
+          <div class="columns is-mobile">
+
+            <div class="column">
+              <a href="https://facebook.com/bishobhasa" target="_blank" rel="noopener noreferrer">
+                <span>
+                  <i class="fa fa-facebook is-size-3"> 
+                  </i>
+                </span>
+              </a> 
+            </div>
+
+            <div class="column">
+              <a href="https://www.youtube.com/channel/UCNGZChMdPeUXQfHgW5k_LPA" target="_blank" rel="noopener noreferrer">
+                <span>
+                  <i class="fa fa-youtube-play is-size-3"></i>
+                </span>
+              </a> 
+            </div> 
+
+            <div class="column is-10">
+
+            </div>
+
+          </div> 
+          
+      </div>
     </>
   )
 }

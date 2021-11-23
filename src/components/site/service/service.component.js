@@ -84,7 +84,7 @@ const ServiceComponent = function(props) {
                                         <li class="pb-1">EPS Skill Test </li>
                                         <li class="pb-1"> Caregiver </li>
                                         <li class="pb-1">Other Foreign Employment </li>
-                                        <li class="pb-1">Job orientation trainings</li> 
+                                        <li class="pb-1">Job Orientation Trainings</li> 
                                     </ul>
                                 </aside> 
                         </p>

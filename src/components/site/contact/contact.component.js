@@ -24,7 +24,7 @@ const ContactComponent = function(props) {
               <div class="container is-dark"> 
                
                 <div class="columns is-variable is-8">
-  
+                   
                   <div class="column is-three-fifths">
 
                     <div class="subtitle is-size-1">
@@ -35,13 +35,15 @@ const ContactComponent = function(props) {
                           </span>
                         </div>
                         <div class="hr-break-contact ml-5 column is-11">
-                          <h2 class="is-unselectable mb-3 is-size-6 mt-4">Chabahil-7, Kathmandu Nepal</h2>
+                          <h2 class="is-unselectable mb-3 is-size-6 mt-4">
+                            Level-5, Charumati Bhawan, <br/> 
+                            Chabahil-7, Kathmandu Nepal
+                          </h2>
                           <hr style={{width:250}} />
                         </div>
                       </div> 
                     </div> 
-
-                    
+ 
                     <div class="subtitle is-size-1">
                       <div class="columns is-gapless is-mobile">
                         <div class="column is-1">
@@ -55,8 +57,7 @@ const ContactComponent = function(props) {
                         </div>
                       </div> 
                     </div>  
-
-                    
+ 
                     <div class="subtitle is-size-1">
                       <div class="columns is-gapless is-mobile">
                         <div class="column is-1">
@@ -69,23 +70,42 @@ const ContactComponent = function(props) {
                           <hr style={{width:250}} />
                         </div>
                       </div> 
-                    </div> 
+                    </div>  
   
                   </div>
 
                   <div class="column is-three-fifths"> 
                     <form method="POST" class="field"> 
                         <div class="control block"> 
-                          <input required class="input is-hovered is-unselectable" type="text" placeholder="Enter your full name" />                        
+                          <input required class="input is-hovered is-unselectable" 
+                              type="text" placeholder="Enter your full name" 
+                              pattern="[a-zA-Z0-9]+"
+                              minlength="4" maxlength="50"
+                          />                        
                         </div> 
                         <div class="control block">
-                          <input required class="input is-hovered is-unselectable" type="email" placeholder="Enter your email" />
+                          <input required class="input is-hovered is-unselectable" 
+                              type="email" 
+                              placeholder="Enter your email" 
+                              minlength="5" maxlength="50"
+                         />
                         </div>
                         <div class="control block">
-                          <input required class="input is-hovered is-unselectable" type="text" placeholder="Enter your number" />
+                          <input required class="input is-hovered is-unselectable" 
+                              type="text" placeholder="Enter your subject" 
+                              minlength="5" maxlength="50"
+                          />
+                        </div>
+                        <div class="control block">
+                          <input required class="input is-hovered is-unselectable" 
+                              type="text" placeholder="Enter your number"
+                              pattern="[0-9]+"
+                              size="10"  minLength="10"
+                          />
                         </div> 
                         <div class="control block">
-                          <textarea required class="textarea is-hovered is-unselectable" placeholder="Enter your message"></textarea>
+                          <textarea required class="textarea is-hovered is-unselectable" 
+                              placeholder="Enter your message"></textarea>
                         </div>
                         <div class="control block">
                           <button class="button is-link" type="submit">Send Message</button>
@@ -98,6 +118,12 @@ const ContactComponent = function(props) {
 
             </div>
           </section> 
+          <section class="hero notification is-light mb-0 px-5">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d220.75956785730145!2d85.3220703!3d27.7125593!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3bffdf1430cf013d!2sIDP+Education+Nepal+-+International+Education+Specialists!5e0!3m2!1sen!2sin!4v1546500493448" 
+                height="450" title="bishobhasamap"
+                frameborder="0" style={{border:1}} allowfullscreen=""></iframe>
+          </section>
         </>  
     )
 }
