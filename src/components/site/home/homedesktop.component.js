@@ -5,18 +5,8 @@ const HomeDesktopComponent = function(props) {
     
     return (
         <> 
-        {/* This class is made for Mobile or Small devices */}
-            <div class="hero container-Ad is-light">
-                 <div class="mobile-animate"> 
-                    Make no bad choices.  
-                    {/* <br/>Choose us.   */}
-                 </div>
-                 <div class="mobile-animate-2"> 
-                    Be a family of Bishobhasha. 
-                 </div>
-            </div>
-            <div class="hero de-v-h-center">
-                <div class="de-v-h-center">
+            <div class="hero de-v-h-center" style={{marginTop:-80}}>
+                <div class="de-v-h-center hero is-light" >
                     <div class="container-slide">
 
                     </div>

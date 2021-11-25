@@ -5,7 +5,7 @@ import React from 'react'
 // import { RegisterComponent } from '../components/auth/register/register.component'
 
 import HeaderComponent from '../components/common/header/header.component'
-import HomeComponent from '../components/site/home/home.componenet'
+import HomeComponent from '../components/site/home/home.component'
 import ServiceComponent from '../components/site/service/service.component'
 import AboutUsComponent from '../components/site/aboutus/aboutus.component'
 import AboutTeamComponent from '../components/site/aboutus/team.component'

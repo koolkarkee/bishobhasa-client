@@ -1,7 +1,7 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
   
-const path1 = "/assets/images/testimonial/1.jpg" 
+const path1 = "/assets/images/testimonials/1.jpg" 
 
 const StudentImage = () => { 
     return (
