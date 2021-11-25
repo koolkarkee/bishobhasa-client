@@ -1,12 +1,11 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
   
-//import studentImage1 from './../../images/about-us/1.jpg'
-// import './../../css/bstyle.css'
+const path1 = "/assets/images/testimonial/1.jpg" 
 
 const StudentImage = () => { 
     return (
-        <img class="is-unselectable" src={process.env.PUBLIC_URL+"/assets/images/about-us/1.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/about-us/1.jpg"} />
+        <img class="is-unselectable" src={process.env.PUBLIC_URL+path1} alt={process.env.PUBLIC_URL+path1} />
     )
 }
 

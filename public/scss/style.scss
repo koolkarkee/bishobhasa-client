@@ -378,7 +378,7 @@ input[type="checkbox"]{
 	.de-v-h-center{
 		margin-top: -51px;
 		padding-top: 59px; 
-		height: 500px !important; 
+		height: 220px !important; 
 		margin-bottom: 50px;
 	}
  
@@ -394,6 +394,50 @@ input[type="checkbox"]{
 		font-size: 30px;
 	}
 
+	.container-slide{
+		display: none;
+	}
+
+	.container-Ad{
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 25px;
+		width: 100%;
+		height: 100vh; 
+		background-image: url(./../assets/images/slider/jpg/0.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;  
+	}
+
+	#services{
+		margin-top: 120px;
+	} 
+
+	.outer{
+		display: none; 
+	}
+
+	.mobile-animate{ 
+		color: $primary;
+		font-size: 24px;
+		position: relative;
+		top: 100px; 
+		animation-name: example;
+		animation-duration: 3s;
+		animation-direction: normal;   
+		transition-timing-function: ease-in-out; 
+		animation-fill-mode: forwards; 
+	} 
+
+	@keyframes example {
+		0%   { left:10px; top:50px;} 
+		// 25%  {left:10px; top:75px;}
+		// 50%  {left:10px; top:75px;}
+		75%  {left:10px; top:100px;}
+		100%  {left:10px; top:100px;}
+	}
+ 
 } 
  
 
@@ -427,7 +471,7 @@ input[type="checkbox"]{
 	left: 0;
 	top: 103px;
     width: 100%;
-    height: 100vh;
+    height: 84vh;
 	animation: animate 12s ease-in-out infinite; 
 	background-size: cover; 
     -moz-animation: 12s linear 1s ease-in-out paused opacity 100ms animate; 
@@ -494,13 +538,20 @@ input[type="checkbox"]{
 	}
 } 
 
+// .container-Ad is made for Mobile or small devices, whichi is
+// not preview in the larger screen
+
+.container-Ad{
+	display: none;
+}
+
 .outer{
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100vh; 
-	background: rgba(0,0,0,0.5)
+	// background: rgba(0,0,0,0.5)
 }
 
 .details h1{
@@ -620,15 +671,9 @@ input[type="checkbox"]{
 	color: #111;
 	visibility: visible;
 	opacity: 01;
-	//transition: 0.3s ease-in-out;
 }
 
-.de-container .de-card:hover .de-content{
-	//visibility: visible;
-	//opacity: 1;
-	//margin-top: -40px;
-	//transition-delay: 0.3s;
-}		
+	
 
 // our services css end
 
