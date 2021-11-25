@@ -15,7 +15,7 @@ const HomeDesktopComponent = function(props) {
 
                         <div class="details de-v-h-center">
                             <h1>Make no bad choices, choose us.</h1>
-                            <p class="subtitle mt-2">
+                            <p class="subtitle mt-2 has-text-white">
                                 Be a family of Bishobhasha. We care on shaping your goals. <br />  
                                 Opportunities don't happen, you create them.
                             </p>

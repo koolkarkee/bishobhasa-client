@@ -105,7 +105,7 @@ const ServiceComponent = function(props) {
                                     <li class="pb-1">South Korea</li>
                                     <li class="pb-1"> Japan </li>
                                     <li class="pb-1">USA </li>
-                                    <li class="pb-1">Austraila</li> 
+                                    <li class="pb-1">Australia</li> 
                                     <li class="pb-1">China</li> 
                                 </ul>
                             </aside> 
