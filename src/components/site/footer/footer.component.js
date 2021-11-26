@@ -5,12 +5,12 @@ const BishoBhasaConsultancySection = () => {
   return(
     <>
       <h2 class="title is-4 has-text-dark">  
-          Bisho Bhasha School 
+          Bishwo Bhasha School 
           & Consultancy 
       </h2>
 
        <p class="subtitle is-6 is-unselectable">        
-          <button class="button is-text is-primary"><Link to="/Team"> Bishobhasa Team </Link></button><br />        
+          <button class="button is-text is-primary"><Link to="/Team"> Bishwo Bhasha Team </Link></button><br />        
           <button class="button is-text is-primary"><Link to="/faq"> FAQ </Link></button><br />         
           <button class="button is-text is-primary"><Link to="/Contact"> Contact Us </Link></button><br />       
           <button class="button is-text is-primary">
@@ -53,7 +53,7 @@ const SubscribeToNewsletterSection = () => {
   return (
     <>
       <h2 class="title is-4 has-text-dark">
-        Subscribe to Bishobhasa newsletter   
+        Subscribe to Bishwo Bhasha newsletter   
       </h2>  
       <p class="subtitle is-6 is-unselectable">
         <br/> 
@@ -79,7 +79,7 @@ const SubscribeToNewsletterSection = () => {
 
       <article class="subtitle is-6 is-unselectable">
           <p class="mb-1">
-            Find Bishobhasa School & Consultancy on social media links below
+            Find Bishwo Bhasha School & Consultancy on social media links below
           </p>  
 
           <div class="columns is-mobile">

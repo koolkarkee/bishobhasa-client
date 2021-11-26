@@ -1,14 +1,41 @@
 import React, {useEffect} from 'react' 
 import { withRouter, Link } from 'react-router-dom' 
+   
+const pathHyolmo = "/assets/images/about-us/hyolmo.jpg"  
+const pathKrishna = "/assets/images/about-us/krishna.jpg"  
+const pathSherpa = "/assets/images/about-us/sherpa.jpg"  
+const pathBibek = "/assets/images/about-us/bibek.jpg"  
+const pathDharma = "/assets/images/about-us/dharma.jpg"   
+
+const HyalmoImage = () => {
+  return (
+     <img src={process.env.PUBLIC_URL+ pathHyolmo} alt={process.env.PUBLIC_URL+ pathHyolmo} /> 
+ )
+}
+
+const KrishnaImage = () => {
+  return (
+     <img src={process.env.PUBLIC_URL+pathKrishna} alt={process.env.PUBLIC_URL+pathKrishna} /> 
+ )
+} 
+
+const SherpaImage = () => { 
+  return (
+      <img src={process.env.PUBLIC_URL+pathSherpa} alt={process.env.PUBLIC_URL+pathSherpa} /> 
+  )
+}
+
+const BibekImage = () => {
+  return (
+     <img src={process.env.PUBLIC_URL+pathBibek} alt={process.env.PUBLIC_URL+ pathBibek} /> 
+ )
+} 
  
-// import './../../css/bstyle.css'
-
-// import sherpaImage from './../../images/about-us/sherpa.jpg' 
-// import krishnaImage from './../../images/about-us/krishna.jpg' 
-// import hyalmoImage from './../../images/about-us/hyolmo.jpg'
-// import bibekImage from './../../images/about-us/bibek.jpg'
-// import dharmaImage from './../../images/about-us/dharma.jpg'  
-
+const DharmaImage = () => {
+  return (
+     <img src={process.env.PUBLIC_URL+ pathDharma} alt={process.env.PUBLIC_URL+pathDharma} /> 
+ )
+} 
 
 const MemberImage = (props) => { 
   if(props.order === "1"){
@@ -33,7 +60,7 @@ const MemberImage = (props) => {
     return (
       <BibekImage />
     )
-  } 
+  }  
 
   if(props.order === "5"){
     return (
@@ -74,36 +101,6 @@ const MemberProfile = (props) => {
   )
 }
 
-
-const SherpaImage = () => { 
-  return (
-      <img src={process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/about-us/sherpa.jpg"} /> 
-  )
-}
-
-const HyalmoImage = () => {
-   return (
-      <img src={process.env.PUBLIC_URL+"/assets/images/about-us/hyolmo.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/about-us/hyolmo.jpg"} /> 
-  )
-}
- 
-const KrishnaImage = () => {
-   return (
-      <img src={process.env.PUBLIC_URL+"/assets/images/about-us/krishna.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/about-us/krishna.jpg"} /> 
-  )
-} 
-
-const BibekImage = () => {
-  return (
-     <img src={process.env.PUBLIC_URL+"/assets/images/about-us/bibek.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/about-us/bibek.jpg"} /> 
- )
-} 
-
-const DharmaImage = () => {
-  return (
-     <img src={process.env.PUBLIC_URL+"/assets/images/about-us/dharma.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/about-us/dharma.jpg"} /> 
- )
-} 
  
 const AboutTeamComponent = function(props) {  
     useEffect(() => {
@@ -137,7 +134,7 @@ const AboutTeamComponent = function(props) {
                               position="Board Member" />
                      <MemberProfile 
                               order = "2"
-                              facebook="#" 
+                              facebook="http://www.facebook.com/sweetgirl.phurpahyolmo" 
                               linkedin="#"
                               instagram="#"
                               name="Ms. Hyolmo Phurdiki" 
@@ -146,7 +143,7 @@ const AboutTeamComponent = function(props) {
                               order = "3"
                               facebook="http://www.facebook.com/krhna.lama" 
                               linkedin="#"
-                              instagram="#"
+                              instagram="https://www.instagram.com/krhnalama"
                               name="Mr. Krishna Kumar Lama" 
                               position="Founder/CEO" />
                      <MemberProfile 

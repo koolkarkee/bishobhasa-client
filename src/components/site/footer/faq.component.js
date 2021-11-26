@@ -5,11 +5,11 @@ import { withRouter } from 'react-router-dom'
 const qas = [
     { 
         question : "1. Where are you located? ", 
-        answer : "Bishobhasa School & Consultancy is located at Level-5, Chabahil GopiKrishna-7, Kathmandu Metropolitician city next to Om Samaj Dental Hospital. You can also see on Google map as well for direction."
+        answer : "Bishwo Bhasha School & Consultancy is located at Level-5, Chabahil GopiKrishna-7, Kathmandu Metropolitician city next to Om Samaj Dental Hospital. You can also see on Google map as well for direction."
     }, 
     { 
         question : "2. What are the hours of operation of your institute?", 
-        answer : "We operate 6 days a week that is from Sunday to Friday during 6AM to 6:30PM."
+        answer : "Bishwo Bhasha School & Consultancy operates 6 days a week that is from Sunday to Friday during 6AM to 6:30PM."
     }, 
     { 
         question : "3. Do you provide online or in-person classes?", 
@@ -17,11 +17,11 @@ const qas = [
     },
     { 
         question : "4. Do I have access to free material on your website?", 
-        answer : "Yes, you do have access to free materials. We have some of our lessons, teachings, learning material , books etc made freely available to all our students." 
+        answer : "Yes, you do have access to free materials. Bishwo Bhasha School & Consultancy have some of the lessons, teachings, learning material , books etc made freely available to all the students." 
     },
     { 
         question : "5. Can I take a free class before registering for it?", 
-        answer : "Yes, you can. You can have 3 free classes before registering for the course." 
+        answer : "Yes, you can. You can have 3 free classes before registering for the course at Bishwo Bhasha School & Consultancy." 
     },
     { 
         question : "6. How many classes do you provide a day?", 
@@ -41,7 +41,7 @@ const qas = [
     },
     { 
         question : "10. Do you provide classes for the absolute beginner?", 
-        answer : "Yes, we provide classes for the absolute beginners as well (With or without materials)." 
+        answer : "Yes, Bishwo Bhasha School & Consultancy provides classes for the absolute beginners as well (With or without materials)." 
     },
     { 
         question : "11. Is there any certification test after completing the courses?", 

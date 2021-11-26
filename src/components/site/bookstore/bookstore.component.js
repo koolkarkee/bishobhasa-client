@@ -103,7 +103,7 @@ const BookStoreComponent = function(props) {
                 <h1 class="title is-size-2 my-3 has-text-centered has-text-primary">Book Store</h1>
                 <p class="has-text-justified is-size-6 mx-5"> 
                   We have a qualified and best teams for the services we offer to our valued readers/users or students. 
-                  Bishobhasha School's team members also publishes learning materials and publishes it as E-book and on paper book. 
+                  Bishwo Bhasha School & Consultancy's team members also publishes learning materials and publishes it as E-book and on paper book. 
                   Please get access to our website and empower your knowledge. 
                 </p>  
              

@@ -26,20 +26,7 @@ const useStyles = makeStyles((theme) => ({
     color : "#149179"
   }
 }));
- 
-
-// const HistoryImage = () => {
-//   return (
-//     <>
-//       <div class="column is-3">
-//           <figure class="image">
-//                 <img class="is-rounded" src={process.env.PUBLIC_URL+"/assets/images/about-us/student1.jpg"} alt={process.env.PUBLIC_URL+"/assets/images/about-us/student1.jpg"} />
-//           </figure> 
-          
-//       </div> 
-//     </>
-//   )
-// }
+  
 
 const History = () => {
   const classes = useStyles()
@@ -93,7 +80,7 @@ const History = () => {
                    <i class="fa fa-building has-text-primary pl-2"></i>  
                   </span> 
                   <span>
-                    Founded Bishwobhasha    
+                    Founded Bishwo Bhasha    
                   </span> 
                 </li>  
                 <li>
